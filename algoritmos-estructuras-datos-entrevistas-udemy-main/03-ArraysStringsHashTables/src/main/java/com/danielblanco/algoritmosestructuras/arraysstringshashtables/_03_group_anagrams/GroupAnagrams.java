@@ -21,8 +21,11 @@ import java.util.Map;
 public class GroupAnagrams {
 
   public List<List<String>> groupAnagrams(String[] words) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (words == null || words.length == 0)
+      return new Collections.emptyList();
   }
+
+  Map<String, List<String>> anagramMap = buildAnagramMap(words);return new ArrayList<>(anagramMap.values());
 
   private Map<String, List<String>> buildAnagramMap(String[] words) {
     Map<String, List<String>> map = new HashMap<>();
