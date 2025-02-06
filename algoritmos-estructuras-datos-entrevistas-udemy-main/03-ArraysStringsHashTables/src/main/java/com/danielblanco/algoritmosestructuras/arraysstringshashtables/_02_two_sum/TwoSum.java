@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.arraysstringshashtables._02_two_sum;
 
+import java.util.HashMap;
+
 /*
  * Dado un array de números enteros y un target, retorna los índices de dos
  * números para los que la suma de ambos sea igual al target.
@@ -20,12 +22,19 @@ package com.danielblanco.algoritmosestructuras.arraysstringshashtables._02_two_s
  * 
  * Hash Table:
  * Almacenar los complementos de los numeros y su indice
- * [-2, 5, 2, 1]
+ * [-2, 5, 2, 1] O(N)
  * 
  */
 public class TwoSum {
 
   public int[] twoSum(int[] nums, int target) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (nums == null || nums.length < 2) {
+      return null;
+    } else {
+      Map<Integer, Integer> compMap = new HashMap<>();
+      for (int i = 0; i < nums.length; i++) {
+
+      }
+    }
   }
 }
