@@ -1,7 +1,9 @@
 package com.danielblanco.algoritmosestructuras.arraysstringshashtables._03_group_anagrams;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /*
  * Un anagrama es una palabra creada a partir de la reordenación de las letras de otra palabra. Ej: saco - caso
@@ -23,7 +25,15 @@ public class GroupAnagrams {
   }
 
   private Map<String, List<String>> buildAnagramMap(String[] words) {
-    Map<String, List<String>> map = new HashMap<>()
+    Map<String, List<String>> map = new HashMap<>();
+    for (String word : words) {
+      String hash = getAnagramHash(word);
+      if (!map.containsKey(hash)) {
+        map.put(hash, new ArrayList<>());
+      }
+      map.get(hash).add(word);
+    }
+    return map;
   }
 
   private String getAnagramHash(String s) {
