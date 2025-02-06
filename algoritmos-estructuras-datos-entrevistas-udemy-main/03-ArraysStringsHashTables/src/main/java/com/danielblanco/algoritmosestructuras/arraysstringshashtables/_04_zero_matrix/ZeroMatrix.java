@@ -1,6 +1,5 @@
 package com.danielblanco.algoritmosestructuras.arraysstringshashtables._04_zero_matrix;
 
-
 /*
  * Dada una matriz, escribe un algoritmo para establecer ceros en la fila F y columna C si existe un
  * 0 en la celda F:C
@@ -15,10 +14,14 @@ package com.danielblanco.algoritmosestructuras.arraysstringshashtables._04_zero_
  *          7 0 1 0 8
  *          0 0 0 0 0
  *          9 0 4 0 9
+ * 
+ * Temporal: O(F*C + z*(F+C))
+ * Espacial: O(F*C)
  */
 public class ZeroMatrix {
 
   public void zeroMatrix(int[][] matrix) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    boolean firstRowHasZero = hasFirstRowAnyZero(matrix);
+    boolean firstColHasZero = hasFirstColAnyZero(matrix);
   }
 }
