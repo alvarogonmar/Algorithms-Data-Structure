@@ -1,6 +1,7 @@
 package com.danielblanco.algoritmosestructuras.arraysstringshashtables._02_two_sum;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /*
  * Dado un array de números enteros y un target, retorna los índices de dos
@@ -33,8 +34,12 @@ public class TwoSum {
     } else {
       Map<Integer, Integer> compMap = new HashMap<>();
       for (int i = 0; i < nums.length; i++) {
-
+        if (compMap.containsKey(nums[i]))
+          return new int[] { i, compMap.get(nums[i]) };
+        int complement = target - nums[i];
+        compMap.put(complement, i);
       }
     }
+    return null;
   }
 }
