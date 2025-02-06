@@ -14,6 +14,14 @@ package com.danielblanco.algoritmosestructuras.arraysstringshashtables._02_two_s
  * Ejemplo 2:
  *  Input: nums = [9,2,5,6], target = 100
  *  Output: null
+ * 
+ * Si hicieramos un doble for anidado sería O(n^2)
+ * 
+ * 
+ * Hash Table:
+ * Almacenar los complementos de los numeros y su indice
+ * [-2, 5, 2, 1]
+ * 
  */
 public class TwoSum {
 
