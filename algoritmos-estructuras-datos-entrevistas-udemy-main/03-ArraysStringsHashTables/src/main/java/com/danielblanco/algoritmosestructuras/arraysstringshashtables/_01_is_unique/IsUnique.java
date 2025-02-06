@@ -5,6 +5,17 @@ package com.danielblanco.algoritmosestructuras.arraysstringshashtables._01_is_un
  *
  * isUnique("abcde") => true;
  * isUnique("abcded") => false;
+ * 
+ * a: b c d e
+ * b: c d e
+ * 
+ * O(n^2)
+ * 
+ * Hash Table:
+ * a b c d e 
+ * 
+ * for O(N)
+ * Consulta el hashtable O(1)
  */
 public class IsUnique {
 

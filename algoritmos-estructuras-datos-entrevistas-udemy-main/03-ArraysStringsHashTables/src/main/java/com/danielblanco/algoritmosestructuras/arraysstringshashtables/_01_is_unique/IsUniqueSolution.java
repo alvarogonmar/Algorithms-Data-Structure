@@ -15,11 +15,13 @@ public class IsUniqueSolution {
   private static int NUMBER_OF_CHARS = 128;
 
   public boolean isUnique(String s) {
-    if (s.length() > NUMBER_OF_CHARS) return false;
+    if (s.length() > NUMBER_OF_CHARS)
+      return false;
 
     Set<Character> set = new HashSet<Character>();
     for (char c : s.toCharArray()) {
-      if (set.contains(c)) return false;
+      if (set.contains(c))
+        return false;
       set.add(c);
     }
 
