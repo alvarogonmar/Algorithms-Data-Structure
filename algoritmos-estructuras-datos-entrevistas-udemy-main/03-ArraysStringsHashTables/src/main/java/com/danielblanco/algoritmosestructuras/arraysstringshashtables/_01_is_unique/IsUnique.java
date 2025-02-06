@@ -19,7 +19,18 @@ package com.danielblanco.algoritmosestructuras.arraysstringshashtables._01_is_un
  */
 public class IsUnique {
 
+  private static int NUMBER_OF_CHARS = 128;
+
   public boolean isUnique(String s) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (s.length() > NUMBER_OF_CHARS)
+      return false;
+
+    Set<Character> characters = new HashSet<>();
+    for (Character c : s.toCharArray()) {
+      if (characters.contains(c))
+        return false;
+      characters.add(c);
+    }
+    return true;
   }
 }
