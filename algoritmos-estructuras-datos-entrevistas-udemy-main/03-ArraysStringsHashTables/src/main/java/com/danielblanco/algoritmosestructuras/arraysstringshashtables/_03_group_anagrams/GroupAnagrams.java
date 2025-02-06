@@ -1,5 +1,6 @@
 package com.danielblanco.algoritmosestructuras.arraysstringshashtables._03_group_anagrams;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -12,12 +13,24 @@ import java.util.List;
  * 
  * Agrupar en hashmap cada letra de la palabra con la cantidad de veces que aparece.
  * Ej. [1,0,1,0,...,....,1,1,0]
- * O(N)
+ * O(N) * O(cantidad de letras) = O(N)
  * 
  */
 public class GroupAnagrams {
 
   public List<List<String>> groupAnagrams(String[] words) {
     throw new UnsupportedOperationException("Not implemented yet");
+  }
+
+  private Map<String, List<String>> buildAnagramMap(String[] words) {
+    Map<String, List<String>> map = new HashMap<>()
+  }
+
+  private String getAnagramHash(String s) {
+    int[] letterCount = new Int[26];
+    for (int c : s.toCharArray()) {
+      letterCount[c - 'a']++;
+    }
+    return Arrays.toString(letterCount);
   }
 }
