@@ -9,6 +9,11 @@ import java.util.List;
  * Ejemplo:
  *  Input: words = ["saco", "arresto", "programa", "rastreo", "caso"].
  *  Output: [["saco", "caso"], ["arresto", "rastreo"], ["programa"]].
+ * 
+ * Agrupar en hashmap cada letra de la palabra con la cantidad de veces que aparece.
+ * Ej. [1,0,1,0,...,....,1,1,0]
+ * O(N)
+ * 
  */
 public class GroupAnagrams {
 
