@@ -23,9 +23,9 @@ public class GroupAnagrams {
   public List<List<String>> groupAnagrams(String[] words) {
     if (words == null || words.length == 0)
       return new Collections.emptyList();
+    Map<String, List<String>> anagramMap = buildAnagramMap(words);
+    return new ArrayList<>(anagramMap.values());
   }
-
-  Map<String, List<String>> anagramMap = buildAnagramMap(words);return new ArrayList<>(anagramMap.values());
 
   private Map<String, List<String>> buildAnagramMap(String[] words) {
     Map<String, List<String>> map = new HashMap<>();
@@ -40,7 +40,7 @@ public class GroupAnagrams {
   }
 
   private String getAnagramHash(String s) {
-    int[] letterCount = new Int[26];
+    int[] letterCount = new int[26];
     for (int c : s.toCharArray()) {
       letterCount[c - 'a']++;
     }
