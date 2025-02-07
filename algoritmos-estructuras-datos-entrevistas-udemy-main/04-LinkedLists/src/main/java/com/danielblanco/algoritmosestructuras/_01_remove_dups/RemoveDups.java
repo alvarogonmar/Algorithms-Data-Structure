@@ -23,5 +23,12 @@ public class RemoveDups {
     HashSet<Integer> foundValues = new HashSet<>(); // Declarar un hashset para almacenar los valores encontrados
     Node current = head; // Puntero auxiliar para recorrer la linked list
     foundValues.add(current.value); // Añadir el valor del nodo actual al hashset
+
+    while (current != null && current.next != null) {
+      if (foundValues.add(current.next.value)) { // Te devuelve true si el valor se puedo aniadir a la lista y false si
+                                                 // no se pudo aniadir lo que quiere decir que ya estaba en el set
+
+      }
+    }
   }
 }
