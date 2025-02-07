@@ -5,7 +5,7 @@ public class SingleLinkedList {
 
   public void appendToTail(int value) { // Aniadir un odo a la lista
     if (head == null) {
-      head = new Node(value);
+      head = new Node(value); // Iniciar el nodo con el valor que nos pasan como argumento
       return;
     }
 
