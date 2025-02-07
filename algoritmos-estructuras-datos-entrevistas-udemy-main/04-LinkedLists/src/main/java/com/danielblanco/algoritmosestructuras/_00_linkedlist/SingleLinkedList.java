@@ -21,8 +21,8 @@ public class SingleLinkedList {
     if (head == null) // Comprobar si hay nodos en la lista
       return;
 
-    if (head.value == value) {
-      head = head.next;
+    if (head.value == value) { // Si el valor de head es igual al que queremos eliminar
+      head = head.next; // Avazamos head al siguiente nodo y el recolector de basura de java lo elimina
       return;
     }
 
