@@ -27,10 +27,10 @@ public class SingleLinkedList {
     }
 
     // 4-3-1
-    Node current = head;
-    while (current.next != null) {
-      if (current.next.value == value) {
-        current.next = current.next.next;
+    Node current = head; // Puntero en nodo inicial
+    while (current.next != null) { // Se AVANZA mientras haya nodos
+      if (current.next.value == value) { // SI el valor siguiente es igual al que queremos eliminar
+        current.next = current.next.next; // Asignamos como nodo sigueinte del actual al sigueinte del siguiente
         return;
       }
       current = current.next;
