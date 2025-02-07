@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras._00_linkedlist;
 public class SingleLinkedList {
   public Node head;
 
-  public void appendToTail(int value) {
+  public void appendToTail(int value) { // Aniadir un odo a la lista
     if (head == null) {
       head = new Node(value);
       return;
@@ -17,7 +17,8 @@ public class SingleLinkedList {
   }
 
   public void deleteNode(int value) {
-    if (head == null) return;
+    if (head == null)
+      return;
 
     if (head.value == value) {
       head = head.next;
