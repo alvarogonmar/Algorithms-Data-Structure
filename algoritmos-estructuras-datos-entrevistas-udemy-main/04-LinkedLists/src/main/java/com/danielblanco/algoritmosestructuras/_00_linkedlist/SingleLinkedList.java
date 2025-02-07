@@ -14,11 +14,11 @@ public class SingleLinkedList {
     while (current.next != null) { // Mientras no lleguemos al final de la linked list
       current = current.next; // Avanzamos al siguiente nodo
     }
-    current.next = new Node(value);
+    current.next = new Node(value); // Añadimos el nuevo nodo al final de la linked list
   }
 
-  public void deleteNode(int value) {
-    if (head == null)
+  public void deleteNode(int value) { // Eliminar el primer nodo que tenga como valor value
+    if (head == null) // Comprobar si hay nodos en la lista
       return;
 
     if (head.value == value) {
