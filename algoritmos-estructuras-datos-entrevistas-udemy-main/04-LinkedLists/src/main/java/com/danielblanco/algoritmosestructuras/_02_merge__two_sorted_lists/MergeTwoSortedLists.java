@@ -14,5 +14,7 @@ public class MergeTwoSortedLists {
 
   public Node mergeTwoLists(Node list1, Node list2) {
     Node aux = new Node(-1); // Nodo auxiliar para recorrer la linked list
+    Node current = aux; // Puntero auxiliar para recorrer la linked list
+
   }
 }
