@@ -34,5 +34,7 @@ public class MergeTwoSortedLists {
     } else {
       current.next = list1; // Añadir el resto de la lista 1 a la lista resultante
     }
+    return aux.next; // Devolver el nodo siguiente al nodo auxiliar que es el head de la lista
+                     // resultante
   }
 }
