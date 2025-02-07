@@ -27,8 +27,9 @@ public class RemoveDups {
     while (current != null && current.next != null) {
       if (foundValues.add(current.next.value)) { // Te devuelve true si el valor se puedo aniadir a la lista y false si
                                                  // no se pudo aniadir lo que quiere decir que ya estaba en el set
-
+        current.next = current.next.next; // Si el valor no esta en el hashset avanzamos al siguiente nodo
       }
+      current = current.next; // Avanzamos al siguiente nodo
     }
   }
 }
