@@ -20,7 +20,10 @@ public class MergeTwoSortedLists {
     // hasta el final de ambas listas
 
     while (list1 != null && list2 != null) {
-
+      if (list1.value <= list2.value) {
+        current.next = list1;
+        list1 = list1.next;
+      }
     }
   }
 }
