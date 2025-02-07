@@ -19,5 +19,8 @@ public class MergeTwoSortedLists {
     // Recorrer ambas listas tomando el menor valor actual de ellas e ir avanzando
     // hasta el final de ambas listas
 
+    while (list1 != null && list2 != null) {
+
+    }
   }
 }
