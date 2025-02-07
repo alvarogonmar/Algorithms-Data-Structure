@@ -27,6 +27,12 @@ public class MergeTwoSortedLists {
         current.next = list2; // Añadir el nodo de list2 al nodo actual
         list2 = list2.next; // Avanzar al siguiente nodo de list2
       }
+      current = current.next; // Avanzar al siguiente nodo
+    }
+    if (list1 == null) {
+      current.next = list2; // Añadir el resto de la lista 2 a la lista resultante
+    } else {
+      current.next = list1; // Añadir el resto de la lista 1 a la lista resultante
     }
   }
 }
