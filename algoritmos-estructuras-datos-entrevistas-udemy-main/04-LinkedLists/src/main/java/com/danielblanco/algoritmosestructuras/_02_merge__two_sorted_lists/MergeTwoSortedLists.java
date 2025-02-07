@@ -13,6 +13,6 @@ import com.danielblanco.algoritmosestructuras._00_linkedlist.Node;
 public class MergeTwoSortedLists {
 
   public Node mergeTwoLists(Node list1, Node list2) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Node aux = new Node(-1); // Nodo auxiliar para recorrer la linked list
   }
 }
