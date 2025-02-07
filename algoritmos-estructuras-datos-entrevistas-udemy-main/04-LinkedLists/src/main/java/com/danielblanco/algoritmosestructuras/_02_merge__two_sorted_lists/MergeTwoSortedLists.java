@@ -16,5 +16,8 @@ public class MergeTwoSortedLists {
     Node aux = new Node(-1); // Nodo auxiliar para recorrer la linked list
     Node current = aux; // Puntero auxiliar para recorrer la linked list
 
+    // Recorrer ambas listas tomando el menor valor actual de ellas e ir avanzando
+    // hasta el final de ambas listas
+
   }
 }
