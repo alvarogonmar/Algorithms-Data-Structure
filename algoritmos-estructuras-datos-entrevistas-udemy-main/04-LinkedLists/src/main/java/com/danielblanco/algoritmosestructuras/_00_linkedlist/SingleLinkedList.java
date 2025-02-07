@@ -10,9 +10,9 @@ public class SingleLinkedList {
     }
     // Recorrer la linked list hasta el ultimo nodo y añadir el nuevo nodo al ultimo
     // nodo
-    Node current = head;
-    while (current.next != null) {
-      current = current.next;
+    Node current = head; // Puntero auxiliar para recorrer la linked list
+    while (current.next != null) { // Mientras no lleguemos al final de la linked list
+      current = current.next; // Avanzamos al siguiente nodo
     }
     current.next = new Node(value);
   }
