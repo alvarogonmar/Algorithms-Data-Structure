@@ -33,7 +33,7 @@ public class SingleLinkedList {
         current.next = current.next.next; // Asignamos como nodo sigueinte del actual al sigueinte del siguiente
         return;
       }
-      current = current.next;
+      current = current.next; // CASO CONTRARIO: avanzar puntero
     }
   }
 
