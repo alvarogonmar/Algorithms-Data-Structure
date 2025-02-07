@@ -20,5 +20,6 @@ public class RemoveDups {
   public void removeDups(Node head) {
     HashSet<Integer> foundValues = new HashSet<>(); // Declarar un hashset para almacenar los valores encontrados
     Node current = head; // Puntero auxiliar para recorrer la linked list
+    foundValues.add(current.value); // Añadir el valor del nodo actual al hashset
   }
 }
