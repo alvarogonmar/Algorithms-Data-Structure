@@ -18,6 +18,8 @@ import com.danielblanco.algoritmosestructuras._00_linkedlist.Node;
 public class RemoveDups {
 
   public void removeDups(Node head) {
+    if (head == null)
+      return; // Comprobar si la linked list esta vacia
     HashSet<Integer> foundValues = new HashSet<>(); // Declarar un hashset para almacenar los valores encontrados
     Node current = head; // Puntero auxiliar para recorrer la linked list
     foundValues.add(current.value); // Añadir el valor del nodo actual al hashset
