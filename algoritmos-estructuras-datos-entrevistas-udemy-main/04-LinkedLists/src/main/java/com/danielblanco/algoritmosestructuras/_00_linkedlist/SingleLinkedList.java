@@ -8,7 +8,8 @@ public class SingleLinkedList {
       head = new Node(value); // Iniciar el nodo con el valor que nos pasan como argumento
       return;
     }
-
+    // Recorrer la linked list hasta el ultimo nodo y añadir el nuevo nodo al ultimo
+    // nodo
     Node current = head;
     while (current.next != null) {
       current = current.next;
