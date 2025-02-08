@@ -37,6 +37,10 @@ public class AddTwoNumbers {
 
       current.value = digit; // Asignar el dígito a current
     }
-    return result;
+    if (carry > 0) {
+      current.next = new Node(carry); // Crear un nuevo nodo con el carry{
+
+    }
+    return result.next; // Devolver el siguiente nodo
   }
 }
