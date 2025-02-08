@@ -19,6 +19,8 @@ public class AddTwoNumbers {
     int carry = 0; // Inicializar el carry en 0
 
     while (list1 != null || list2 != null) {
+      current.next = new Node(-1); // Crear un nuevo nodo
+      current = current.next; // Avanzar current
       int digit = carry; // Inicializar el dígito con el carry
 
       if (list1 != null) {
@@ -34,11 +36,6 @@ public class AddTwoNumbers {
       digit = digit % 10; // Calcular el dígito
 
       current.value = digit; // Asignar el dígito a current
-
-      if (list1 != null || list2 != null) {
-        current.next = new Node(-1); // Crear un nuevo nodo
-        current = current.next; // Avanzar current
-      }
     }
     return result;
   }
