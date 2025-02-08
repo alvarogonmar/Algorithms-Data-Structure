@@ -14,9 +14,16 @@ import com.danielblanco.algoritmosestructuras._00_linkedlist.Node;
 public class AddTwoNumbers {
 
   public Node addTwoNumbers(Node list1, Node list2) {
+    Node result = new Node(-1); // Crear un nuevo nodo
+    Node current = result; // Asignar el nuevo nodo a current
+    int carry = 0; // Inicializar el carry en 0
+
     while (list1 != null || list2 != null) {
-      Node result = new Node(-1); // Crear un nuevo nodo
-      Node current = result; // Asignar el nuevo nodo a current
-      int carry = 0; // Inicializar el carry en 0
+      int digit = carry; // Inicializar el dígito con el carry
+
+      if (list1 != null) {
+        digit += list1.value; // Sumar el valor de list1 al dígito
+      }
+    }
   }
 }
