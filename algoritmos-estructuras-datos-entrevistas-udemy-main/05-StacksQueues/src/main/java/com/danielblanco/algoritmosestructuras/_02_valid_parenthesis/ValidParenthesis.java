@@ -21,8 +21,20 @@ public class ValidParenthesis {
 
     for (char c : s.toCharArray()) {
       if (c == "(" || c == "{" || c == "[") {
-
+        stack.push(getOpposite(c));
       }
+    }
+  }
+
+  private Character getOpposite(Character c) {
+    if (c == "(") {
+      return ")";
+    }
+    if (c == "{") {
+      return "}";
+    }
+    if (c == "[") {
+      return "]";
     }
   }
 }
