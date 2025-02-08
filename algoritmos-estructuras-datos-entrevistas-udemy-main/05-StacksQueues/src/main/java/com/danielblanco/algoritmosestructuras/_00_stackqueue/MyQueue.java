@@ -10,10 +10,10 @@ public class MyQueue {
       last.next = newLast; // El siguiente nodo del último nodo es el nuevo nodo
     }
 
-    last = newLast;
+    last = newLast; // El nuevo nodo es el último nodo
 
-    if (first == null) {
-      first = last;
+    if (first == null) { // Si la cola está vacía
+      first = last; // El primer nodo es el último nodo
     }
   }
 
