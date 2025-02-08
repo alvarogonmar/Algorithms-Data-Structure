@@ -12,6 +12,7 @@ import com.danielblanco.algoritmosestructuras._00_linkedlist.Node;
 public class NthNodeToLast {
 
   public Node nthNodeToLast(Node head, int n) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Node p1 = head;
+    Node p2 = head;
   }
 }
