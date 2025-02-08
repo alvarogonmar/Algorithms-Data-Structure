@@ -23,6 +23,11 @@ public class AddTwoNumbers {
 
       if (list1 != null) {
         digit += list1.value; // Sumar el valor de list1 al dígito
+        list1 = list1.next; // Avanzar list1
+      }
+      if (list2 != null) {
+        digit += list2.value; // Sumar el valor de list2 al dígito
+        list2 = list2.next; // Avanzar list2
       }
     }
   }
