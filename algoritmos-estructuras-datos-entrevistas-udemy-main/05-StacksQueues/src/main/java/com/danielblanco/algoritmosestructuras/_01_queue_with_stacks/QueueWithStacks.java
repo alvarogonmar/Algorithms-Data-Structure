@@ -24,23 +24,25 @@ public class QueueWithStacks {
 
   public Integer peek() {
     dumpElementsIntoSecondStack();
-    secondStack.peek();
+    return secondStack.peek(); // peek() devuelve el elemento en la cima de la pila, sin eliminarlo
   }
 
   public Integer remove() {
     dumpElementsIntoSecondStack();
+    return secondStack.pop(); // pop() devuelve y elimina el elemento en la cima de la pila
   }
 
   private void dumpElementsIntoSecondStack() {
-    while (!firstStack.isEmpty()) {
-      secondStack.push(firstStack.pop());
+    while (!firstStack.isEmpty()) { /// Mientras la pila no esté vacía
+      secondStack.push(firstStack.pop()); // Pasamos los elementos de la primera pila a la segunda
     }
+  }
 
   public boolean isEmpty() {
     return size() == 0;
   }
 
   public int size() {
-    return firstStack.size() + secondStack.size();
+    return firstStack.size() + secondStack.size(); // Devuelve el tamaño de la cola
   }
 }
