@@ -20,10 +20,11 @@ public class NthNodeToLast {
         return null; // Lista no tiene N elementos
       p1 = p1.next;
     }
-    while (p1 != null) {
-      p1 = p1.next;
-      p2 = p2.next;
-
+    while (p1 != null) { // Mientras p1 no llegue al final
+      p1 = p1.next; // Avanzar p1
+      p2 = p2.next; // Avanzar p2
     }
+
+    return p2;
   }
 }
