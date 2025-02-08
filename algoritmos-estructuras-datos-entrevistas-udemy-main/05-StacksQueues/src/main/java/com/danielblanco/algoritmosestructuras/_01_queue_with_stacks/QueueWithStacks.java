@@ -19,7 +19,7 @@ public class QueueWithStacks {
   Deque<Integer> secondStack = new ArrayDeque<>();
 
   public void add(Integer value) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    firstStack.push(value);
   }
 
   public Integer peek() {
