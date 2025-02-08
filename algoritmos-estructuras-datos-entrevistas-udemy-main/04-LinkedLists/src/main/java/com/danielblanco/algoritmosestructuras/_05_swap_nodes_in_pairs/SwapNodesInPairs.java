@@ -13,8 +13,10 @@ import com.danielblanco.algoritmosestructuras._00_linkedlist.Node;
 public class SwapNodesInPairs {
 
   public Node swapNodesInPairs(Node head) {
-    if (head == null || head.next == null) {
-      return head;
+    if (head == null || head.next == null) { // Si la lista está vacía o tiene un solo nodo
+      return head; // Retornamos la lista tal cual
     }
   }
+
+  Node tmp = head.next.next; // Guardamos el segundo nodo en una variable temporal
 }
