@@ -30,6 +30,11 @@ public class QueueWithStacks {
     throw new UnsupportedOperationException("Not implemented yet");
   }
 
+  private void dumpElementsIntoSecondStack() {
+    while (!firstStack.isEmpty()) {
+      secondStack.push(firstStack.pop());
+    }
+
   public boolean isEmpty() {
     return size() == 0;
   }
