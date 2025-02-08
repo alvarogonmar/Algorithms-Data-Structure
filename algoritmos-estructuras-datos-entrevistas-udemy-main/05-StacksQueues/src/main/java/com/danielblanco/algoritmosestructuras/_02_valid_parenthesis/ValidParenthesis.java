@@ -18,5 +18,11 @@ public class ValidParenthesis {
 
   public boolean isValid(String s) {
     Deque<Character> stack = new java.util.ArrayDeque<>();
+
+    for (char c : s.toCharArray()) {
+      if (c == "(" || c == "{" || c == "[") {
+
+      }
+    }
   }
 }
