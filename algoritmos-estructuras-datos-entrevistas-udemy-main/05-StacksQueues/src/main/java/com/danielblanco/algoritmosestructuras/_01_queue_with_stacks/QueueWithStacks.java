@@ -35,6 +35,6 @@ public class QueueWithStacks {
   }
 
   public int size() {
-    throw new UnsupportedOperationException("Not implemented yet");
+    return firstStack.size() + secondStack.size();
   }
 }
