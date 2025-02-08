@@ -19,4 +19,5 @@ public class SwapNodesInPairs {
   }
 
   Node tmp = head.next.next; // Guardamos el segundo nodo en una variable temporal
+  head.next.next = head; // Intercambiamos los dos primeros nodos
 }
