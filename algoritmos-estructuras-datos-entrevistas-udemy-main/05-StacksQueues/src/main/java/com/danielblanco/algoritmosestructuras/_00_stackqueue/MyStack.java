@@ -9,14 +9,14 @@ public class MyStack {
     top = newTop; // El nuevo nodo es el nodo superior
   }
 
-  public int pop() {
-    if (top == null) {
-      throw new MyEmptyStackException();
+  public int pop() { // Sacar el nodo superior
+    if (top == null) { // Si la pila está vacía
+      throw new MyEmptyStackException(); // Lanzar una excepción
     }
 
-    int topValue = top.value;
-    top = top.next;
-    return topValue;
+    int topValue = top.value; // Guardar el valor del nodo superior
+    top = top.next; // El nodo superior es el siguiente nodo
+    return topValue; // Devolver el valor del nodo superior
   }
 
   public int peek() {
