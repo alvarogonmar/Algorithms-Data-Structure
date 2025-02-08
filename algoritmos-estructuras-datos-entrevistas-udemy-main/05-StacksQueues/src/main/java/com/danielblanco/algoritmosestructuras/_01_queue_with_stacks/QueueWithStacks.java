@@ -23,11 +23,12 @@ public class QueueWithStacks {
   }
 
   public Integer peek() {
-    throw new UnsupportedOperationException("Not implemented yet");
+    dumpElementsIntoSecondStack();
+    secondStack.peek();
   }
 
   public Integer remove() {
-    throw new UnsupportedOperationException("Not implemented yet");
+    dumpElementsIntoSecondStack();
   }
 
   private void dumpElementsIntoSecondStack() {
