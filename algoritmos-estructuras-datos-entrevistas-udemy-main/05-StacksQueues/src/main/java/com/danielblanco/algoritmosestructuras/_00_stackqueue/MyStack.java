@@ -27,7 +27,7 @@ public class MyStack {
     return top.value; // Devolver el valor del nodo superior
   }
 
-  public boolean isEmpty() {
-    return top == null;
+  public boolean isEmpty() { // Verificar si la pila está vacía
+    return top == null; // Devolver si el nodo superior es nulo
   }
 }
