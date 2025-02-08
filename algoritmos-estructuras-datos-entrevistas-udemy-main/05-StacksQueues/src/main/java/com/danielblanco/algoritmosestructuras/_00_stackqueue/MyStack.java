@@ -19,12 +19,12 @@ public class MyStack {
     return topValue; // Devolver el valor del nodo superior
   }
 
-  public int peek() {
-    if (top == null) {
-      throw new MyEmptyStackException();
+  public int peek() { // Ver el valor del nodo superior sin eliminarlo
+    if (top == null) { // Si la pila está vacía
+      throw new MyEmptyStackException(); // Lanzar una excepción
     }
 
-    return top.value;
+    return top.value; // Devolver el valor del nodo superior
   }
 
   public boolean isEmpty() {
