@@ -1,8 +1,8 @@
 package com.danielblanco.algoritmosestructuras._00_stackqueue;
 
 public class MyQueue {
-  private Node first;
-  private Node last;
+  private Node first; // Almacenar el primer nodo de la cola
+  private Node last; // Almacenar el último nodo de la cola
 
   public void add(int value) {
     Node newLast = new Node(value);
