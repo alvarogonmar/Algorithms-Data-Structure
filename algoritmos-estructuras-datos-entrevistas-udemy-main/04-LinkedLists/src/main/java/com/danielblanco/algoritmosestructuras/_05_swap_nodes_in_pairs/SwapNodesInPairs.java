@@ -16,8 +16,12 @@ public class SwapNodesInPairs {
     if (head == null || head.next == null) { // Si la lista está vacía o tiene un solo nodo
       return head; // Retornamos la lista tal cual
     }
-  }
 
-  Node tmp = head.next.next; // Guardamos el segundo nodo en una variable temporal
-  head.next.next = head; // Intercambiamos los dos primeros nodos
+    Node tmp = head.next.next; // Guardamos el segundo nodo en una variable temporal 4->6->8
+    head.next.next = head; // Intercambiamos los dos primeros nodos 1->2->1...
+    head = head.next; // Actualizamos la cabeza de la lista 2->1...
+    head.next.next = swapNodesInPairs(tmp); // Llamamos recursivamente a la función con el resto de la lista
+                                            // 2->1->6->4->8
+    return head; // Retornamos la lista con los nodos intercambiados
+  }
 }
