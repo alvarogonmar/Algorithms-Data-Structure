@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras._02_valid_parenthesis;
 
+import java.util.Deque;
+
 /*
  * Dado un String que solamente contiene los caracteres '(', ')', '{', '}', '[' y ']',
  * implementa un algoritmo para determinar si es válido.
@@ -15,6 +17,6 @@ package com.danielblanco.algoritmosestructuras._02_valid_parenthesis;
 public class ValidParenthesis {
 
   public boolean isValid(String s) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Deque<Character> stack = new java.util.ArrayDeque<>();
   }
 }
