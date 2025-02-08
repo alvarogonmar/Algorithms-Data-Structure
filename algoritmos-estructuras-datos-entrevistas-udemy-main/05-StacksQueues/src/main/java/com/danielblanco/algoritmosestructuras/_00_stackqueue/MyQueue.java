@@ -29,15 +29,15 @@ public class MyQueue {
       last = null; // Actualizar el último nodo
     }
 
-    return firstValue;
+    return firstValue; // Devolver el valor del primer nodo
   }
 
-  public int peek() {
-    if (first == null) {
-      throw new MyEmptyQueueException();
+  public int peek() { // Ver el valor del primer nodo sin eliminarlo
+    if (first == null) { // Si la cola está vacía
+      throw new MyEmptyQueueException(); // Lanzar una excepción
     }
 
-    return first.value;
+    return first.value; // Devolver el valor del primer nodo
   }
 
   public boolean isEmpty() {
