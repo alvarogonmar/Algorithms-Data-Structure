@@ -22,11 +22,11 @@ public class MyQueue {
       throw new MyEmptyQueueException(); // Lanzar una excepción
     }
 
-    int firstValue = first.value;
-    first = first.next;
+    int firstValue = first.value; // Guardar el valor del primer nodo
+    first = first.next; // Actualizar el primer nodo
 
-    if (first == null) {
-      last = null;
+    if (first == null) { // Si la cola está vacía
+      last = null; // Actualizar el último nodo
     }
 
     return firstValue;
