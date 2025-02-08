@@ -16,7 +16,14 @@ public class NthNodeToLast {
     Node p2 = head;
 
     for (inte i = 0; i < n; i++) {
+      if (p1 == null)
+        return null; // Lista no tiene N elementos
       p1 = p1.next;
+    }
+    while (p1 != null) {
+      p1 = p1.next;
+      p2 = p2.next;
+
     }
   }
 }
