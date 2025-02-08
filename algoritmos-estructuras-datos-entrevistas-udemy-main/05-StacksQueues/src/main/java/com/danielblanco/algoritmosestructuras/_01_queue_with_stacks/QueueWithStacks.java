@@ -31,7 +31,7 @@ public class QueueWithStacks {
   }
 
   public boolean isEmpty() {
-    throw new UnsupportedOperationException("Not implemented yet");
+    return size() == 0;
   }
 
   public int size() {
