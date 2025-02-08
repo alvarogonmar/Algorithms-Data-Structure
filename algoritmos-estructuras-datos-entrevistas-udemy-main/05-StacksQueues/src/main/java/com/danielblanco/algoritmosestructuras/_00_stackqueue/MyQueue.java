@@ -40,7 +40,7 @@ public class MyQueue {
     return first.value; // Devolver el valor del primer nodo
   }
 
-  public boolean isEmpty() {
-    return first == null;
+  public boolean isEmpty() { // Verificar si la cola está vacía
+    return first == null; // Devolver si el primer nodo es nulo
   }
 }
