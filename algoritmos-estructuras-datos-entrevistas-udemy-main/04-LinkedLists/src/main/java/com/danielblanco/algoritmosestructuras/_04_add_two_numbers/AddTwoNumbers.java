@@ -29,6 +29,11 @@ public class AddTwoNumbers {
         digit += list2.value; // Sumar el valor de list2 al dígito
         list2 = list2.next; // Avanzar list2
       }
+
+      carry = digit / 10; // Calcular el carry
+      digit = digit % 10; // Calcular el dígito
+
+      current.value = digit; // Asignar el dígito a current
     }
   }
 }
