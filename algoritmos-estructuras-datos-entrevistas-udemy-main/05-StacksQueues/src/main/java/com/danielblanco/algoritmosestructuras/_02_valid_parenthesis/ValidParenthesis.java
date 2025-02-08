@@ -23,10 +23,11 @@ public class ValidParenthesis {
       if (c == "(" || c == "{" || c == "[") {
         stack.push(getOpposite(c));
       } else {
-        if (stack.pop() != c) {
+        if (stack.isEmpty() || stack.pop() != c) {
           return false;
         }
       }
+      return stack.isEmpty();
     }
   }
 
