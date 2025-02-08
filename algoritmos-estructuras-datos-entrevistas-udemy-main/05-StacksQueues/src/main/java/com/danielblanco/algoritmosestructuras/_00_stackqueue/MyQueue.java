@@ -17,9 +17,9 @@ public class MyQueue {
     }
   }
 
-  public int remove() {
-    if (first == null) {
-      throw new MyEmptyQueueException();
+  public int remove() { // Sacar el primer nodo de la cola
+    if (first == null) { // Si la cola está vacía
+      throw new MyEmptyQueueException(); // Lanzar una excepción
     }
 
     int firstValue = first.value;
