@@ -14,5 +14,9 @@ public class NthNodeToLast {
   public Node nthNodeToLast(Node head, int n) {
     Node p1 = head;
     Node p2 = head;
+
+    for (inte i = 0; i < n; i++) {
+      p1 = p1.next;
+    }
   }
 }
