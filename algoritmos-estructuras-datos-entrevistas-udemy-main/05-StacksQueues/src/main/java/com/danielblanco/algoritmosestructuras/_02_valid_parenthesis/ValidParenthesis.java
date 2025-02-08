@@ -22,6 +22,10 @@ public class ValidParenthesis {
     for (char c : s.toCharArray()) {
       if (c == "(" || c == "{" || c == "[") {
         stack.push(getOpposite(c));
+      } else {
+        if (stack.pop() != c) {
+          return false;
+        }
       }
     }
   }
