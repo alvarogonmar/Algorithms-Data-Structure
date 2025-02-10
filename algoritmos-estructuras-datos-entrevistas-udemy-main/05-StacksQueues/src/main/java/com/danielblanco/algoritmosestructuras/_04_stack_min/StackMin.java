@@ -21,6 +21,10 @@ public class StackMin {
 
   public int pop() {
     int value = valuesStack.pop(); // Saca el valor del stack de valores
+    if (value == minStack.peek()) {
+      minStack.pop(); // Si el valor es igual al mínimo actual, lo saca del stack de mínimos
+    }
+    return value;
   }
 
   public int min() {
