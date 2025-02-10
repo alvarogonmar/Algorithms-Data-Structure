@@ -10,6 +10,7 @@ import java.util.Deque;
 public class StackMin {
 
   private Deque<Integer> valuesStack = new ArrayDeque<>(); // Stack para los valores
+  private Deque<Integer> minStack = new ArrayDeque<>(); // Stack para los mínimos
 
   public void push(Integer data) {
     throw new UnsupportedOperationException("Not implemented yet");
