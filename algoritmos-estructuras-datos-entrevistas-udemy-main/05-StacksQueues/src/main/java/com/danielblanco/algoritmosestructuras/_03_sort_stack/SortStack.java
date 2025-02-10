@@ -19,6 +19,11 @@ public class SortStack {
                                                      // ordenados
     while (!stack.isEmpty()) { // Mientras el Stack original no este vacio
       Integer element = stack.pop(); // Sacamos el elemento del tope del Stack original
+      while (!sortedStack.isEmpty() && sortedStack.peek() > element) { // Mientras el Stack ordenado no esté vacío y
+                                                                       // el elemento del tope sea mayor que el elemento
+                                                                       // que queremos insertar
+        stack.push(sortedStack.pop()); // Pasamos el elemento del tope del Stack ordenado al Stack original
+      }
     }
   }
 }
