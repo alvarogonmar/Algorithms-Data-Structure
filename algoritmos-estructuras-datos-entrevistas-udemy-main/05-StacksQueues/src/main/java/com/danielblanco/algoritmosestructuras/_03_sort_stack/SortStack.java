@@ -15,6 +15,10 @@ import java.util.Deque;
 public class SortStack {
 
   public Deque<Integer> sort(Deque<Integer> stack) {
-    Deque<Integer> stack = new ArrayDeque<>(); // Creamos un Stack adicional para almacenar los elementos ordenados
+    Deque<Integer> sortedStack = new ArrayDeque<>(); // Creamos un Stack adicional para almacenar los elementos
+                                                     // ordenados
+    while (!stack.isEmpty()) { // Mientras el Stack original no este vacio
+
+    }
   }
 }
