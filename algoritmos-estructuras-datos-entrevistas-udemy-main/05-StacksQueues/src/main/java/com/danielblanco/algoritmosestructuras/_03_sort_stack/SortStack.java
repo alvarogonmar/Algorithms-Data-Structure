@@ -18,7 +18,7 @@ public class SortStack {
     Deque<Integer> sortedStack = new ArrayDeque<>(); // Creamos un Stack adicional para almacenar los elementos
                                                      // ordenados
     while (!stack.isEmpty()) { // Mientras el Stack original no este vacio
-
+      Integer element = stack.pop(); // Sacamos el elemento del tope del Stack original
     }
   }
 }
