@@ -14,6 +14,9 @@ public class StackMin {
 
   public void push(Integer data) {
     valuesStack.push(data); // Agrega el valor al stack de valores
+    if (data < minStack.peek() || minStack.isEmpty()) {
+      minStack.push(data); // Si el valor es menor al mínimo actual, lo agrega al stack de mínimos
+    }
   }
 
   public int pop() {
