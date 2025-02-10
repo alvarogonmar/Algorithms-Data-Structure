@@ -26,5 +26,6 @@ public class SortStack {
       }
       sortedStack.push(element); // Insertamos el elemento en el Stack ordenado
     }
+    return sortedStack; // Devolvemos el Stack ordenado
   }
 }
