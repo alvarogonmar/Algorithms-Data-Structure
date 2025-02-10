@@ -14,13 +14,13 @@ public class StackMin {
 
   public void push(Integer data) {
     valuesStack.push(data); // Agrega el valor al stack de valores
-    if (data < minStack.peek() || minStack.isEmpty()) {
+    if (data <= minStack.peek() || minStack.isEmpty()) {
       minStack.push(data); // Si el valor es menor al mínimo actual, lo agrega al stack de mínimos
     }
   }
 
   public int pop() {
-    throw new UnsupportedOperationException("Not implemented yet");
+    int value = valuesStack.pop(); // Saca el valor del stack de valores
   }
 
   public int min() {
