@@ -13,7 +13,7 @@ public class StackMin {
   private Deque<Integer> minStack = new ArrayDeque<>(); // Stack para los mínimos
 
   public void push(Integer data) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    valuesStack.push(data); // Agrega el valor al stack de valores
   }
 
   public int pop() {
@@ -21,6 +21,6 @@ public class StackMin {
   }
 
   public int min() {
-    throw new UnsupportedOperationException("Not implemented yet");
+    return minStack.peek(); // Devuelve el mínimo sin sacarlo
   }
 }
