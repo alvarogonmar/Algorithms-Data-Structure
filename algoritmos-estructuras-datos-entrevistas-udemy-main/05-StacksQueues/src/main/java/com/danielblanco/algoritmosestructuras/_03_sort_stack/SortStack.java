@@ -24,6 +24,7 @@ public class SortStack {
                                                                        // que queremos insertar
         stack.push(sortedStack.pop()); // Pasamos el elemento del tope del Stack ordenado al Stack original
       }
+      sortedStack.push(element); // Insertamos el elemento en el Stack ordenado
     }
   }
 }
