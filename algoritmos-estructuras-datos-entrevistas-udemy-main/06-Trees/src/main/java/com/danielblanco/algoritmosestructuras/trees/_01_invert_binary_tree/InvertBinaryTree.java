@@ -20,5 +20,6 @@ public class InvertBinaryTree {
 
   public Node invertTree(Node root) {
     Node temp = root.left; // Guardamos el nodo izquierdo en una variable temporal
+    root.left - invertTree(root.right); // Invertimos el nodo izquierdo con el derecho
   }
 }
