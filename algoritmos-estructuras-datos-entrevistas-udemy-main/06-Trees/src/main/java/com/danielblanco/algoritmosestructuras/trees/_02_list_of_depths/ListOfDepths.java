@@ -37,6 +37,9 @@ public class ListOfDepths {
         if (node.left != null) { // Si el nodo izquierdo no es nulo
           current.add(node.left); // Añadimos el nodo izquierdo a la lista enlazada
         }
+        if (node.right != null) { // Si el nodo derecho no es nulo
+          current.add(node.right); // Añadimos el nodo derecho a la lista enlazada
+        }
       }
     }
   }
