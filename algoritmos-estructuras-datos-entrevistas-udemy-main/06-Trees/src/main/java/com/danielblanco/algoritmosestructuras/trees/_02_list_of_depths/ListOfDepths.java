@@ -1,6 +1,8 @@
 package com.danielblanco.algoritmosestructuras.trees._02_list_of_depths;
 
 import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
+
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,6 +24,7 @@ import java.util.List;
 public class ListOfDepths {
 
   public List<LinkedList<Node>> listOfDepths(Node root) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    List<LinkedList<Node>> result = new ArrayList(); // Creamos una lista de listas enlazadas
+    List<Node> current = new LinkedList<>(); // Creamos una lista enlazada
   }
 }
