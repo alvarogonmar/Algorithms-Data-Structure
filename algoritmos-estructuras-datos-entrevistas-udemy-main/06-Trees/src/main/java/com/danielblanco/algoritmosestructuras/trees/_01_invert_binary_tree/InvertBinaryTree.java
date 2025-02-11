@@ -19,6 +19,6 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class InvertBinaryTree {
 
   public Node invertTree(Node root) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Node temp = root.left; // Guardamos el nodo izquierdo en una variable temporal
   }
 }
