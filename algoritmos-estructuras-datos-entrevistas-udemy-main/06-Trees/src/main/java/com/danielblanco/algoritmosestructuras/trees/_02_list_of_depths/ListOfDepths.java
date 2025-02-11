@@ -27,5 +27,9 @@ public class ListOfDepths {
     List<LinkedList<Node>> result = new ArrayList(); // Creamos una lista de listas enlazadas
     List<Node> current = new LinkedList<>(); // Creamos una lista enlazada
     current.add(root); // Añadimos el nodo raíz a la lista enlazada
+
+    while (!current.isEmpty()) { // Mientras la lista enlazada no esté vacía
+      result.add(current); // Añadimos la lista enlazada a la lista de listas enlazadas
+    }
   }
 }
