@@ -19,11 +19,12 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class InvertBinaryTree {
 
   public Node invertTree(Node root) {
-    if (root == null) {
-      return null;
+    if (root == null) { // Si el nodo raíz es nulo, devolvemos nulo
+      return null; // Devolvemos nulo
     }
     Node temp = root.left; // Guardamos el nodo izquierdo en una variable temporal
     root.left = invertTree(root.right); // Invertimos el nodo izquierdo con el derecho
     root.right = invertTree(temp); // Invertimos el nodo derecho con el izquierdo con la variable temporal
+    return root; // Devolvemos el nodo raíz
   }
 }
