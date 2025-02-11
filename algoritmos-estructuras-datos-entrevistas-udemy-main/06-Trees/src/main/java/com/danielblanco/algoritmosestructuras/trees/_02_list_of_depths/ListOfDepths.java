@@ -42,5 +42,6 @@ public class ListOfDepths {
         }
       }
     }
+    return result; // Devolvemos la lista de listas enlazadas
   }
 }
