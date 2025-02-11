@@ -11,8 +11,8 @@ public class BinaryTreeTraversals { // Clase para los recorridos de un árbol bi
     }
   }
 
-  public static void preOrderTraversal(Node node) {
-    if (node != null) {
+  public static void preOrderTraversal(Node node) { // Recorrido preOrder
+    if (node != null) { // Si el nodo no es nulo
       System.out.print(node.value + " ");
       preOrderTraversal(node.left);
       preOrderTraversal(node.right);
