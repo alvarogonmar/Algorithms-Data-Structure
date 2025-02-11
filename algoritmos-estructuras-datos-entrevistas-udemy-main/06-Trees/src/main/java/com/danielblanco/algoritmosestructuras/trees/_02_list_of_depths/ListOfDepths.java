@@ -32,6 +32,12 @@ public class ListOfDepths {
       result.add(current); // Añadimos la lista enlazada a la lista de listas enlazadas
       LinkedList<Node> parents = current; // Guardamos la lista enlazada en una variable temporal
       current = new LinkedList<>(); // Creamos una nueva lista enlazada
+
+      for (Node node : parents) {
+        if (node.left != null) { // Si el nodo izquierdo no es nulo
+          current.add(node.left); // Añadimos el nodo izquierdo a la lista enlazada
+        }
+      }
     }
   }
 }
