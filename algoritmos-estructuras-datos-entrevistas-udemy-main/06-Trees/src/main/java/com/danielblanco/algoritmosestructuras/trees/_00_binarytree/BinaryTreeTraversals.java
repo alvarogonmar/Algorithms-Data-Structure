@@ -21,9 +21,9 @@ public class BinaryTreeTraversals { // Clase para los recorridos de un árbol bi
 
   public static void postOrderTraversal(Node node) { // Recorrido postOrder
     if (node != null) { // Si el nodo no es nulo
-      postOrderTraversal(node.left);
-      postOrderTraversal(node.right);
-      System.out.print(node.value + " ");
+      postOrderTraversal(node.left); // Recorre el nodo izquierdo
+      postOrderTraversal(node.right); // Recorre el nodo derecho
+      System.out.print(node.value + " "); // Imprime el valor del nodo
     }
   }
 }
