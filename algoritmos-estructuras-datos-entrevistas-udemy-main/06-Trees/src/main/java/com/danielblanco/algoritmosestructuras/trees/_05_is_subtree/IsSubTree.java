@@ -43,5 +43,6 @@ public class IsSubTree {
 
   public boolean isSubtree(Node first, Node second) {
     String sb1 = new StringBuilder(); // string builder para el arbol first
+    String sb2 = new StringBuilder(); // string builder para el arbol second
   }
 }
