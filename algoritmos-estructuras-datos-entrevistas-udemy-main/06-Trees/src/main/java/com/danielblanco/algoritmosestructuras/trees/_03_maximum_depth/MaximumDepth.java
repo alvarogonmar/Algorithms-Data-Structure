@@ -22,6 +22,8 @@ public class MaximumDepth {
     } else {
       int leftDepth = maxDepth(root.left) + 1; // Calculamos la profundidad del nodo izquierdo y le sumamos 1 (por el
                                                // nodo raíz)
+      int rightDepth = maxDepth(root.right) + 1; // Calculamos la profundidad del nodo derecho y le sumamos 1 (por el
+                                                 // nodo raíz)
     }
   }
 }
