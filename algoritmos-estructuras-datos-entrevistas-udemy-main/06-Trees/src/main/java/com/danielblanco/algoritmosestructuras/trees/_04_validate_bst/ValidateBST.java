@@ -28,6 +28,9 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class ValidateBST {
 
   public boolean isValidBST(Node root) {
-    throw new UnsupportedOperationException("Not implemented yet");
+  }
+
+  public boolean isValidBST(Node root, Integer min, Integer max) { // funcion con el maximo y minimo
+
   }
 }
