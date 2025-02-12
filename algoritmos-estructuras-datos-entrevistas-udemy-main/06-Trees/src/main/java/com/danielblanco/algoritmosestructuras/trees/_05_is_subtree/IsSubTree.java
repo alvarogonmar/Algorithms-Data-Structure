@@ -34,6 +34,9 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  *    8
  *
  * Output: true
+ * 
+ *  4 - 5 - 1 - 8 - 3 - 7
+ * 5 - 1 - 8 - 3 esto esta dentro de 4 - 5 - 1 - 8 - 3 - 7 por lo tanto es un subarbol
  */
 public class IsSubTree {
 
