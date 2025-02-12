@@ -47,6 +47,10 @@ public class IsSubTree {
   }
 
   private void preOrder(Node node, StringBuilder sb) { // funcion de recorrido preorder
+    if (node == null) { // si el nodo es nulo
+      sb.append("X"); // se agrega una X al string builder
+      return; // se termina la funcion
+    }
     sb.append(node.value); // se agrega el valor del nodo al string builder
     preOrder(node.left, sb); // se llama recursivamente a la izquierda
     preOrder(node.right, sb); // se llama recursivamente a la derecha
