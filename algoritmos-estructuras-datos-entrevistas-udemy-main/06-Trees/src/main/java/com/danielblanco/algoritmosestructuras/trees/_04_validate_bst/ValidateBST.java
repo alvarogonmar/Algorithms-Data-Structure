@@ -35,5 +35,11 @@ public class ValidateBST {
     if (root == null) { // si el nodo es nulo, retornamos true
       return true;
     }
+    if ((min != null && root.value <= min) || (max != null && root.value >= max)) { // si el valor del nodo es menor o
+                                                                                    // igual al minimo o mayor o igual
+                                                                                    // al maximo, retornamos false
+      return false;
+
+    }
   }
 }
