@@ -17,6 +17,8 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class MaximumDepth {
 
   public int maxDepth(Node root) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (root == null) { // Si el nodo raíz es nulo, devolvemos 0
+      return 0; // Devolvemos 0
+    }
   }
 }
