@@ -47,6 +47,6 @@ public class IsSubTree {
   }
 
   private void preOrder(Node node, StringBuilder sb) { // funcion de recorrido preorder
-
+    sb.append(node.value); // se agrega el valor del nodo al string builder
   }
 }
