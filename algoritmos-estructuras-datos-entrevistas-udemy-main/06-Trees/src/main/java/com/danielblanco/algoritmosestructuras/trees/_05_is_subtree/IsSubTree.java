@@ -37,6 +37,7 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  * 
  *  4 - 5 - 1 - 8 - 3 - 7
  * 5 - 1 - 8 - 3 esto esta dentro de 4 - 5 - 1 - 8 - 3 - 7 por lo tanto es un subarbol
+ * O(n + m) donde n es el numero de nodos del arbol first y m es el numero de nodos del arbol second
  */
 public class IsSubTree {
 
