@@ -45,4 +45,8 @@ public class IsSubTree {
     String sb1 = new StringBuilder(); // string builder para el arbol first
     String sb2 = new StringBuilder(); // string builder para el arbol second
   }
+
+  private void preOrder(Node node, StringBuilder sb) { // funcion de recorrido preorder
+
+  }
 }
