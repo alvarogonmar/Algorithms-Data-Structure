@@ -28,6 +28,7 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class ValidateBST {
 
   public boolean isValidBST(Node root) {
+    return isValidBST(root, null, null); // llamamos a la funcion con el maximo y minimo
   }
 
   public boolean isValidBST(Node root, Integer min, Integer max) { // funcion con el maximo y minimo
