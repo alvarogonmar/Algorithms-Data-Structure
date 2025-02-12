@@ -39,7 +39,24 @@ public class ValidateBST {
                                                                                     // igual al minimo o mayor o igual
                                                                                     // al maximo, retornamos false
       return false;
-
     }
+    return isValidBST(root.left, min, root.value) && isValidBST(root.right, root.value, max);
+    // llamamos a la funcion
+    // con el nodo izquierdo y
+    // el nodo derecho
+    // Por ejemplo con el
+    // ejemplo 2, el nodo 2
+    // tiene un minimo de 1 y
+    // un maximo de 4
+    // y el nodo 7 tiene un
+    // minimo de 4 y un maximo
+    // de 7
+    // por lo que el nodo 5
+    // tiene un minimo de 4 y
+    // un maximo de 7
+    // y el nodo 3 tiene un
+    // minimo de 1 y un maximo
+    // de 2 y el nodo 1 tiene
+    // un minimo de 1 y un maximo de 2
   }
 }
