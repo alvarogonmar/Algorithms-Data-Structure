@@ -42,6 +42,6 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class IsSubTree {
 
   public boolean isSubtree(Node first, Node second) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    String sb1 = new StringBuilder(); // string builder para el arbol first
   }
 }
