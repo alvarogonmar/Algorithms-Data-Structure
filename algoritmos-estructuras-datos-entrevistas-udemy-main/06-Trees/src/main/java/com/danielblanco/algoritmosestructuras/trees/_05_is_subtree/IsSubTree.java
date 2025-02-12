@@ -44,6 +44,9 @@ public class IsSubTree {
   public boolean isSubtree(Node first, Node second) {
     String sb1 = new StringBuilder(); // string builder para el arbol first
     String sb2 = new StringBuilder(); // string builder para el arbol second
+
+    preOrder(first, sb1); // se llama a la funcion preorder para el arbol first
+    preOrder(second, sb2); // se llama a la funcion preorder para el arbol first
     return sb1.toString().contains(sb2.toString()); // se retorna si el string builder 1 contiene el string builder 2
   }
 
