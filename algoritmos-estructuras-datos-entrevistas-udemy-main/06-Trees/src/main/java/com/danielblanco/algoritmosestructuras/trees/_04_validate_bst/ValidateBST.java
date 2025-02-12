@@ -32,6 +32,8 @@ public class ValidateBST {
   }
 
   public boolean isValidBST(Node root, Integer min, Integer max) { // funcion con el maximo y minimo
-
+    if (root == null) { // si el nodo es nulo, retornamos true
+      return true;
+    }
   }
 }
