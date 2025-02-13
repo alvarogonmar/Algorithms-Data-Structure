@@ -20,8 +20,8 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class FirstCommonAncestor {
 
   class AncestorNode { // Clase interna para devolver el ancestro común y si se encontró o no
-    boolean nodeFound;
-    Node ancestor;
+    boolean nodeFound; // Indica si se encontró el nodo
+    Node ancestor; // Nodo ancestro común de los dos nodos
   }
 
   public Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) {
