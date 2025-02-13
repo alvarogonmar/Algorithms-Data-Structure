@@ -71,5 +71,6 @@ public class FirstCommonAncestor {
                                                                                                                  // nodo
                                                                                                                  // como
                                                                                                                  // encontrado
+    return result; // Devolvemos el nodo ancestro
   }
 }
