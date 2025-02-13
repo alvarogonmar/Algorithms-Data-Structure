@@ -45,5 +45,10 @@ public class FirstCommonAncestor {
 
     AncestorNode result = new AncestorNode(); // Creamos un nodo ancestro nulo para devolver en caso de no encontrar
                                               // el ancestro
+
+    if (leftResult.nodeFound && rightResult.nodeFound) { // Si encontramos ambos nodos en los hijos, el ancestro es el
+                                                         // nodo actual
+
+    }
   }
 }
