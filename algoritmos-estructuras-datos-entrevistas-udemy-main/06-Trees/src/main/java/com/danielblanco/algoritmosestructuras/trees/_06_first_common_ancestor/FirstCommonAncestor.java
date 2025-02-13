@@ -27,4 +27,7 @@ public class FirstCommonAncestor {
   public Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) {
     throw new UnsupportedOperationException("Not implemented yet");
   }
+
+  private AncestorNode postOrderSearch(Node root, Node firstNode, Node secondNode) {
+  }
 }
