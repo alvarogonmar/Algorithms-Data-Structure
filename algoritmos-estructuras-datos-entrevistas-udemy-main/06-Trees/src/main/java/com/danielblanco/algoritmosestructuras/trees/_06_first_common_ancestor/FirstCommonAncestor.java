@@ -28,6 +28,11 @@ public class FirstCommonAncestor {
     throw new UnsupportedOperationException("Not implemented yet");
   }
 
-  private AncestorNode postOrderSearch(Node root, Node firstNode, Node secondNode) {
+  private AncestorNode postOrderSearch(Node root, Node firstNode, Node secondNode) { // Recorrido postorden, es decir
+                                                                                     // primero los hijos y luego el
+                                                                                     // nodo
+    if (root == null) { // Si el nodo es nulo, devolvemos un nodo ancestro nulo
+      return new AncestorNode(); // Devolvemos un nodo ancestro nulo
+    }
   }
 }
