@@ -38,8 +38,8 @@ public class FirstCommonAncestor {
     if (leftResult.ancestor != null) { // Si encontramos el ancestro en el hijo izquierdo, lo devolvemos
       return leftResult;
     }
-    AncestorNode rightResult = postOrderSearch(root.right, firstNode, secondNode); // Buscamos en el hijo izquierdo
-    if (rightResult.ancestor != null) { // Si encontramos el ancestro en el hijo izquierdo, lo devolvemos
+    AncestorNode rightResult = postOrderSearch(root.right, firstNode, secondNode); // Buscamos en el hijo derecho
+    if (rightResult.ancestor != null) { // Si encontramos el ancestro en el hijo derecho, lo devolvemos
       return rightResult;
     }
   }
