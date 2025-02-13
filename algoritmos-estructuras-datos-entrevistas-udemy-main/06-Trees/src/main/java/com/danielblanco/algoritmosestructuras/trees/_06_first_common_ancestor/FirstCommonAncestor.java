@@ -42,5 +42,8 @@ public class FirstCommonAncestor {
     if (rightResult.ancestor != null) { // Si encontramos el ancestro en el hijo derecho, lo devolvemos
       return rightResult;
     }
+
+    AncestorNode result = new AncestorNode(); // Creamos un nodo ancestro nulo para devolver en caso de no encontrar
+                                              // el ancestro
   }
 }
