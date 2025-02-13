@@ -48,7 +48,8 @@ public class FirstCommonAncestor {
 
     if (leftResult.nodeFound && rightResult.nodeFound) { // Si encontramos ambos nodos en los hijos, el ancestro es el
                                                          // nodo actual
-
+      result.ancestor = root; // El ancestro es el nodo actual
+      return result; // Devolvemos el ancestro
     }
   }
 }
