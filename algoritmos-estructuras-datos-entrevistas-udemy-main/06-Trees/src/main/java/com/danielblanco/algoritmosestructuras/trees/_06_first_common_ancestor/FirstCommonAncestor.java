@@ -34,5 +34,6 @@ public class FirstCommonAncestor {
     if (root == null) { // Si el nodo es nulo, devolvemos un nodo ancestro nulo
       return new AncestorNode(); // Devolvemos un nodo ancestro nulo
     }
+    AncestorNode left = postOrderSearch(root.left, firstNode, secondNode); // Buscamos en el hijo izquierdo
   }
 }
