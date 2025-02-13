@@ -51,5 +51,25 @@ public class FirstCommonAncestor {
       result.ancestor = root; // El ancestro es el nodo actual
       return result; // Devolvemos el ancestro
     }
+
+    result.nodeFound = leftResult.nodeFound || rightResult.nodeFound || root == firstNode || root == secondNode; // Si
+                                                                                                                 // encontramos
+                                                                                                                 // alguno
+                                                                                                                 // de
+                                                                                                                 // los
+                                                                                                                 // nodos
+                                                                                                                 // en
+                                                                                                                 // el
+                                                                                                                 // hijo
+                                                                                                                 // izquierdo,
+                                                                                                                 // derecho
+                                                                                                                 // o el
+                                                                                                                 // nodo
+                                                                                                                 // actual,
+                                                                                                                 // marcamos
+                                                                                                                 // el
+                                                                                                                 // nodo
+                                                                                                                 // como
+                                                                                                                 // encontrado
   }
 }
