@@ -19,6 +19,11 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  */
 public class FirstCommonAncestor {
 
+  class AncestorNode { // Clase interna para devolver el ancestro común y si se encontró o no
+    boolean nodeFound;
+    Node ancestor;
+  }
+
   public Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) {
     throw new UnsupportedOperationException("Not implemented yet");
   }
