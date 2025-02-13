@@ -25,7 +25,7 @@ public class FirstCommonAncestor {
   }
 
   public Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    return postOrderSearch(root, firstNode, secondNode).ancestor; // Buscamos el ancestro común de los dos nodos
   }
 
   private AncestorNode postOrderSearch(Node root, Node firstNode, Node secondNode) { // Recorrido postorden, es decir
