@@ -9,12 +9,14 @@ public class GraphNode { // Clase para representar un nodo de un grafo
   // Utilizas hashMap para almacenar los nodos adyacentes, ya que es más
   // eficiente, con clave el valor del nodo y valor el nodo
 
+  // Constructor
   public GraphNode(String value) {
     this.value = value;
     this.adjacents = new HashMap<String, GraphNode>();
     this.status = GraphNodeStatus.Unvisited;
   }
 
+  // Constructor
   public GraphNode(String value, HashMap<String, GraphNode> adjacents) {
     this.value = value;
     this.adjacents = adjacents;
