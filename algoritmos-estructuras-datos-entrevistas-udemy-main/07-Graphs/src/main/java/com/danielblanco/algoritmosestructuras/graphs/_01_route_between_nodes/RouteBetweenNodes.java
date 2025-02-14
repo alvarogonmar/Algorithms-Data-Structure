@@ -1,5 +1,8 @@
 package com.danielblanco.algoritmosestructuras.graphs._01_route_between_nodes;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.Graph;
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.GraphNode;
 
@@ -27,5 +30,6 @@ public class RouteBetweenNodes {
     if (start == end) { // Si los nodos son iguales
       return true; // Caso base retorna true
     }
+    Queue<Graph> queue = new LinkedList<>(); // Creamos una cola de nodos
   }
 }
