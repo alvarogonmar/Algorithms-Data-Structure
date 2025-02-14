@@ -24,6 +24,8 @@ import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.GraphNode;
 public class RouteBetweenNodes {
 
   public boolean isRouteBetween(Graph g, GraphNode start, GraphNode end) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (start == end) { // Si los nodos son iguales
+      return true; // Caso base retorna true
+    }
   }
 }
