@@ -26,9 +26,9 @@ public class BreadthFirstSearch { // Aqui si examinan primero los nodos adyacent
 
       currentNode.status = GraphNodeStatus.Visited; // En caso contrario Marcar el nodo actual como visitado
 
-      for (GraphNode adj : currentNode.adjacents.values()) {
-        if (adj.status == GraphNodeStatus.Unvisited) {
-          queue.add(adj);
+      for (GraphNode adj : currentNode.adjacents.values()) { // Iterar sobre los nodos adyacentes al nodo actual
+        if (adj.status == GraphNodeStatus.Unvisited) { // Si el nodo adyacente no ha sido visitado
+          queue.add(adj); // Agregar el nodo adyacente a la cola
         }
       }
     }
