@@ -4,9 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BreadthFirstSearch {
-  public static boolean breadthFirstSearch(Graph graph, String target) {
-    for (GraphNode node : graph.nodes.values()) {
-      if (singleBfsHelper(node, target)) return true;
+  public static boolean breadthFirstSearch(Graph graph, String target) { // Funcion que recibe un grafo y un objetivo
+    for (GraphNode node : graph.nodes.values()) { // iterar sobre los nodos del grafo
+      if (singleBfsHelper(node, target))
+        return true; // Llamar a la función auxiliar BFS con el nodo actual
     }
 
     return false;
@@ -19,7 +20,8 @@ public class BreadthFirstSearch {
     while (!queue.isEmpty()) {
       GraphNode currentNode = queue.remove();
 
-      if (currentNode.value.equals(target)) return true;
+      if (currentNode.value.equals(target))
+        return true;
 
       currentNode.status = GraphNodeStatus.Visited;
 
