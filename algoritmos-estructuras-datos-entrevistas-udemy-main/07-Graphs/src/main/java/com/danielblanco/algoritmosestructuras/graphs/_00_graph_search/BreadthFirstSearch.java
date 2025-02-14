@@ -3,7 +3,8 @@ package com.danielblanco.algoritmosestructuras.graphs._00_graph_search;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BreadthFirstSearch {
+public class BreadthFirstSearch { // Aqui si examinan primero los nodos adyacentes al nodo actual antes de pasar
+                                  // al siguiente nodo
   public static boolean breadthFirstSearch(Graph graph, String target) { // Funcion que recibe un grafo y un objetivo
     for (GraphNode node : graph.nodes.values()) { // iterar sobre los nodos del grafo
       if (singleBfsHelper(node, target))
