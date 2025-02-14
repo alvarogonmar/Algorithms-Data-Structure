@@ -11,9 +11,9 @@ public class Graph { // Clase para representar un grafo
 
   public GraphNode getOrCreateNode(String name) { // Método para obtener un nodo o crearlo si no existe
     GraphNode node = nodes.get(name); // Obtener el nodo del HashMap
-    if (node == null) {
-      node = new GraphNode(name);
-      nodes.put(name, node);
+    if (node == null) { // Si el nodo no existe
+      node = new GraphNode(name); // Crear un nuevo nodo
+      nodes.put(name, node); // Agregar el nodo al HashMap
     }
     return node;
   }
