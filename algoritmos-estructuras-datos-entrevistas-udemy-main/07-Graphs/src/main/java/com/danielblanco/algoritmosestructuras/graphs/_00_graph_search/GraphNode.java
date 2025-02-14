@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras.graphs._00_graph_search;
 import java.util.HashMap;
 
 public class GraphNode { // Clase para representar un nodo de un grafo
-  public String value;
+  public String value; // Almacena el valor del nodo
   public GraphNodeStatus status;
   public HashMap<String, GraphNode> adjacents;
 
