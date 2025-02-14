@@ -13,7 +13,7 @@ public class DepthFirstSearch {
 
   private static boolean recursiveDfsHelper(GraphNode currentNode, String target) {
     if (currentNode.value.equals(target))
-      return true;
+      return true; // Si el valor del nodo actual es igual al objetivo, devolver verdadero
 
     currentNode.status = GraphNodeStatus.Visited;
 
