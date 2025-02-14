@@ -2,7 +2,7 @@ package com.danielblanco.algoritmosestructuras.graphs._00_graph_search;
 
 import java.util.HashMap;
 
-public class GraphNode {
+public class GraphNode { // Clase para representar un nodo de un grafo
   public String value;
   public GraphNodeStatus status;
   public HashMap<String, GraphNode> adjacents;
@@ -34,13 +34,18 @@ public class GraphNode {
 
   @Override
   public boolean equals(Object obj) {
-    if (this == obj) return true;
-    if (obj == null) return false;
-    if (getClass() != obj.getClass()) return false;
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
     GraphNode other = (GraphNode) obj;
     if (value == null) {
-      if (other.value != null) return false;
-    } else if (!value.equals(other.value)) return false;
+      if (other.value != null)
+        return false;
+    } else if (!value.equals(other.value))
+      return false;
     return true;
   }
 }
