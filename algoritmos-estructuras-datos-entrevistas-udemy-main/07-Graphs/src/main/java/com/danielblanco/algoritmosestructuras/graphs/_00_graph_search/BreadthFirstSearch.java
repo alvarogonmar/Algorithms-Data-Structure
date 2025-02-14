@@ -21,10 +21,10 @@ public class BreadthFirstSearch { // Aqui si examinan primero los nodos adyacent
     while (!queue.isEmpty()) { // Mientras la cola no esté vacía
       GraphNode currentNode = queue.remove(); // Obtener el primer nodo de la cola
 
-      if (currentNode.value.equals(target))
-        return true;
+      if (currentNode.value.equals(target)) // Si el valor del nodo actual es igual al objetivo
+        return true; // Devolver verdadero
 
-      currentNode.status = GraphNodeStatus.Visited;
+      currentNode.status = GraphNodeStatus.Visited; // En caso contrario Marcar el nodo actual como visitado
 
       for (GraphNode adj : currentNode.adjacents.values()) {
         if (adj.status == GraphNodeStatus.Unvisited) {
