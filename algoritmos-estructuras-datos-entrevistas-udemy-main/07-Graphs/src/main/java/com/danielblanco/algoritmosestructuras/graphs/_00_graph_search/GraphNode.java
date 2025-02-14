@@ -22,9 +22,10 @@ public class GraphNode { // Clase para representar un nodo de un grafo
     this.adjacents = adjacents;
   }
 
+  // Añade un nodo adyacente al nodo actual
   public void addNeighbor(GraphNode node) {
-    if (!adjacents.containsKey(node.value)) {
-      adjacents.put(node.value, node);
+    if (!adjacents.containsKey(node.value)) { // Si el nodo no está en la lista de adyacentes, lo añadimos
+      adjacents.put(node.value, node); // Añadimos el nodo a la lista de adyacentes
     }
   }
 
