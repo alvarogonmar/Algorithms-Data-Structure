@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class GraphNode { // Clase para representar un nodo de un grafo
   public String value; // Almacena el valor del nodo
   public GraphNodeStatus status; // Almacena el estado del nodo (visitado, no visitado, visitando)
-  public HashMap<String, GraphNode> adjacents;
+  public HashMap<String, GraphNode> adjacents; // Almacena los nodos adyacentes al nodo actual
 
   public GraphNode(String value) {
     this.value = value;
