@@ -36,6 +36,9 @@ public class RouteBetweenNodes {
     while (!queue.isEmpty()) { // Mientras la cola no este vacia
       GraphNode next = queue.remove(); // Obtenemos el siguiente nodo
 
+      if (end == next) { // Si el nodo siguiente es igual al nodo final
+        return true; // Retornamos true
+      }
     }
   }
 }
