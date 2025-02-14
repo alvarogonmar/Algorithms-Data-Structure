@@ -17,10 +17,10 @@ public class DepthFirstSearch {
 
     currentNode.status = GraphNodeStatus.Visited; // Marcar el nodo actual como visitado
 
-    for (GraphNode node : currentNode.adjacents.values()) {
-      if (node.status != GraphNodeStatus.Visited) {
+    for (GraphNode node : currentNode.adjacents.values()) { // Iterar sobre los nodos adyacentes al nodo actual
+      if (node.status != GraphNodeStatus.Visited) { // Si el nodo adyacente no ha sido visitado
         if (recursiveDfsHelper(node, target))
-          return true;
+          return true; // Llamar a la función auxiliar recursiva con el nodo adyacente
       }
     }
     return false;
