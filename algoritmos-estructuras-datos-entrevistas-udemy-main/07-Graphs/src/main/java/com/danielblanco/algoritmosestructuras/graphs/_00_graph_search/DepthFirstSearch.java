@@ -23,6 +23,6 @@ public class DepthFirstSearch {
           return true; // Llamar a la función auxiliar recursiva con el nodo adyacente
       }
     }
-    return false;
+    return false; // Si no se encuentra el objetivo, devolver falso
   }
 }
