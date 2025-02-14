@@ -15,7 +15,7 @@ public class DepthFirstSearch {
     if (currentNode.value.equals(target))
       return true; // Si el valor del nodo actual es igual al objetivo, devolver verdadero
 
-    currentNode.status = GraphNodeStatus.Visited;
+    currentNode.status = GraphNodeStatus.Visited; // Marcar el nodo actual como visitado
 
     for (GraphNode node : currentNode.adjacents.values()) {
       if (node.status != GraphNodeStatus.Visited) {
