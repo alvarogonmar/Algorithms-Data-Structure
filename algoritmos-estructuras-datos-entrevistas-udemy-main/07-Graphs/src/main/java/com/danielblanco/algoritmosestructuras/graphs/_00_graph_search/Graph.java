@@ -18,9 +18,9 @@ public class Graph { // Clase para representar un grafo
     return node;
   }
 
-  public void addEdge(String start, String end) {
-    GraphNode startNode = getOrCreateNode(start);
-    GraphNode endNode = getOrCreateNode(end);
-    startNode.addNeighbor(endNode);
+  public void addEdge(String start, String end) { // Método para agregar una arista
+    GraphNode startNode = getOrCreateNode(start); // Obtener el nodo de inicio
+    GraphNode endNode = getOrCreateNode(end); // Obtener el nodo de fin
+    startNode.addNeighbor(endNode); // Agregar el nodo de fin como vecino del nodo de inicio
   }
 }
