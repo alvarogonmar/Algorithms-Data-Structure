@@ -15,11 +15,11 @@ public class BreadthFirstSearch { // Aqui si examinan primero los nodos adyacent
   }
 
   private static boolean singleBfsHelper(GraphNode node, String target) {
-    Queue<GraphNode> queue = new LinkedList<GraphNode>();
-    queue.add(node);
+    Queue<GraphNode> queue = new LinkedList<GraphNode>(); // Crear una cola para almacenar los nodos
+    queue.add(node); // Agregar el nodo actual a la cola
 
-    while (!queue.isEmpty()) {
-      GraphNode currentNode = queue.remove();
+    while (!queue.isEmpty()) { // Mientras la cola no esté vacía
+      GraphNode currentNode = queue.remove(); // Obtener el primer nodo de la cola
 
       if (currentNode.value.equals(target))
         return true;
