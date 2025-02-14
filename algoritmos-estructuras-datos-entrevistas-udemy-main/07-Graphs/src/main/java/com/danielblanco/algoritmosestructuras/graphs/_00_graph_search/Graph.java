@@ -2,11 +2,11 @@ package com.danielblanco.algoritmosestructuras.graphs._00_graph_search;
 
 import java.util.HashMap;
 
-public class Graph {
-  public HashMap<String, GraphNode> nodes;
+public class Graph { // Clase para representar un grafo
+  public HashMap<String, GraphNode> nodes; // HashMap para almacenar los nodos del grafo
 
   public Graph() {
-    nodes = new HashMap<String, GraphNode>();
+    nodes = new HashMap<String, GraphNode>(); // Crear un nuevo HashMap
   }
 
   public GraphNode getOrCreateNode(String name) {
