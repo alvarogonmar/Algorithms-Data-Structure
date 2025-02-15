@@ -40,8 +40,8 @@ public class RouteBetweenNodes {
         return true; // Retornamos true
       }
       for (GraphNode n : next.adjacents.values()) { // Recorremos los nodos adyacentes
-        if (!n.status.equals(GraphNodeStatus.Visited)) {
-          queue.add(n);
+        if (!n.status.equals(GraphNodeStatus.Visited)) { // Si el nodo no ha sido visitado
+          queue.add(n); // Añadimos el nodo a la cola
           n.status = GraphNodeStatus.Visited;
         }
       }
