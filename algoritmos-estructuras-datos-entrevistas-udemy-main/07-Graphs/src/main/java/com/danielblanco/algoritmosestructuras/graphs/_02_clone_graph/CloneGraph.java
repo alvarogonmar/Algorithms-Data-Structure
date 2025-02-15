@@ -13,8 +13,8 @@ import java.util.List;
 public class CloneGraph {
 
   public class Node { // Clase de un nodo de grafo
-    public int val;
-    public List<Node> neighbors;
+    public int val; // Valor del nodo
+    public List<Node> neighbors; // Lista de nodos vecinos
   }
 
   public Node cloneGraph(Node node) {
