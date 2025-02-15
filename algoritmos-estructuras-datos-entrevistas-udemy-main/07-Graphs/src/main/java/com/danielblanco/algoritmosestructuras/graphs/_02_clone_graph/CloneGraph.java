@@ -17,7 +17,7 @@ public class CloneGraph {
     public List<Node> neighbors; // Lista de nodos vecinos
   }
 
-  public Node cloneGraph(Node node) {
+  public Node cloneGraph(Node node) { // Método para clonar un grafo
     throw new UnsupportedOperationException("Not implemented yet");
   }
 }
