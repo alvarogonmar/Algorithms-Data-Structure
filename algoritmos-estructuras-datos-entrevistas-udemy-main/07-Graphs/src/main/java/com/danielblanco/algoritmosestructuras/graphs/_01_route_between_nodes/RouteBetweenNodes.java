@@ -39,7 +39,7 @@ public class RouteBetweenNodes {
       if (end == next) { // Si el nodo siguiente es igual al nodo final
         return true; // Retornamos true
       }
-      for (GraphNode n : next.adjacents.values()) {
+      for (GraphNode n : next.adjacents.values()) { // Recorremos los nodos adyacentes
         if (!n.status.equals(GraphNodeStatus.Visited)) {
           queue.add(n);
           n.status = GraphNodeStatus.Visited;
