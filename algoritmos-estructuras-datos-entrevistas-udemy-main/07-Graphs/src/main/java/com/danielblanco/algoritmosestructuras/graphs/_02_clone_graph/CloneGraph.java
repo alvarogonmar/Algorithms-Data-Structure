@@ -1,5 +1,6 @@
 package com.danielblanco.algoritmosestructuras.graphs._02_clone_graph;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -18,6 +19,6 @@ public class CloneGraph {
   }
 
   public Node cloneGraph(Node node) { // Método para clonar un grafo
-    throw new UnsupportedOperationException("Not implemented yet");
+    HashMap<Integer, Node> map = new HashMap<>(); // Crear un nuevo HashMap
   }
 }
