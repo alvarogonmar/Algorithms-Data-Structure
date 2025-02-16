@@ -31,5 +31,6 @@ public class CloneGraph {
 
     Node newNode = new Node(); // Crear un nuevo nodo
     newNode.val = node.val; // Asignar el valor del nodo
+    newNode.neighbors = new ArrayList<>(); // Crear una nueva lista de nodos
   }
 }
