@@ -35,5 +35,7 @@ public class CloneGraph {
 
     for (Node n : node.neighbors) // Recorrer los nodos vecinos
       newNode.neighbors.add(clone(n, map)); // Añadir el nodo clonado a la lista de nodos vecinos
+
+    return newNode; // return el nuevo nodo
   }
 }
