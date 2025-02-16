@@ -20,7 +20,7 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
   }
 
   public Node cloneGraph(Node node) { // Método para clonar un grafo
-    Map<Integer, Node> map = new HashMap<>();
+    Map<Integer, Node> map = new HashMap<>(); // Cambio de nombre de graph a map
     return clone(node, map);
   }
 
