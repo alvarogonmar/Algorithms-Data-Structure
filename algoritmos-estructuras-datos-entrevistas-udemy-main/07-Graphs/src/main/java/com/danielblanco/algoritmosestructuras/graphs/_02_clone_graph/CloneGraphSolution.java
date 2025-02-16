@@ -28,7 +28,7 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
     if (node == null)
       return null; // return null si el nodo es null
 
-    if (map.containsKey(node.val))
+    if (map.containsKey(node.val)) // si el map contiene la key node.val
       return map.get(node.val);
 
     Node newNode = new Node();
