@@ -14,7 +14,7 @@ import java.util.Map;
  *  Output: Un clon de ese grafo (nuevos Nodos, no las mismas referencias).
  */
 public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraphSolution
-  public class Node {
+  public class Node { // Clase de un nodo de grafo
     public int val;
     public List<Node> neighbors;
   }
