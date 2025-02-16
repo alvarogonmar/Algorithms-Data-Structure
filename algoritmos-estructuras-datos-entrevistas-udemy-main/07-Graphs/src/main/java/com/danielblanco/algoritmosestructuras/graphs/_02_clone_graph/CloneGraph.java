@@ -30,5 +30,6 @@ public class CloneGraph {
       return map.get(node.val); // return el valor de la key node.val
 
     Node newNode = new Node(); // Crear un nuevo nodo
+    newNode.val = node.val; // Asignar el valor del nodo
   }
 }
