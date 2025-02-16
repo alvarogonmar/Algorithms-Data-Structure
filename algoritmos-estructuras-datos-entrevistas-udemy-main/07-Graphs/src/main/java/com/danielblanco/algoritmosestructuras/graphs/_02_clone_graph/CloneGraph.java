@@ -21,4 +21,8 @@ public class CloneGraph {
   public Node cloneGraph(Node node) { // Método para clonar un grafo
     HashMap<Integer, Node> map = new HashMap<>(); // Crear un nuevo HashMap
   }
+
+  private Node clone(Node node, HashMap<Integer, Node> map) { // funcion para clonar un nodo
+
+  }
 }
