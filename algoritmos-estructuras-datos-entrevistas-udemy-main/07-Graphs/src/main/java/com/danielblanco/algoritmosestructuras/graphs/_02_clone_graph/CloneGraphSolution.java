@@ -13,7 +13,7 @@ import java.util.Map;
  *  Input: Nodo de grafo conexo y no dirigido (desde él se puede llegar a los demás)
  *  Output: Un clon de ese grafo (nuevos Nodos, no las mismas referencias).
  */
-public class CloneGraphSolution {
+public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraphSolution
   public class Node {
     public int val;
     public List<Node> neighbors;
@@ -25,16 +25,19 @@ public class CloneGraphSolution {
   }
 
   private Node clone(Node node, Map<Integer, Node> map) {
-    if (node == null) return null;
+    if (node == null)
+      return null;
 
-    if (map.containsKey(node.val)) return map.get(node.val);
+    if (map.containsKey(node.val))
+      return map.get(node.val);
 
     Node newNode = new Node();
     newNode.val = node.val;
     newNode.neighbors = new ArrayList<Node>();
 
     map.put(newNode.val, newNode);
-    for (Node neighbor : node.neighbors) newNode.neighbors.add(clone(neighbor, map));
+    for (Node neighbor : node.neighbors)
+      newNode.neighbors.add(clone(neighbor, map));
     return newNode;
   }
 }
