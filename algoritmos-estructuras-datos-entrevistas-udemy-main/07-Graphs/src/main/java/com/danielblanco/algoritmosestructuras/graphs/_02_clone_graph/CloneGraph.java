@@ -23,6 +23,7 @@ public class CloneGraph {
   }
 
   private Node clone(Node node, HashMap<Integer, Node> map) { // funcion para clonar un nodo
-
+    if (node == null)
+      return null; // si el nodo es null, return null
   }
 }
