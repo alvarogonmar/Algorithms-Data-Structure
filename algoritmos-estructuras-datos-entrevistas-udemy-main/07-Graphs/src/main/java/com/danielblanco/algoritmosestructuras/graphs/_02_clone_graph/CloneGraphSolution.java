@@ -19,7 +19,7 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
     public List<Node> neighbors; // Lista de nodos vecinos (cambio de nombre de neighbors a neighbors)
   }
 
-  public Node cloneGraph(Node node) {
+  public Node cloneGraph(Node node) { // Método para clonar un grafo
     Map<Integer, Node> map = new HashMap<>();
     return clone(node, map);
   }
