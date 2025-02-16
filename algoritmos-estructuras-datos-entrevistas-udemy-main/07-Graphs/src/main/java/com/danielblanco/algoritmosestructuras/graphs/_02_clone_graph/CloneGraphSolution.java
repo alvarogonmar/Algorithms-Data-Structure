@@ -21,12 +21,12 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
 
   public Node cloneGraph(Node node) { // Método para clonar un grafo
     Map<Integer, Node> map = new HashMap<>(); // Cambio de nombre de graph a map
-    return clone(node, map);
+    return clone(node, map); // Cambio de nombre de cloneGraph a clone
   }
 
-  private Node clone(Node node, Map<Integer, Node> map) {
+  private Node clone(Node node, Map<Integer, Node> map) { // funcion clone con parametros node y map
     if (node == null)
-      return null;
+      return null; // return null si el nodo es null
 
     if (map.containsKey(node.val))
       return map.get(node.val);
