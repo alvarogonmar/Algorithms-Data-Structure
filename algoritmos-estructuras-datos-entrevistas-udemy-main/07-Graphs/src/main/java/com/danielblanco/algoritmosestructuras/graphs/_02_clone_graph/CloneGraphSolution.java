@@ -31,7 +31,7 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
     if (map.containsKey(node.val)) // si el map contiene la key node.val
       return map.get(node.val); // return el valor de la key node.val
 
-    Node newNode = new Node();
+    Node newNode = new Node();// Crear un nuevo nodo
     newNode.val = node.val;
     newNode.neighbors = new ArrayList<Node>();
 
