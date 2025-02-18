@@ -27,7 +27,7 @@ import java.util.List;
  *  Output: Lanza excepción. No se puede construir ya que se forma un ciclo.
  *
  */
-public class BuildOrderSolution {
+public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrderSolution
   public List<String> buildOrder(String[] projects, String[][] dependencies) {
     Graph graph = buildDependencyGraph(projects, dependencies);
 
