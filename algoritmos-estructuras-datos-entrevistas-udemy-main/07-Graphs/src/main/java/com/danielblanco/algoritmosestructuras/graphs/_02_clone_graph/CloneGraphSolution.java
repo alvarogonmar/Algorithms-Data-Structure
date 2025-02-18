@@ -38,6 +38,6 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
     map.put(newNode.val, newNode); // Añadir el nuevo nodo al map
     for (Node neighbor : node.neighbors) // Recorrer los nodos vecinos
       newNode.neighbors.add(clone(neighbor, map)); // Añadir el nodo clonado a la lista de nodos vecinos
-    return newNode;
+    return newNode; // return el nuevo nodo
   }
 }
