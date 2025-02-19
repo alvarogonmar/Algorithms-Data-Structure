@@ -39,6 +39,7 @@ public class BuildOrder {
     }
 
     Collection.reverrse(sortedProjects); // invertir la lista de proyectos
+    return sortedProjects; // devolver lista de proyectos en orden de compilación
   }
 
   private void depthFirstSearch(GraphNode node, ArrayList<String> sortedProjects) {
