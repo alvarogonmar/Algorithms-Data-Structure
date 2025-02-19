@@ -25,11 +25,16 @@ public class NumberOfProvinces {
         dfs(isConnected, visited, i); // Llamamos a la función dfs para marcar las ciudades conectadas
       }
     }
+    return provinces; // Retornamos el número de provincias
   }
 
-  private void dfs(int[][] isConnected, boolean[] visited, int i) {
+  private void dfs(int[][] isConnected, boolean[] visited, int city) {
     for (int other = 0; other < isConnected[0].length; other++) { // recorrer las ciudades conectadas
-
+      if (other != city && isConnected[city][other] == 1 && !visited[other]) { // si la ciudad está conectada y no ha
+                                                                               // sido visitada
+        visited[other] = true; // marcar la ciudad como visitada
+        dfs(isConnected, visited, other); // llamar a la función dfs para marcar las ciudades conectadas
+      }
     }
   }
 }
