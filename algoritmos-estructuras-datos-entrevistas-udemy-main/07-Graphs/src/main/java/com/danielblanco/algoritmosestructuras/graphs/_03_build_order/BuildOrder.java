@@ -45,6 +45,7 @@ public class BuildOrder {
       for (GraphNode neighbor : node.adjacents.values()) { // por cada vecino del nodo
         depthFirstSearch(neighbor, sortedProjects); // hacer búsqueda en profundidad en el vecino
       }
+      node.status = GraphNodeStatus.Visited; // marcar nodo como visitado
     }
   }
 
