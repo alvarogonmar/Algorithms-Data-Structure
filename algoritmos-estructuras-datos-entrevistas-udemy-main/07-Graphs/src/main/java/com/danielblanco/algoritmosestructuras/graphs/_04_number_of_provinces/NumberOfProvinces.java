@@ -26,4 +26,8 @@ public class NumberOfProvinces {
       }
     }
   }
+
+  private void dfs(int[][] isConnected, boolean[] visited, int i) {
+
+  }
 }
