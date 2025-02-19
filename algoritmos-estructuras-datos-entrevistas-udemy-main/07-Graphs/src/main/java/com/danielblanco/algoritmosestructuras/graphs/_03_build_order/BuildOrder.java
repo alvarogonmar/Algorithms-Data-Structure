@@ -2,6 +2,7 @@ package com.danielblanco.algoritmosestructuras.graphs._03_build_order;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.DepthFirstSearch;
@@ -36,6 +37,8 @@ public class BuildOrder {
     for (Graph.Node node : graph.nodes.values()) { // por cada nodo en el grafo
       depthFirstSearch(node, sortedProjects); // hacer búsqueda en profundidad
     }
+
+    Collection.reverrse(sortedProjects); // invertir la lista de proyectos
   }
 
   private void depthFirstSearch(GraphNode node, ArrayList<String> sortedProjects) {
