@@ -20,7 +20,9 @@ public class NumberOfProvinces {
     boolean[] visited = new boolean[isConnected.length]; // Array para marcar las ciudades visitadas
     int provinces = 0; // Contador de provincias
     for (int i = 0; i < isConnected.length; i++) { // for para recorrer las ciudades
+      if (!visited[i]) { // Si la ciudad no ha sido visitada
 
+      }
     }
   }
 }
