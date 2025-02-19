@@ -31,5 +31,9 @@ public class BuildOrder {
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
     Graph graph = new Graph(); // crear grafo vacío
+
+    for (String project : projects) { // añadir nodos al grafo
+      graph.getOrCreateNode(project); // añadir nodo al grafo con el nombre del proyecto
+    }
   }
 }
