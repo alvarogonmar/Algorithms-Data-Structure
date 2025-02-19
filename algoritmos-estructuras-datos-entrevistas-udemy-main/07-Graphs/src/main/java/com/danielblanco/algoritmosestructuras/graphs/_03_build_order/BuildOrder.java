@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.DepthFirstSearch;
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.Graph;
 
 /*
@@ -31,6 +32,9 @@ public class BuildOrder {
   public List<String> buildOrder(String[] projects, String[][] dependencies) {
     Graph graph = buildDependencyGraph(projects, dependencies); // construir grafo de dependencias
     ArrayList<String> sortedProjects = new ArrayList<>(); // lista de proyectos en orden de compilación
+    for (Graph.Node node : graph.nodes.values()) { // por cada nodo en el grafo
+      DepthFirstSearch(node, sortedProjects); // hacer búsqueda en profundidad
+    }
   }
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
