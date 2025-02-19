@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.graphs._03_build_order;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.Graph;
@@ -28,6 +30,8 @@ public class BuildOrder {
 
   public List<String> buildOrder(String[] projects, String[][] dependencies) {
     Graph graph = buildDependencyGraph(projects, dependencies); // construir grafo de dependencias
+    ArrayList<String> sortedProjects = new ArrayList<>(); // lista de proyectos en orden de compilación
+  }
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
     Graph graph = new Graph(); // crear grafo vacío
@@ -39,5 +43,6 @@ public class BuildOrder {
     for (String[] dep : dependencies) { // por cada dependencia en la lista de dependencias
       graph.addEdge(dep[0], dep[1]); // añadir arista al grafo
     }
+    return graph;
   }
 }
