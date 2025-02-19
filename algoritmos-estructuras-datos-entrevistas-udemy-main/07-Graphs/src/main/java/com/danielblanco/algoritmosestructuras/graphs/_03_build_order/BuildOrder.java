@@ -33,8 +33,13 @@ public class BuildOrder {
     Graph graph = buildDependencyGraph(projects, dependencies); // construir grafo de dependencias
     ArrayList<String> sortedProjects = new ArrayList<>(); // lista de proyectos en orden de compilación
     for (Graph.Node node : graph.nodes.values()) { // por cada nodo en el grafo
-      DepthFirstSearch(node, sortedProjects); // hacer búsqueda en profundidad
+      depthFirstSearch(node, sortedProjects); // hacer búsqueda en profundidad
     }
+  }
+
+  private void depthFirstSearch(GraphNode node, ArrayList<String> sortedProjects) {
+    if (node == null)
+      return; // si el nodo es nulo, salir
   }
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
