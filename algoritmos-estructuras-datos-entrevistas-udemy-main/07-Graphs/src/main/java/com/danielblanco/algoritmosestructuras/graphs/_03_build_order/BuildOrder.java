@@ -2,6 +2,8 @@ package com.danielblanco.algoritmosestructuras.graphs._03_build_order;
 
 import java.util.List;
 
+import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.Graph;
+
 /*
  * Dada una lista de proyectos y las dependencias entre ellos, devuelve un orden de
  * compilación válido para dichos proyectos.
@@ -25,6 +27,6 @@ import java.util.List;
 public class BuildOrder {
 
   public List<String> buildOrder(String[] projects, String[][] dependencies) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Graph graph = buildDependencyGraph(projects, dependencies); // construir grafo de dependencias
   }
 }
