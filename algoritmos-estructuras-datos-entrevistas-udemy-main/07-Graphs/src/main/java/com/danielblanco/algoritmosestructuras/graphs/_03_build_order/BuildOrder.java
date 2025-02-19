@@ -42,6 +42,7 @@ public class BuildOrder {
     if (node == null)
       return; // si el nodo es nulo, salir
     if (node.status == GraphNodeStatus.Unvisited) {
+      node.status = GraphNodeStatus.Visiting; // marcar nodo como visitado
       for (GraphNode neighbor : node.adjacents.values()) { // por cada vecino del nodo
         depthFirstSearch(neighbor, sortedProjects); // hacer búsqueda en profundidad en el vecino
       }
