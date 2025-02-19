@@ -28,5 +28,8 @@ public class BuildOrder {
 
   public List<String> buildOrder(String[] projects, String[][] dependencies) {
     Graph graph = buildDependencyGraph(projects, dependencies); // construir grafo de dependencias
+
+  private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
+    return null;
   }
 }
