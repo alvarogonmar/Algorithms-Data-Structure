@@ -21,7 +21,7 @@ public class NumberOfProvinces {
     int provinces = 0; // Contador de provincias
     for (int i = 0; i < isConnected.length; i++) { // for para recorrer las ciudades
       if (!visited[i]) { // Si la ciudad no ha sido visitada
-
+        provinces++; // Incrementamos el contador de provincias
       }
     }
   }
