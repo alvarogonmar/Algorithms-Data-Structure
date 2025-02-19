@@ -28,6 +28,8 @@ public class NumberOfProvinces {
   }
 
   private void dfs(int[][] isConnected, boolean[] visited, int i) {
+    for (int other = 0; other < isConnected[0].length; other++) { // recorrer las ciudades conectadas
 
+    }
   }
 }
