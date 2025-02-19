@@ -30,6 +30,6 @@ public class BuildOrder {
     Graph graph = buildDependencyGraph(projects, dependencies); // construir grafo de dependencias
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
-    return null;
+    Graph graph = new Graph(); // crear grafo vacío
   }
 }
