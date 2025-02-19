@@ -22,6 +22,7 @@ public class NumberOfProvinces {
     for (int i = 0; i < isConnected.length; i++) { // for para recorrer las ciudades
       if (!visited[i]) { // Si la ciudad no ha sido visitada
         provinces++; // Incrementamos el contador de provincias
+        dfs(isConnected, visited, i); // Llamamos a la función dfs para marcar las ciudades conectadas
       }
     }
   }
