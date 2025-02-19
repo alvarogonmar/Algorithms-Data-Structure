@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.DepthFirstSearch;
 import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.Graph;
+import com.danielblanco.algoritmosestructuras.graphs._00_graph_search.GraphNode;
 
 /*
  * Dada una lista de proyectos y las dependencias entre ellos, devuelve un orden de
@@ -40,6 +41,11 @@ public class BuildOrder {
   private void depthFirstSearch(GraphNode node, ArrayList<String> sortedProjects) {
     if (node == null)
       return; // si el nodo es nulo, salir
+    if (node.status == GraphNodeStatus.Unvisited) {
+      for (GraphNode neighbor : node.adjacents.values()) { // por cada vecino del nodo
+        depthFirstSearch(neighbor, sortedProjects); // hacer búsqueda en profundidad en el vecino
+      }
+    }
   }
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // construir grafo de dependencias
