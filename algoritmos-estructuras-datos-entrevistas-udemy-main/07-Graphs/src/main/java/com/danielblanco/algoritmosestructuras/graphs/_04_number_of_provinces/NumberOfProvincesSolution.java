@@ -14,7 +14,7 @@ package com.danielblanco.algoritmosestructuras.graphs._04_number_of_provinces;
  *
  *  Output: 2
  */
-public class NumberOfProvincesSolution {
+public class NumberOfProvincesSolution { // O(n^2)
   public int numberOfProvinces(int[][] isConnected) {
     boolean[] visited = new boolean[isConnected.length];
     int count = 0;
