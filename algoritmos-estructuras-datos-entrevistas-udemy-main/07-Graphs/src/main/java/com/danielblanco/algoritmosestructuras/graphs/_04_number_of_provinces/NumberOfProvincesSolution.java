@@ -28,7 +28,7 @@ public class NumberOfProvincesSolution { // O(n^2)
     return count;
   }
 
-  private void dfs(int[][] isConnected, boolean[] visited, int city) {
+  private void dfs(int[][] isConnected, boolean[] visited, int city) { // funcion dfs para visitar todos los nodos
     for (int other = 0; other < isConnected.length; other++) {
       if (other != city && isConnected[city][other] == 1 && !visited[other]) {
         visited[other] = true;
