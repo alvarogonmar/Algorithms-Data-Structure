@@ -34,7 +34,7 @@ public class NumberOfProvincesSolution { // O(n^2)
                                                                                // y esta conectado y no lo hemos
                                                                                // visitado
         visited[other] = true; // marcamos el nodo como visitado
-        dfs(isConnected, visited, other);
+        dfs(isConnected, visited, other); // hacemos un dfs para visitar los nodos conectados
       }
     }
   }
