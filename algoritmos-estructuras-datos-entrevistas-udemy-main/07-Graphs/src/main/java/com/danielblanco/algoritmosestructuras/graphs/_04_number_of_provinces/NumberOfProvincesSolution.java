@@ -21,8 +21,8 @@ public class NumberOfProvincesSolution { // O(n^2)
     int count = 0; // contador de provincias
     for (int i = 0; i < isConnected.length; i++) { // recorremos la matriz de adyacencia
       if (!visited[i]) { // si no hemos visitado el nodo
-        dfs(isConnected, visited, i);
-        count++;
+        dfs(isConnected, visited, i); // hacemos un dfs para visitar todos los nodos conectados
+        count++; // incrementamos el contador de provincias
       }
     }
     return count;
