@@ -30,7 +30,9 @@ public class NumberOfProvincesSolution { // O(n^2)
 
   private void dfs(int[][] isConnected, boolean[] visited, int city) { // funcion dfs para visitar todos los nodos
     for (int other = 0; other < isConnected.length; other++) { // recorremos la matriz de adyacencia
-      if (other != city && isConnected[city][other] == 1 && !visited[other]) {
+      if (other != city && isConnected[city][other] == 1 && !visited[other]) { // si el nodo es diferente al nodo actual
+                                                                               // y esta conectado y no lo hemos
+                                                                               // visitado
         visited[other] = true;
         dfs(isConnected, visited, other);
       }
