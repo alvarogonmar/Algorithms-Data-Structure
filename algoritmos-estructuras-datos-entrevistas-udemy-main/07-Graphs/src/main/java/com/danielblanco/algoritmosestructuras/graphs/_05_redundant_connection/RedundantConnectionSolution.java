@@ -22,8 +22,8 @@ import java.util.Set;
 public class RedundantConnectionSolution {
   private static final int MAX_NODE_VALUE = 1000; // valor máximo de nodos
 
-  public int[] findRedundantConnection(int[][] edges) {
-    List<Set<Integer>> adjList = new ArrayList<>();
+  public int[] findRedundantConnection(int[][] edges) { // O(n^2)
+    List<Set<Integer>> adjList = new ArrayList<>(); // creamos una lista de conjuntos para almacenar las aristas
     for (int i = 0; i < MAX_NODE_VALUE; i++)
       adjList.add(new HashSet<>());
 
