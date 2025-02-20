@@ -18,8 +18,8 @@ public class NumberOfProvincesSolution { // O(n^2)
   public int numberOfProvinces(int[][] isConnected) { // funcion principal que recibe la matriz de adyacencia
     boolean[] visited = new boolean[isConnected.length]; // creamos un array de booleanos para saber si ya visitamos un
                                                          // nodo
-    int count = 0;
-    for (int i = 0; i < isConnected.length; i++) {
+    int count = 0; // contador de provincias
+    for (int i = 0; i < isConnected.length; i++) { // recorremos la matriz de adyacencia
       if (!visited[i]) {
         dfs(isConnected, visited, i);
         count++;
