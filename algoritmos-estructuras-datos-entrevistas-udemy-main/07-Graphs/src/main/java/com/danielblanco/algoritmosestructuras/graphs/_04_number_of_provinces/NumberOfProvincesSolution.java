@@ -33,7 +33,7 @@ public class NumberOfProvincesSolution { // O(n^2)
       if (other != city && isConnected[city][other] == 1 && !visited[other]) { // si el nodo es diferente al nodo actual
                                                                                // y esta conectado y no lo hemos
                                                                                // visitado
-        visited[other] = true;
+        visited[other] = true; // marcamos el nodo como visitado
         dfs(isConnected, visited, other);
       }
     }
