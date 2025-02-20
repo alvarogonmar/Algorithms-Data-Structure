@@ -16,7 +16,8 @@ package com.danielblanco.algoritmosestructuras.graphs._04_number_of_provinces;
  */
 public class NumberOfProvincesSolution { // O(n^2)
   public int numberOfProvinces(int[][] isConnected) { // funcion principal que recibe la matriz de adyacencia
-    boolean[] visited = new boolean[isConnected.length];
+    boolean[] visited = new boolean[isConnected.length]; // creamos un array de booleanos para saber si ya visitamos un
+                                                         // nodo
     int count = 0;
     for (int i = 0; i < isConnected.length; i++) {
       if (!visited[i]) {
