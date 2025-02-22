@@ -27,7 +27,7 @@ public class RedundantConnectionSolution {
     for (int i = 0; i < MAX_NODE_VALUE; i++) // recorremos el valor máximo de nodos
       adjList.add(new HashSet<>()); // añadimos un conjunto vacío a la lista
 
-    for (int[] edge : edges) {
+    for (int[] edge : edges) { // recorremos las aristas
       int first = edge[0];
       int second = edge[1];
       if (dfs(first, second, -1, adjList)) {
