@@ -33,7 +33,7 @@ public class RedundantConnectionSolution {
       if (dfs(first, second, -1, adjList)) { // si existe un camino entre los nodos
         return edge; // devolvemos la arista
       } else {
-        adjList.get(first).add(second);
+        adjList.get(first).add(second); // añadimos el nodo destino al conjunto del nodo origen
         adjList.get(second).add(first);
       }
     }
