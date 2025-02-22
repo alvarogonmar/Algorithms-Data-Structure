@@ -29,7 +29,7 @@ public class RedundantConnectionSolution {
 
     for (int[] edge : edges) { // recorremos las aristas
       int first = edge[0]; // nodo origen
-      int second = edge[1];
+      int second = edge[1]; // nodo destino
       if (dfs(first, second, -1, adjList)) {
         return edge;
       } else {
