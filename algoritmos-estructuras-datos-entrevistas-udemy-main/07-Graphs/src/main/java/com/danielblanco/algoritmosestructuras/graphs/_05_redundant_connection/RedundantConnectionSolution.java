@@ -30,7 +30,7 @@ public class RedundantConnectionSolution {
     for (int[] edge : edges) { // recorremos las aristas
       int first = edge[0]; // nodo origen
       int second = edge[1]; // nodo destino
-      if (dfs(first, second, -1, adjList)) {
+      if (dfs(first, second, -1, adjList)) { // si existe un camino entre los nodos
         return edge;
       } else {
         adjList.get(first).add(second);
