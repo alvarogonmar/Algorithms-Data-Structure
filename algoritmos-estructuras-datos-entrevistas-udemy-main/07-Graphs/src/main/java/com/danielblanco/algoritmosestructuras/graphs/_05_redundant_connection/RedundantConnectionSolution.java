@@ -25,7 +25,7 @@ public class RedundantConnectionSolution {
   public int[] findRedundantConnection(int[][] edges) { // O(n^2)
     List<Set<Integer>> adjList = new ArrayList<>(); // creamos una lista de conjuntos para almacenar las aristas
     for (int i = 0; i < MAX_NODE_VALUE; i++) // recorremos el valor máximo de nodos
-      adjList.add(new HashSet<>());
+      adjList.add(new HashSet<>()); // añadimos un conjunto vacío a la lista
 
     for (int[] edge : edges) {
       int first = edge[0];
