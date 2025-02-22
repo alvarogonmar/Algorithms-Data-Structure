@@ -34,7 +34,7 @@ public class RedundantConnectionSolution {
         return edge; // devolvemos la arista
       } else {
         adjList.get(first).add(second); // añadimos el nodo destino al conjunto del nodo origen
-        adjList.get(second).add(first);
+        adjList.get(second).add(first); // añadimos el nodo origen al conjunto del nodo destino
       }
     }
     return null;
