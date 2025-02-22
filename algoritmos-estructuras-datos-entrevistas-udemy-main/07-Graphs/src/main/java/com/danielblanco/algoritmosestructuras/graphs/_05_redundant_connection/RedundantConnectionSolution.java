@@ -28,7 +28,7 @@ public class RedundantConnectionSolution {
       adjList.add(new HashSet<>()); // añadimos un conjunto vacío a la lista
 
     for (int[] edge : edges) { // recorremos las aristas
-      int first = edge[0];
+      int first = edge[0]; // nodo origen
       int second = edge[1];
       if (dfs(first, second, -1, adjList)) {
         return edge;
