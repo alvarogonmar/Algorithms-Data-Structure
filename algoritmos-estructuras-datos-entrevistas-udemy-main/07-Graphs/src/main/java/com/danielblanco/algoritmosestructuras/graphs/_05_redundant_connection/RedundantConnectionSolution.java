@@ -37,7 +37,7 @@ public class RedundantConnectionSolution {
         adjList.get(second).add(first); // añadimos el nodo origen al conjunto del nodo destino
       }
     }
-    return null;
+    return null; // si no existe arista redundante
   }
 
   private boolean dfs(int first, int second, int previous, List<Set<Integer>> adjList) {
