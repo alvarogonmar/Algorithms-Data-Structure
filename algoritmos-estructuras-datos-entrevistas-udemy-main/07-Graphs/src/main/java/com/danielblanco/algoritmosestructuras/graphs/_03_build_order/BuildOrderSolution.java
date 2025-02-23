@@ -38,7 +38,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
       depthSearchFirst(node, sortedProjects); // Llamar a la función depthSearchFirst
     }
 
-    Collections.reverse(sortedProjects);
+    Collections.reverse(sortedProjects); // Invertir la lista de proyectos
     return sortedProjects;
   }
 
