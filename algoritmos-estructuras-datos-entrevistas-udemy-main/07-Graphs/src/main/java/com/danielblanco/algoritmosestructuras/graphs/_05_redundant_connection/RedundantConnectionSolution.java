@@ -49,6 +49,6 @@ public class RedundantConnectionSolution {
       if (dfs(w, second, first, adjList)) // si existe un camino entre los nodos
         return true; // devolvemos verdadero
     }
-    return false;
+    return false; // si no existe camino entre los nodos devolvemos falso
   }
 }
