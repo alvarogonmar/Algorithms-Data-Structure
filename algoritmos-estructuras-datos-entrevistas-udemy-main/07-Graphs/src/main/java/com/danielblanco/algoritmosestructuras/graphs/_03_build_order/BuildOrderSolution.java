@@ -30,7 +30,8 @@ import java.util.List;
 public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrderSolution
   public List<String> buildOrder(String[] projects, String[][] dependencies) { // Cambio de nombre de buildOrder a
                                                                                // buildOrderSolution
-    Graph graph = buildDependencyGraph(projects, dependencies);
+    Graph graph = buildDependencyGraph(projects, dependencies); // Cambio de nombre de buildDependencyGraph a
+                                                                // buildDependencyGraph
 
     List<String> sortedProjects = new ArrayList<String>();
     for (GraphNode node : graph.nodes.values()) {
