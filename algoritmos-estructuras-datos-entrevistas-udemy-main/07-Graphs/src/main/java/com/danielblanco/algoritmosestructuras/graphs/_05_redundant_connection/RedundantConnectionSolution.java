@@ -47,7 +47,7 @@ public class RedundantConnectionSolution {
       if (w == previous) // si el nodo adyacente es igual al nodo anterior
         continue; // continuamos con el siguiente nodo
       if (dfs(w, second, first, adjList)) // si existe un camino entre los nodos
-        return true;
+        return true; // devolvemos verdadero
     }
     return false;
   }
