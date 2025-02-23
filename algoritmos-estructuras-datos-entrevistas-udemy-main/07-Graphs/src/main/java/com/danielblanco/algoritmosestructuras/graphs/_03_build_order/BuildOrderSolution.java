@@ -42,7 +42,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
     return sortedProjects; // Devolver la lista de proyectos
   }
 
-  private void depthSearchFirst(GraphNode node, List<String> orderedProjects) {
+  private void depthSearchFirst(GraphNode node, List<String> orderedProjects) { // función depthSearchFirst
     if (node.status == GraphNodeStatus.Unvisited) {
       node.status = GraphNodeStatus.Visiting;
       for (GraphNode adjacent : node.adjacents.values()) {
