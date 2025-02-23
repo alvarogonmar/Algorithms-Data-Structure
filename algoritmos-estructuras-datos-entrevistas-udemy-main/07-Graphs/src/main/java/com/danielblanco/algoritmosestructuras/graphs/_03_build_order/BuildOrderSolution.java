@@ -45,7 +45,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
   private void depthSearchFirst(GraphNode node, List<String> orderedProjects) { // función depthSearchFirst
     if (node.status == GraphNodeStatus.Unvisited) { // si el nodo no ha sido visitado
       node.status = GraphNodeStatus.Visiting; // marcar el nodo como visitado
-      for (GraphNode adjacent : node.adjacents.values()) {
+      for (GraphNode adjacent : node.adjacents.values()) { // recorrer los nodos adyacentes
         depthSearchFirst(adjacent, orderedProjects);
       }
 
