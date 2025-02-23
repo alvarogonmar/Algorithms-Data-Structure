@@ -44,7 +44,7 @@ public class RedundantConnectionSolution {
     if (first == second) // si los nodos son iguales
       return true; // devolvemos verdadero
     for (int w : adjList.get(first)) { // recorremos los nodos adyacentes al nodo origen
-      if (w == previous)
+      if (w == previous) // si el nodo adyacente es igual al nodo anterior
         continue;
       if (dfs(w, second, first, adjList))
         return true;
