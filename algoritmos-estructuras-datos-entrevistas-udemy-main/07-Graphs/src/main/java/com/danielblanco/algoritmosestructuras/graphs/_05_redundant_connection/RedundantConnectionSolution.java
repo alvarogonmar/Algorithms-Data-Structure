@@ -42,7 +42,7 @@ public class RedundantConnectionSolution {
 
   private boolean dfs(int first, int second, int previous, List<Set<Integer>> adjList) { // O(n)
     if (first == second) // si los nodos son iguales
-      return true;
+      return true; // devolvemos verdadero
     for (int w : adjList.get(first)) {
       if (w == previous)
         continue;
