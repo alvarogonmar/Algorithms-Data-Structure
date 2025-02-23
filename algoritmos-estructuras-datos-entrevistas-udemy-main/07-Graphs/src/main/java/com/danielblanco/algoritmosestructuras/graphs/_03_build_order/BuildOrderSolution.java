@@ -34,7 +34,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
                                                                 // buildDependencyGraph
 
     List<String> sortedProjects = new ArrayList<String>(); // Crear una lista de strings para almacenar los proyectos
-    for (GraphNode node : graph.nodes.values()) {
+    for (GraphNode node : graph.nodes.values()) { // Recorrer los nodos del grafo
       depthSearchFirst(node, sortedProjects);
     }
 
