@@ -33,7 +33,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
     Graph graph = buildDependencyGraph(projects, dependencies); // Cambio de nombre de buildDependencyGraph a
                                                                 // buildDependencyGraph
 
-    List<String> sortedProjects = new ArrayList<String>();
+    List<String> sortedProjects = new ArrayList<String>(); // Crear una lista de strings para almacenar los proyectos
     for (GraphNode node : graph.nodes.values()) {
       depthSearchFirst(node, sortedProjects);
     }
