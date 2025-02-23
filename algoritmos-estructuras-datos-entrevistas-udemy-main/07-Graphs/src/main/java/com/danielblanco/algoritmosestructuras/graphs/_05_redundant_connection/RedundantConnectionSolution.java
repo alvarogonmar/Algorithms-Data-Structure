@@ -19,7 +19,7 @@ import java.util.Set;
  *  Input: [[1,2],[2,3],[3,4],[1,4],[1,5]]
  *  Output: [1,4]
  */
-public class RedundantConnectionSolution {
+public class RedundantConnectionSolution { // O(n^2)
   private static final int MAX_NODE_VALUE = 1000; // valor máximo de nodos
 
   public int[] findRedundantConnection(int[][] edges) { // O(n^2)
