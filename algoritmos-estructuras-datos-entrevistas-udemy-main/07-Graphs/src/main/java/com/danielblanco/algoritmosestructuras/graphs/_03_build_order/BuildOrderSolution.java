@@ -39,7 +39,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
     }
 
     Collections.reverse(sortedProjects); // Invertir la lista de proyectos
-    return sortedProjects;
+    return sortedProjects; // Devolver la lista de proyectos
   }
 
   private void depthSearchFirst(GraphNode node, List<String> orderedProjects) {
