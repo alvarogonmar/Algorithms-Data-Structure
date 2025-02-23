@@ -40,7 +40,7 @@ public class RedundantConnectionSolution {
     return null; // si no existe arista redundante
   }
 
-  private boolean dfs(int first, int second, int previous, List<Set<Integer>> adjList) {
+  private boolean dfs(int first, int second, int previous, List<Set<Integer>> adjList) { // O(n)
     if (first == second)
       return true;
     for (int w : adjList.get(first)) {
