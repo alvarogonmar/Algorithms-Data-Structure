@@ -36,7 +36,7 @@ public class RouteBetweenNodesSolution { // O(n)
     while (!queue.isEmpty()) { // mientras la cola no esté vacía
       GraphNode next = queue.remove(); // sacamos el primer nodo de la cola
 
-      if (end == next)
+      if (end == next) // si el nodo de fin es igual al nodo actual
         return true;
 
       for (GraphNode n : next.adjacents.values()) {
