@@ -49,7 +49,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
         depthSearchFirst(adjacent, orderedProjects);
       }
 
-      node.status = GraphNodeStatus.Visited;
+      node.status = GraphNodeStatus.Visited; // marcar el nodo como visitado
       orderedProjects.add(node.value);
     } else if (node.status == GraphNodeStatus.Visiting) {
       throw new RuntimeException(); // Found a cycle, cannot be built
