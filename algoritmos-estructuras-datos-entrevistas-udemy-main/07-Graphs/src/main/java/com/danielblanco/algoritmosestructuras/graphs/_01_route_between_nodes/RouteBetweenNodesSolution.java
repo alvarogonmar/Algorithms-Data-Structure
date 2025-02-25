@@ -31,7 +31,7 @@ public class RouteBetweenNodesSolution { // O(n)
       return true; // devolvemos verdadero
 
     Queue<GraphNode> queue = new LinkedList<>(); // creamos una cola
-    queue.add(start);
+    queue.add(start); // añadimos el nodo de inicio a la cola
 
     while (!queue.isEmpty()) {
       GraphNode next = queue.remove();
