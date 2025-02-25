@@ -61,7 +61,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
       return null; // devolver nulo
     }
 
-    Graph graph = new Graph();
+    Graph graph = new Graph(); // crear un nuevo grafo
 
     for (String project : projects) {
       graph.getOrCreateNode(project);
