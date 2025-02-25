@@ -30,7 +30,7 @@ public class RouteBetweenNodesSolution { // O(n)
     if (start == end) // si los nodos son iguales
       return true; // devolvemos verdadero
 
-    Queue<GraphNode> queue = new LinkedList<>();
+    Queue<GraphNode> queue = new LinkedList<>(); // creamos una cola
     queue.add(start);
 
     while (!queue.isEmpty()) {
