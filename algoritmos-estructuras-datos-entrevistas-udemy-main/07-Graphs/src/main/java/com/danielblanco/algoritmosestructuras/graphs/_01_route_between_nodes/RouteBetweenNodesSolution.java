@@ -37,7 +37,7 @@ public class RouteBetweenNodesSolution { // O(n)
       GraphNode next = queue.remove(); // sacamos el primer nodo de la cola
 
       if (end == next) // si el nodo de fin es igual al nodo actual
-        return true;
+        return true; // devolvemos verdadero
 
       for (GraphNode n : next.adjacents.values()) {
         if (!n.status.equals(GraphNodeStatus.Visited)) {
