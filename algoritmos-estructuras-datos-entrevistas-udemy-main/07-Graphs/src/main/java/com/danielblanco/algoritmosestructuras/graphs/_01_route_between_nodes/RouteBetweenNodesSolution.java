@@ -34,7 +34,7 @@ public class RouteBetweenNodesSolution { // O(n)
     queue.add(start); // añadimos el nodo de inicio a la cola
 
     while (!queue.isEmpty()) { // mientras la cola no esté vacía
-      GraphNode next = queue.remove();
+      GraphNode next = queue.remove(); // sacamos el primer nodo de la cola
 
       if (end == next)
         return true;
