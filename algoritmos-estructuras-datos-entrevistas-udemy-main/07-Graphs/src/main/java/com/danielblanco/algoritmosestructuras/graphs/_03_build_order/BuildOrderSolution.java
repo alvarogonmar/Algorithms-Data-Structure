@@ -57,7 +57,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
   }
 
   private Graph buildDependencyGraph(String[] projects, String[][] dependencies) { // función buildDependencyGraph
-    if (dependencies == null || dependencies.length == 0) {
+    if (dependencies == null || dependencies.length == 0) { // si no hay dependencias
       return null;
     }
 
