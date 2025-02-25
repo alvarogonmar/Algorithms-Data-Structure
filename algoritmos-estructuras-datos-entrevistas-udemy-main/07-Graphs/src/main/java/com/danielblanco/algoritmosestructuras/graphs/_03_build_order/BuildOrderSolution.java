@@ -50,7 +50,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
       }
 
       node.status = GraphNodeStatus.Visited; // marcar el nodo como visitado
-      orderedProjects.add(node.value);
+      orderedProjects.add(node.value); // añadir el nodo a la lista de proyectos
     } else if (node.status == GraphNodeStatus.Visiting) {
       throw new RuntimeException(); // Found a cycle, cannot be built
     }
