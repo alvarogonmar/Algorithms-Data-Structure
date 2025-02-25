@@ -24,10 +24,11 @@ import java.util.Queue;
  * isRouteBetween(0, 1) = false
  * isRouteBetween(0, 0) = true
  */
-public class RouteBetweenNodesSolution {
+public class RouteBetweenNodesSolution { // O(n)
 
   public boolean isRouteBetween(Graph g, GraphNode start, GraphNode end) {
-    if (start == end) return true;
+    if (start == end)
+      return true;
 
     Queue<GraphNode> queue = new LinkedList<>();
     queue.add(start);
@@ -35,7 +36,8 @@ public class RouteBetweenNodesSolution {
     while (!queue.isEmpty()) {
       GraphNode next = queue.remove();
 
-      if (end == next) return true;
+      if (end == next)
+        return true;
 
       for (GraphNode n : next.adjacents.values()) {
         if (!n.status.equals(GraphNodeStatus.Visited)) {
