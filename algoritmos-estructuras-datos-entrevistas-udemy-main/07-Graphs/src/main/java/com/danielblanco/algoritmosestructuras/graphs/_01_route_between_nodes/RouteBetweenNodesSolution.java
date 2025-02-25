@@ -26,8 +26,8 @@ import java.util.Queue;
  */
 public class RouteBetweenNodesSolution { // O(n)
 
-  public boolean isRouteBetween(Graph g, GraphNode start, GraphNode end) {
-    if (start == end)
+  public boolean isRouteBetween(Graph g, GraphNode start, GraphNode end) { //
+    if (start == end) // si los nodos son iguales
       return true;
 
     Queue<GraphNode> queue = new LinkedList<>();
