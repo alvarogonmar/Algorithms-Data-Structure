@@ -68,7 +68,7 @@ public class BuildOrderSolution { // Cambio de nombre de BuildOrder a BuildOrder
     }
 
     for (String[] dep : dependencies) { // recorrer las dependencias
-      graph.addEdge(dep[0], dep[1]);
+      graph.addEdge(dep[0], dep[1]); // añadir una arista
     }
     return graph;
   }
