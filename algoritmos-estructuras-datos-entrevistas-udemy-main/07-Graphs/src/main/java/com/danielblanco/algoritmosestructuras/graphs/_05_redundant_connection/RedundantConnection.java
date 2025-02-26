@@ -19,6 +19,11 @@ import java.util.List;
 public class RedundantConnection {
 
   public int[] findRedundantConnection(int[][] edges) {
-    List<Set<Integer>> adjList = new ArrayList<>(); // creamos una lista de conjuntos para almacenar las aristas
+    List<Set<Integer>> adjList = new ArrayList<>(); // creamos una lista de conjuntos para almacenar las aristas,
+                                                    // representa si hay una conexion entre dos nodos
+    for (int i = 0; i < 1000; i++) { // recorremos el valor máximo de nodos
+      adjList.add(new HashSet<>()); // añadimos un conjunto vacío a la lista
+
+    }
   }
 }
