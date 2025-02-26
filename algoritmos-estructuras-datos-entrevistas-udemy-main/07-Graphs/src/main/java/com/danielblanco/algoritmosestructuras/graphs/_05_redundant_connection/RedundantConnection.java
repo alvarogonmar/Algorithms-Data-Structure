@@ -28,6 +28,9 @@ public class RedundantConnection {
     for (Int[] edge : edges) { // recorrer las aristas
       int first = edge[0]; // nodo origen
       int second = edge[1]; // nodo destino
+      if (dfs(first, second, adjList)) { // si existe un camino entre los nodos
+        return edge; // devolvemos la arista
+      }
     }
   }
 }
