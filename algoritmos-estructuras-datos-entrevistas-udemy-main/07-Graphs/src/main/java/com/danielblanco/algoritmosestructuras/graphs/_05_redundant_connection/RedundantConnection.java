@@ -23,7 +23,11 @@ public class RedundantConnection {
                                                     // representa si hay una conexion entre dos nodos
     for (int i = 0; i < 1000; i++) { // recorremos el valor máximo de nodos
       adjList.add(new HashSet<>()); // añadimos un conjunto vacío a la lista
+    }
 
+    for (Int[] edge : edges) { // recorrer las aristas
+      int first = edge[0]; // nodo origen
+      int second = edge[1]; // nodo destino
     }
   }
 }
