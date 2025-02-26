@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.graphs._05_redundant_connection;
 
+import java.util.List;
+
 /*
  * Dado un grafo formado tras añadir una arista entre dos nodos de un árbol, devuelve
  * la arista que puede ser eliminada para volver a formar un árbol.
@@ -17,6 +19,6 @@ package com.danielblanco.algoritmosestructuras.graphs._05_redundant_connection;
 public class RedundantConnection {
 
   public int[] findRedundantConnection(int[][] edges) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    List<Set<Integer>> adjList = new ArrayList<>(); // creamos una lista de conjuntos para almacenar las aristas
   }
 }
