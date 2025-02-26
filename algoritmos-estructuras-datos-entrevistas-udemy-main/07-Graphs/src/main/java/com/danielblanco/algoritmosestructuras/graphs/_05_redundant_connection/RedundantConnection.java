@@ -1,6 +1,9 @@
 package com.danielblanco.algoritmosestructuras.graphs._05_redundant_connection;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /*
  * Dado un grafo formado tras añadir una arista entre dos nodos de un árbol, devuelve
@@ -30,7 +33,11 @@ public class RedundantConnection {
       int second = edge[1]; // nodo destino
       if (dfs(first, second, adjList)) { // si existe un camino entre los nodos
         return edge; // devolvemos la arista
+      } else {
+        adjList.get(first).add(second); // añadimos el nodo destino al conjunto del nodo origen
+        adjList.get(second).add(first); // añadimos el nodo origen al conjunto del nodo destino
       }
+      return null;
     }
   }
 }
