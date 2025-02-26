@@ -40,4 +40,17 @@ public class RedundantConnection {
       return null;
     }
   }
+
+  private boolean dfs(int first, int second, List<Set<Integer>> adjList) {
+    if (first == second) { // si los nodos son iguales
+      return true; // devolvemos true
+    } else {
+      for (int other : adjList.get(first)) { // recorremos los nodos adyacentes al nodo origen
+        if (dfs(other, second, adjList)) { // si existe un camino entre el nodo adyacente y el nodo destino
+          return true; // devolvemos true
+        }
+      }
+      return false; // si no existe camino, devolvemos false
+    }
+  }
 }
