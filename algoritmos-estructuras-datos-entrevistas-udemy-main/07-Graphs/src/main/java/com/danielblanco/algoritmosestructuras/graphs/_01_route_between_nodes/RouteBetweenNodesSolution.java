@@ -47,6 +47,6 @@ public class RouteBetweenNodesSolution { // O(n)
       }
     }
 
-    return false;
+    return false; // si no existe camino, devolvemos falso
   }
 }
