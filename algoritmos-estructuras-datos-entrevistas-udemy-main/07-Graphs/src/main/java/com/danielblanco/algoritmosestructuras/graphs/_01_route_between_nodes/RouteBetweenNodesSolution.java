@@ -42,7 +42,7 @@ public class RouteBetweenNodesSolution { // O(n)
       for (GraphNode n : next.adjacents.values()) { // recorremos los nodos adyacentes al nodo actual
         if (!n.status.equals(GraphNodeStatus.Visited)) { // si el nodo no ha sido visitado
           queue.add(n); // añadimos el nodo a la cola
-          n.status = GraphNodeStatus.Visited;
+          n.status = GraphNodeStatus.Visited; // marcamos el nodo como visitado
         }
       }
     }
