@@ -24,7 +24,7 @@ public class InvertBinaryTreeSolution {
 
     Node tmp = root.left; // node temporal para guardar el nodo izquierdo
     root.left = invertTree(root.right); // invertir el nodo derecho
-    root.right = invertTree(tmp);
+    root.right = invertTree(tmp); // invertir el nodo izquierdo
 
     return root;
   }
