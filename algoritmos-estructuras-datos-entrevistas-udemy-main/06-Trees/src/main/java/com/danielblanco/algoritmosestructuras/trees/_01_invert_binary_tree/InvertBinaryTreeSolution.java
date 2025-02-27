@@ -26,6 +26,6 @@ public class InvertBinaryTreeSolution {
     root.left = invertTree(root.right); // invertir el nodo derecho
     root.right = invertTree(tmp); // invertir el nodo izquierdo
 
-    return root;
+    return root; // return O(1)
   }
 }
