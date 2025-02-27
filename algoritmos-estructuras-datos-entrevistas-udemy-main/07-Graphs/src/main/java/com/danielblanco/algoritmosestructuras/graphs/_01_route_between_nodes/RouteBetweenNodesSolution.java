@@ -40,7 +40,7 @@ public class RouteBetweenNodesSolution { // O(n)
         return true; // devolvemos verdadero
 
       for (GraphNode n : next.adjacents.values()) { // recorremos los nodos adyacentes al nodo actual
-        if (!n.status.equals(GraphNodeStatus.Visited)) {
+        if (!n.status.equals(GraphNodeStatus.Visited)) { // si el nodo no ha sido visitado
           queue.add(n);
           n.status = GraphNodeStatus.Visited;
         }
