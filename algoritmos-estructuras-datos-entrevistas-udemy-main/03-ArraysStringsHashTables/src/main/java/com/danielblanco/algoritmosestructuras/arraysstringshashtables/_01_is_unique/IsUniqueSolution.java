@@ -12,7 +12,7 @@ import java.util.Set;
 public class IsUniqueSolution {
 
   // Asumiendo que es ASCII. Dependiendo de la codificación serán más
-  private static int NUMBER_OF_CHARS = 128;
+  private static int NUMBER_OF_CHARS = 128; // funcion de complejidad O(1)
 
   public boolean isUnique(String s) {
     if (s.length() > NUMBER_OF_CHARS)
