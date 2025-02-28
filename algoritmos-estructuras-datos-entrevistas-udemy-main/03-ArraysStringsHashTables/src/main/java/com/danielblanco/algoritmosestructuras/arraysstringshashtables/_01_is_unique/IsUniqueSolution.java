@@ -14,8 +14,8 @@ public class IsUniqueSolution {
   // Asumiendo que es ASCII. Dependiendo de la codificación serán más
   private static int NUMBER_OF_CHARS = 128; // funcion de complejidad O(1)
 
-  public boolean isUnique(String s) {
-    if (s.length() > NUMBER_OF_CHARS)
+  public boolean isUnique(String s) { // O(n)
+    if (s.length() > NUMBER_OF_CHARS) // si la longitud de la cadena es mayor que el número de caracteres posibles
       return false;
 
     Set<Character> set = new HashSet<Character>();
