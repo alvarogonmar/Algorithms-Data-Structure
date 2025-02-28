@@ -22,7 +22,7 @@ public class IsUniqueSolution {
     for (char c : s.toCharArray()) { // recorremos la cadena
       if (set.contains(c)) // si el set ya contiene el caracter
         return false; // entonces no es única
-      set.add(c);
+      set.add(c); // si no lo contiene, lo añadimos al set
     }
 
     return true;
