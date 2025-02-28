@@ -18,7 +18,7 @@ public class IsUniqueSolution {
     if (s.length() > NUMBER_OF_CHARS) // si la longitud de la cadena es mayor que el número de caracteres posibles
       return false; // entonces no puede ser única
 
-    Set<Character> set = new HashSet<Character>();
+    Set<Character> set = new HashSet<Character>(); // set para almacenar los caracteres
     for (char c : s.toCharArray()) {
       if (set.contains(c))
         return false;
