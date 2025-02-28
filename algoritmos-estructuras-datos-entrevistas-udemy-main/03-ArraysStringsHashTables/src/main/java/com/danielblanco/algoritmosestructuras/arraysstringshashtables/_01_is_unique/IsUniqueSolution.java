@@ -19,7 +19,7 @@ public class IsUniqueSolution {
       return false; // entonces no puede ser única
 
     Set<Character> set = new HashSet<Character>(); // set para almacenar los caracteres
-    for (char c : s.toCharArray()) {
+    for (char c : s.toCharArray()) { // recorremos la cadena
       if (set.contains(c))
         return false;
       set.add(c);
