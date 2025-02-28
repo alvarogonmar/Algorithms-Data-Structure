@@ -21,7 +21,7 @@ public class IsUniqueSolution {
     Set<Character> set = new HashSet<Character>(); // set para almacenar los caracteres
     for (char c : s.toCharArray()) { // recorremos la cadena
       if (set.contains(c)) // si el set ya contiene el caracter
-        return false;
+        return false; // entonces no es única
       set.add(c);
     }
 
