@@ -25,6 +25,6 @@ public class IsUniqueSolution {
       set.add(c); // si no lo contiene, lo añadimos al set
     }
 
-    return true;
+    return true; // si no se ha encontrado ningún caracter repetido, entonces es única
   }
 }
