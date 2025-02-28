@@ -21,12 +21,14 @@ import java.util.Map;
 public class TwoSumSolution {
 
   public int[] twoSum(int[] nums, int target) {
-    if (nums == null || nums.length <= 1) return null;
+    if (nums == null || nums.length <= 1)
+      return null; // si el array es nulo o tiene menos de 2 elementos, no hay solución
 
     Map<Integer, Integer> complementMap = new HashMap<Integer, Integer>();
 
     for (int i = 0; i < nums.length; i++) {
-      if (complementMap.containsKey(nums[i])) return new int[] {complementMap.get(nums[i]), i};
+      if (complementMap.containsKey(nums[i]))
+        return new int[] { complementMap.get(nums[i]), i };
       int complement = target - nums[i];
       complementMap.put(complement, i);
     }
