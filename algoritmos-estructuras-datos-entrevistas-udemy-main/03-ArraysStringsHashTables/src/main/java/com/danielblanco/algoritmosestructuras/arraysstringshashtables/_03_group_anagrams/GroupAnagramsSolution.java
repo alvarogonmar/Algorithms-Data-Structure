@@ -19,7 +19,7 @@ public class GroupAnagramsSolution {
 
   public List<List<String>> groupAnagrams(String[] strs) { // O(n * m) time, O(n) space
     if (strs == null || strs.length == 0) // if para validar el input
-      return Collections.emptyList();
+      return Collections.emptyList(); // si el input es invalido, retornamos una lista vacia
 
     Map<String, List<String>> anagramMap = buildAnagramMap(strs);
     return new ArrayList<>(anagramMap.values());
