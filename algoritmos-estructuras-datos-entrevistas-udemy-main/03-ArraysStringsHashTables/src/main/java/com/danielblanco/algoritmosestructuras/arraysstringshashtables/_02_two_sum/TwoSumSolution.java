@@ -24,7 +24,7 @@ public class TwoSumSolution {
     if (nums == null || nums.length <= 1)
       return null; // si el array es nulo o tiene menos de 2 elementos, no hay solución
 
-    Map<Integer, Integer> complementMap = new HashMap<Integer, Integer>();
+    Map<Integer, Integer> complementMap = new HashMap<Integer, Integer>(); // key: complement, value: index
 
     for (int i = 0; i < nums.length; i++) {
       if (complementMap.containsKey(nums[i]))
