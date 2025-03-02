@@ -22,7 +22,7 @@ public class GroupAnagramsSolution {
       return Collections.emptyList(); // si el input es invalido, retornamos una lista vacia
 
     Map<String, List<String>> anagramMap = buildAnagramMap(strs); // O(n * m) time, O(n) space
-    return new ArrayList<>(anagramMap.values());
+    return new ArrayList<>(anagramMap.values()); // O(n) time, O(n) space
   }
 
   private Map<String, List<String>> buildAnagramMap(String[] strs) {
