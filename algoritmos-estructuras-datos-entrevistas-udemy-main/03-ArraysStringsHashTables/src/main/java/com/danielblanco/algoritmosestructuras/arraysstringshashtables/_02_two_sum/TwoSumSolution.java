@@ -28,7 +28,7 @@ public class TwoSumSolution {
 
     for (int i = 0; i < nums.length; i++) { // for para recorrer el array
       if (complementMap.containsKey(nums[i])) // si el complemento ya está en el map, devolvemos los índices
-        return new int[] { complementMap.get(nums[i]), i };
+        return new int[] { complementMap.get(nums[i]), i }; // devolvemos los índices
       int complement = target - nums[i];
       complementMap.put(complement, i);
     }
