@@ -17,8 +17,9 @@ import java.util.Map;
  */
 public class GroupAnagramsSolution {
 
-  public List<List<String>> groupAnagrams(String[] strs) {
-    if (strs == null || strs.length == 0) return Collections.emptyList();
+  public List<List<String>> groupAnagrams(String[] strs) { // O(n * m) time, O(n) space
+    if (strs == null || strs.length == 0)
+      return Collections.emptyList();
 
     Map<String, List<String>> anagramMap = buildAnagramMap(strs);
     return new ArrayList<>(anagramMap.values());
