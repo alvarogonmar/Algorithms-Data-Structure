@@ -21,7 +21,7 @@ public class GroupAnagramsSolution {
     if (strs == null || strs.length == 0) // if para validar el input
       return Collections.emptyList(); // si el input es invalido, retornamos una lista vacia
 
-    Map<String, List<String>> anagramMap = buildAnagramMap(strs);
+    Map<String, List<String>> anagramMap = buildAnagramMap(strs); // O(n * m) time, O(n) space
     return new ArrayList<>(anagramMap.values());
   }
 
