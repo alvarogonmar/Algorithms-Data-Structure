@@ -33,6 +33,6 @@ public class TwoSumSolution {
       complementMap.put(complement, i); // guardamos el complemento en el map
     }
 
-    return null;
+    return null; // si no hay solución, devolvemos null
   }
 }
