@@ -27,7 +27,7 @@ public class GroupAnagramsSolution {
 
   private Map<String, List<String>> buildAnagramMap(String[] strs) { // O(n * m) time, O(n) space
     Map<String, List<String>> anagramMap = new HashMap<String, List<String>>(); // map para guardar los anagramas
-    for (String s : strs) {
+    for (String s : strs) { // for para recorrer el array de strings
       String hash = getAnagramHash(s);
       if (!anagramMap.containsKey(hash)) {
         anagramMap.put(hash, new ArrayList<String>());
