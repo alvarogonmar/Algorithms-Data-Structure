@@ -30,7 +30,7 @@ public class GroupAnagramsSolution {
     for (String s : strs) { // for para recorrer el array de strings
       String hash = getAnagramHash(s); // string hash para guardar el hash de cada string
       if (!anagramMap.containsKey(hash)) { // if para validar si el hash ya existe en el map
-        anagramMap.put(hash, new ArrayList<String>());
+        anagramMap.put(hash, new ArrayList<String>()); // si no existe, creamos una nueva lista
       }
 
       anagramMap.get(hash).add(s);
