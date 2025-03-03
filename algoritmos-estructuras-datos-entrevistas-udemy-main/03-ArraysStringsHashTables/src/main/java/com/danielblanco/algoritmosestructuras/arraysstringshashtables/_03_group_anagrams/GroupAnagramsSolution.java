@@ -41,7 +41,7 @@ public class GroupAnagramsSolution {
 
   private String getAnagramHash(String s) { // funcion para obtener el hash de un string
     int[] letterCount = new int[26]; // array para contar las letras de la palabra
-    for (int c : s.toCharArray()) {
+    for (int c : s.toCharArray()) { // for para recorrer la palabra
       letterCount[c - 'a']++;
     }
 
