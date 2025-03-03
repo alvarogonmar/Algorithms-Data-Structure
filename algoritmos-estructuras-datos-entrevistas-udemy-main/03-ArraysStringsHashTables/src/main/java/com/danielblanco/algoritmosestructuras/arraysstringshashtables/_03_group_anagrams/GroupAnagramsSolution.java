@@ -39,7 +39,7 @@ public class GroupAnagramsSolution {
     return anagramMap; // retornamos el map con los anagramas
   }
 
-  private String getAnagramHash(String s) {
+  private String getAnagramHash(String s) { // funcion para obtener el hash de un string
     int[] letterCount = new int[26];
     for (int c : s.toCharArray()) {
       letterCount[c - 'a']++;
