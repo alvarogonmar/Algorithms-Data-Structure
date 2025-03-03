@@ -33,7 +33,7 @@ public class GroupAnagramsSolution {
         anagramMap.put(hash, new ArrayList<String>()); // si no existe, creamos una nueva lista
       }
 
-      anagramMap.get(hash).add(s);
+      anagramMap.get(hash).add(s); // agregamos el string a la lista correspondiente
     }
 
     return anagramMap;
