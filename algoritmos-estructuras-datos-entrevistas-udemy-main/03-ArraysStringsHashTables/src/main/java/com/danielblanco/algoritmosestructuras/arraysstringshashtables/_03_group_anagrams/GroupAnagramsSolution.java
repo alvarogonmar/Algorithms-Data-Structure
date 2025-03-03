@@ -36,7 +36,7 @@ public class GroupAnagramsSolution {
       anagramMap.get(hash).add(s); // agregamos el string a la lista correspondiente
     }
 
-    return anagramMap;
+    return anagramMap; // retornamos el map con los anagramas
   }
 
   private String getAnagramHash(String s) {
