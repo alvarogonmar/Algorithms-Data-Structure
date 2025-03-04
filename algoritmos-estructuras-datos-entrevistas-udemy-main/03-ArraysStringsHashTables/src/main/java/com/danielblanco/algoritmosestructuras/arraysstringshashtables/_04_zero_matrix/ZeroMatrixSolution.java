@@ -49,7 +49,7 @@ public class ZeroMatrixSolution { // O(n*m)
   private boolean hasFirstColAnyZeroes(int[][] matrix) { // funcion para saber si la primera columna tiene un 0
     for (int i = 0; i < matrix.length; i++) { // recorremos la primera columna
       if (matrix[i][0] == 0) { // si encontramos un 0
-        return true;
+        return true; // devolvemos true
       }
     }
     return false;
