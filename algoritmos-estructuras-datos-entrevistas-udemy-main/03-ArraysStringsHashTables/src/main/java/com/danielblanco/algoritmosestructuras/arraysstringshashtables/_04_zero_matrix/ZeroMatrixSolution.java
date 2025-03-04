@@ -15,10 +15,10 @@ package com.danielblanco.algoritmosestructuras.arraysstringshashtables._04_zero_
  *          0 0 0 0 0
  *          9 0 4 0 9
  */
-public class ZeroMatrixSolution {
+public class ZeroMatrixSolution { // O(n*m)
 
-  public void zeroMatrix(int[][] matrix) {
-    boolean firstRowHasZero = hasFirstRowAnyZeroes(matrix);
+  public void zeroMatrix(int[][] matrix) { // O(n*m)
+    boolean firstRowHasZero = hasFirstRowAnyZeroes(matrix); // boleano para saber si la primera fila tiene un 0
     boolean firstColHasZero = hasFirstColAnyZeroes(matrix);
 
     // Comprobamos los ceros en el resto de la matriz.
@@ -56,8 +56,10 @@ public class ZeroMatrixSolution {
   }
 
   /*
-   * Si encontramos un cero en F:C, escribimos un cero en la fila F de la primera columna y en la
-   * columna C de la primera fila. Así marcamos que la fila y la columna debe ser procesada.
+   * Si encontramos un cero en F:C, escribimos un cero en la fila F de la primera
+   * columna y en la
+   * columna C de la primera fila. Así marcamos que la fila y la columna debe ser
+   * procesada.
    */
   private void checkForZeroes(int[][] matrix) {
     for (int row = 1; row < matrix.length; row++) {
