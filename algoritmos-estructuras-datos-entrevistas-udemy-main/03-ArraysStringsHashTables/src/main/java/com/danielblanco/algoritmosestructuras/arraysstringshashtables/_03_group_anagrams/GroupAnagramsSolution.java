@@ -45,6 +45,6 @@ public class GroupAnagramsSolution {
       letterCount[c - 'a']++; // incrementamos el contador de la letra
     }
 
-    return Arrays.toString(letterCount);
+    return Arrays.toString(letterCount); // retornamos el hash
   }
 }
