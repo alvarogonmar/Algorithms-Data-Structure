@@ -32,7 +32,7 @@ public class ZeroMatrixSolution { // O(n*m)
       setRowToZero(matrix, 0); // Establecemos la primera fila a 0
     }
 
-    if (firstColHasZero) {
+    if (firstColHasZero) { // Si la primera columna tiene un 0
       setColToZero(matrix, 0);
     }
   }
