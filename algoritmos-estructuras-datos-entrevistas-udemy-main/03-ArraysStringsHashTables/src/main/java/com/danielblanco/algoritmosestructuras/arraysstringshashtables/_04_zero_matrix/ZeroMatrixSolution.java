@@ -24,7 +24,7 @@ public class ZeroMatrixSolution { // O(n*m)
     // Comprobamos los ceros en el resto de la matriz.
     checkForZeroes(matrix);
 
-    processRows(matrix);
+    processRows(matrix); // Procesamos las filas
     processColumns(matrix);
 
     // Si la primera fila o columna tenía un cero, debemos procesarlas también.
