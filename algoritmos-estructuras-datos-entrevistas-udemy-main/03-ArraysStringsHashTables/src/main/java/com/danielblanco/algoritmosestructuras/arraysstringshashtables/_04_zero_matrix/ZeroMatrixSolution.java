@@ -28,7 +28,7 @@ public class ZeroMatrixSolution { // O(n*m)
     processColumns(matrix); // Procesamos las columnas
 
     // Si la primera fila o columna tenía un cero, debemos procesarlas también.
-    if (firstRowHasZero) {
+    if (firstRowHasZero) { // Si la primera fila tiene un 0
       setRowToZero(matrix, 0);
     }
 
