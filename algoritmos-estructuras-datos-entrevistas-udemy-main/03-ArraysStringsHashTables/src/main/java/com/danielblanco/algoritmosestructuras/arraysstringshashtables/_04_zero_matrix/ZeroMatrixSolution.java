@@ -52,7 +52,7 @@ public class ZeroMatrixSolution { // O(n*m)
         return true; // devolvemos true
       }
     }
-    return false;
+    return false; // si no encontramos un 0 devolvemos false
   }
 
   /*
