@@ -38,7 +38,7 @@ public class ZeroMatrixSolution { // O(n*m)
   }
 
   private boolean hasFirstRowAnyZeroes(int[][] matrix) { // funcion para saber si la primera fila tiene un 0
-    for (int i = 0; i < matrix[0].length; i++) {
+    for (int i = 0; i < matrix[0].length; i++) { // recorremos la primera fila
       if (matrix[0][i] == 0) {
         return true;
       }
