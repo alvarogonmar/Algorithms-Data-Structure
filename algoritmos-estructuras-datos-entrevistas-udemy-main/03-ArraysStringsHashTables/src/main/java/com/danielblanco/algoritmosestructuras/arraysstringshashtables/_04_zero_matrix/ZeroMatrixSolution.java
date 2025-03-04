@@ -61,7 +61,7 @@ public class ZeroMatrixSolution { // O(n*m)
    * columna C de la primera fila. Así marcamos que la fila y la columna debe ser
    * procesada.
    */
-  private void checkForZeroes(int[][] matrix) {
+  private void checkForZeroes(int[][] matrix) { // funcion para comprobar los ceros en la matriz
     for (int row = 1; row < matrix.length; row++) {
       for (int col = 1; col < matrix[0].length; col++) {
         if (matrix[row][col] == 0) {
