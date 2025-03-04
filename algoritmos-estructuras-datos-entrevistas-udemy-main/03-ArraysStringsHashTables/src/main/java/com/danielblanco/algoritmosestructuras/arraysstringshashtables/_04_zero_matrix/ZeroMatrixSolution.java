@@ -19,7 +19,7 @@ public class ZeroMatrixSolution { // O(n*m)
 
   public void zeroMatrix(int[][] matrix) { // O(n*m)
     boolean firstRowHasZero = hasFirstRowAnyZeroes(matrix); // boleano para saber si la primera fila tiene un 0
-    boolean firstColHasZero = hasFirstColAnyZeroes(matrix);
+    boolean firstColHasZero = hasFirstColAnyZeroes(matrix); // boleano para saber si la primera columna tiene un 0
 
     // Comprobamos los ceros en el resto de la matriz.
     checkForZeroes(matrix);
