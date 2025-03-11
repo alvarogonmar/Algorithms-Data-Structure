@@ -64,7 +64,7 @@ public class ZeroMatrixSolution { // O(n*m)
   private void checkForZeroes(int[][] matrix) { // funcion para comprobar los ceros en la matriz
     for (int row = 1; row < matrix.length; row++) { // recorremos las filas
       for (int col = 1; col < matrix[0].length; col++) { // recorremos las columnas
-        if (matrix[row][col] == 0) {
+        if (matrix[row][col] == 0) { // si encontramos un 0
           matrix[row][0] = 0;
           matrix[0][col] = 0;
         }
