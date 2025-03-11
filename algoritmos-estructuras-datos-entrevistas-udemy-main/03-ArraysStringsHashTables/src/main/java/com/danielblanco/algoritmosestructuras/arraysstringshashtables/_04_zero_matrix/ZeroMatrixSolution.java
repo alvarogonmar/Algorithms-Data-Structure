@@ -74,7 +74,7 @@ public class ZeroMatrixSolution { // O(n*m)
 
   private void processRows(int[][] matrix) { // funcion para procesar las filas
     for (int row = 0; row < matrix.length; row++) { // recorremos las filas
-      if (matrix[row][0] == 0) {
+      if (matrix[row][0] == 0) { // si la primera columna de la fila es 0
         setRowToZero(matrix, row);
       }
     }
