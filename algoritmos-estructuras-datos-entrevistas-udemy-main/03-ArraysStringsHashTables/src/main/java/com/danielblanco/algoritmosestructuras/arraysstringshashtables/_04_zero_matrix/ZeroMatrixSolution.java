@@ -66,7 +66,7 @@ public class ZeroMatrixSolution { // O(n*m)
       for (int col = 1; col < matrix[0].length; col++) { // recorremos las columnas
         if (matrix[row][col] == 0) { // si encontramos un 0
           matrix[row][0] = 0; // establecemos la primera columna a 0
-          matrix[0][col] = 0;
+          matrix[0][col] = 0; // establecemos la primera fila a 0
         }
       }
     }
