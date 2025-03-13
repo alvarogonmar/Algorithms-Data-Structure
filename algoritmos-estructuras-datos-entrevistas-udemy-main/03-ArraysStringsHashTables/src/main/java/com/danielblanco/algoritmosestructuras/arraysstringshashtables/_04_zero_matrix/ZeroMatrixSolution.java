@@ -95,7 +95,7 @@ public class ZeroMatrixSolution { // O(n*m)
   }
 
   private void setColToZero(int[][] matrix, int col) { // funcion para establecer la columna a 0
-    for (int row = 0; row < matrix.length; row++) {
+    for (int row = 0; row < matrix.length; row++) { // recorremos las filas
       matrix[row][col] = 0;
     }
   }
