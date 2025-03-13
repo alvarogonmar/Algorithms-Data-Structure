@@ -82,7 +82,7 @@ public class ZeroMatrixSolution { // O(n*m)
 
   private void setRowToZero(int[][] matrix, int row) { // funcion para establecer la fila a 0
     for (int col = 0; col < matrix[0].length; col++) { // recorremos las columnas
-      matrix[row][col] = 0;
+      matrix[row][col] = 0; // establecemos la fila a 0
     }
   }
 
