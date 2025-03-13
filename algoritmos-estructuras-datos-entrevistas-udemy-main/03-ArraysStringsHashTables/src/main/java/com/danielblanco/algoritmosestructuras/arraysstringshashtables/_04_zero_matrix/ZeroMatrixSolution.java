@@ -86,7 +86,7 @@ public class ZeroMatrixSolution { // O(n*m)
     }
   }
 
-  private void processColumns(int[][] matrix) {
+  private void processColumns(int[][] matrix) { // funcion para procesar las columnas
     for (int col = 0; col < matrix[0].length; col++) {
       if (matrix[0][col] == 0) {
         setColToZero(matrix, col);
