@@ -37,7 +37,7 @@ public class SingleLinkedList {
     }
   }
 
-  public void print() {
+  public void print() { // Imprimir la linked list
     if (head == null) {
       System.out.println("END");
       return;
