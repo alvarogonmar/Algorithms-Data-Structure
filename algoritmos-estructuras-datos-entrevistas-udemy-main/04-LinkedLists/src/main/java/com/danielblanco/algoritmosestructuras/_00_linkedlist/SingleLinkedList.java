@@ -38,7 +38,7 @@ public class SingleLinkedList {
   }
 
   public void print() { // Imprimir la linked list
-    if (head == null) {
+    if (head == null) { // Si no hay nodos en la linked list
       System.out.println("END");
       return;
     }
