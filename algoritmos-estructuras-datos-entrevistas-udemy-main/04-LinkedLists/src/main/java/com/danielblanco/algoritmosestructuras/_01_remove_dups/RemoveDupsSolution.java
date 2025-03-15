@@ -18,7 +18,7 @@ public class RemoveDupsSolution { // O(n)
 
   public void removeDups(Node head) { // O(n)
     HashSet<Integer> foundValues = new HashSet<Integer>(); // HashSet para almacenar los valores encontrados
-    foundValues.add(head.value);
+    foundValues.add(head.value); // Añadimos el primer valor a la lista
     Node current = head;
 
     while (current != null && current.next != null) {
