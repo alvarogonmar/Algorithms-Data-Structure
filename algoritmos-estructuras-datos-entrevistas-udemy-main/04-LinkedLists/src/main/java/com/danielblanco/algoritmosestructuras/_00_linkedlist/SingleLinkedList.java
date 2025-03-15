@@ -43,7 +43,7 @@ public class SingleLinkedList {
       return; // Salir del metodo
     }
     Node current = head; // Puntero auxiliar para recorrer la linked list
-    while (current.next != null) {
+    while (current.next != null) { // Mientras no lleguemos al final de la linked list
       System.out.print(current.value + " -> ");
       current = current.next;
     }
