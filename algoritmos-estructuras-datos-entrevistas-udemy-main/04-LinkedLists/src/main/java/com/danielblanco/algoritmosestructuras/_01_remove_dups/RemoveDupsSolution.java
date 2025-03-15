@@ -14,10 +14,10 @@ import java.util.HashSet;
  *
  * Follow-up: ¿Cuál sería tu solución si no pudieras utilizar memoria adicional?
  */
-public class RemoveDupsSolution {
+public class RemoveDupsSolution { // O(n)
 
-  public void removeDups(Node head) {
-    HashSet<Integer> foundValues = new HashSet<Integer>();
+  public void removeDups(Node head) { // O(n)
+    HashSet<Integer> foundValues = new HashSet<Integer>(); // HashSet para almacenar los valores encontrados
     foundValues.add(head.value);
     Node current = head;
 
