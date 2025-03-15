@@ -47,6 +47,6 @@ public class SingleLinkedList {
       System.out.print(current.value + " -> "); // Imprimir el valor del nodo actual
       current = current.next; // Avanzar al siguiente nodo
     }
-    System.out.println(current.value + " -> END");
+    System.out.println(current.value + " -> END"); // Imprimir el valor del ultimo nodo y END
   }
 }
