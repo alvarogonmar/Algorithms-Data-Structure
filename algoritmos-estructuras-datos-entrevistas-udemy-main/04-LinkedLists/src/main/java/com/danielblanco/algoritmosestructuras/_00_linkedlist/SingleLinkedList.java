@@ -40,7 +40,7 @@ public class SingleLinkedList {
   public void print() { // Imprimir la linked list
     if (head == null) { // Si no hay nodos en la linked list
       System.out.println("END"); // Imprimir END
-      return;
+      return; // Salir del metodo
     }
     Node current = head;
     while (current.next != null) {
