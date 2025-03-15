@@ -18,7 +18,7 @@ public class MergeTwoSortedListsSolution {
     // Se toman los nodos de forma ordenada hasta que se finalice una de las dos
     // listas
     Node current = dummy; // Nodo actual
-    while (list1 != null && list2 != null) {
+    while (list1 != null && list2 != null) { // Mientras no se haya finalizado ninguna de las dos listas
       if (list1.value <= list2.value) {
         current.next = list1;
         list1 = list1.next;
