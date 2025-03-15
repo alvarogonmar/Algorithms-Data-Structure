@@ -28,7 +28,7 @@ public class RemoveDupsSolution { // O(n)
       }
 
       // Por último avanzamos el nodo actual para seguir iterando sobre la lista
-      current = current.next;
+      current = current.next; // Avanzamos al siguiente nodo
     }
   }
 }
