@@ -12,10 +12,11 @@ import com.danielblanco.algoritmosestructuras._00_linkedlist.Node;
  */
 public class MergeTwoSortedListsSolution {
 
-  public Node mergeTwoLists(Node list1, Node list2) {
-    Node dummy = new Node(Integer.MIN_VALUE);
+  public Node mergeTwoLists(Node list1, Node list2) { // O(n)
+    Node dummy = new Node(Integer.MIN_VALUE); // Nodo dummy para el resultado
 
-    // Se toman los nodos de forma ordenada hasta que se finalice una de las dos listas
+    // Se toman los nodos de forma ordenada hasta que se finalice una de las dos
+    // listas
     Node current = dummy;
     while (list1 != null && list2 != null) {
       if (list1.value <= list2.value) {
