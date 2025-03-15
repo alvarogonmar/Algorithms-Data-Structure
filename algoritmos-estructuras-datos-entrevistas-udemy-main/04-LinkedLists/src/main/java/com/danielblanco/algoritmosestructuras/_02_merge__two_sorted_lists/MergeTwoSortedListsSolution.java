@@ -21,7 +21,7 @@ public class MergeTwoSortedListsSolution {
     while (list1 != null && list2 != null) { // Mientras no se haya finalizado ninguna de las dos listas
       if (list1.value <= list2.value) { // Si el valor de la lista 1 es menor o igual al de la lista 2
         current.next = list1; // Añadimos el nodo de la lista 1
-        list1 = list1.next;
+        list1 = list1.next; // Avanzamos al siguiente nodo de la lista 1
       } else {
         current.next = list2;
         list2 = list2.next;
