@@ -24,7 +24,7 @@ public class RemoveDupsSolution { // O(n)
     while (current != null && current.next != null) { // Mientras no lleguemos al final de la linked list
       if (!foundValues.add(current.next.value)) { // Si el valor ya ha sido encontrado
         // Si ya hemos encontrado ese nodo debemos eliminarlo
-        current.next = current.next.next;
+        current.next = current.next.next; // Saltamos el nodo actual
       }
 
       // Por último avanzamos el nodo actual para seguir iterando sobre la lista
