@@ -34,7 +34,7 @@ public class MergeTwoSortedListsSolution {
     if (list1 == null) { // Si la lista 1 ha finalizado
       appendList(current, list2); // Añadimos los elementos de la lista 2
     } else {
-      appendList(current, list1);
+      appendList(current, list1); // Añadimos los elementos de la lista 1
     }
 
     return dummy.next;
