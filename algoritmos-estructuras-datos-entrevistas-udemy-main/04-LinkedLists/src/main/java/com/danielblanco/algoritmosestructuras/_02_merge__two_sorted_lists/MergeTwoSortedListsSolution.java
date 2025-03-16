@@ -27,7 +27,7 @@ public class MergeTwoSortedListsSolution {
         list2 = list2.next; // Avanzamos al siguiente nodo de la lista 2
       }
 
-      current = current.next;
+      current = current.next; // Avanzamos al siguiente nodo
     }
 
     // Para acabar, se añaden los elementos de la lista que aún no hemos finalizado.
