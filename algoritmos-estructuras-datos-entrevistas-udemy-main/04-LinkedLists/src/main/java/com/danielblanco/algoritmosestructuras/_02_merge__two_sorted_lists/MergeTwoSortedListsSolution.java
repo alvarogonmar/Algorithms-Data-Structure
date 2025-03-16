@@ -31,7 +31,7 @@ public class MergeTwoSortedListsSolution {
     }
 
     // Para acabar, se añaden los elementos de la lista que aún no hemos finalizado.
-    if (list1 == null) {
+    if (list1 == null) { // Si la lista 1 ha finalizado
       appendList(current, list2);
     } else {
       appendList(current, list1);
