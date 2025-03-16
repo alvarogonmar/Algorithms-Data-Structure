@@ -37,7 +37,7 @@ public class MergeTwoSortedListsSolution {
       appendList(current, list1); // Añadimos los elementos de la lista 1
     }
 
-    return dummy.next;
+    return dummy.next; // Devolvemos el nodo dummy
   }
 
   private void appendList(Node current, Node listToAppend) {
