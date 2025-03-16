@@ -44,7 +44,7 @@ public class MergeTwoSortedListsSolution {
     while (listToAppend != null) { // Mientras no se haya finalizado la lista a añadir
       current.next = listToAppend; // Añadimos el nodo
       listToAppend = listToAppend.next; // Avanzamos al siguiente nodo
-      current = current.next;
+      current = current.next; // Avanzamos al siguiente nodo
     }
   }
 }
