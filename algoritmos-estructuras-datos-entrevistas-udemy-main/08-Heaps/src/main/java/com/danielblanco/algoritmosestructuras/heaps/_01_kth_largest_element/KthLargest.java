@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.heaps._01_kth_largest_element;
 
+import java.util.PriorityQueue;
+
 /*
  * Diseña una clase para obtener el kth elemento más grande de un stream de datos.
  *
@@ -17,6 +19,9 @@ package com.danielblanco.algoritmosestructuras.heaps._01_kth_largest_element;
  *    add(8) = 4
  */
 public class KthLargest {
+
+  private int k;
+  private PriorityQueue<Integer> heap;
 
   public KthLargest(int k, int[] nums) {
     throw new UnsupportedOperationException("Not implemented yet");
