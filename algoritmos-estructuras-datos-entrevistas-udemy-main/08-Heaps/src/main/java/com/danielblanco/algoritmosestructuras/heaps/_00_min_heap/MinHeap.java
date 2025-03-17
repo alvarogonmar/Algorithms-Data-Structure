@@ -13,11 +13,11 @@ public class MinHeap {
     Heap = new int[size];
   }
 
-  private int parentIndex(int i) {
+  private int parentIndex(int i) { // funcion para obtener el indice del padre
     return (i - 1) / 2;
   }
 
-  private int leftChildIndex(int i) {
+  private int leftChildIndex(int i) { // funcion para obtener el indice del hijo izquierdo
     return (i * 2) + 1;
   }
 
