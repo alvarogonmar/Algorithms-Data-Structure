@@ -21,7 +21,7 @@ public class MinHeap {
     return (i * 2) + 1;
   }
 
-  private int rightChildIndex(int i) {
+  private int rightChildIndex(int i) { // funcion para obtener el indice del hijo derecho
     return (i * 2) + 2;
   }
 
