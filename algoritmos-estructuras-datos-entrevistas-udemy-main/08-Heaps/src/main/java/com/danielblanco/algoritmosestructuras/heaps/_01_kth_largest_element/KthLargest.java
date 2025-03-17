@@ -30,6 +30,10 @@ public class KthLargest {
     for (int num : nums) {
       heap.add(num);
     }
+
+    while (heap.size() > k) {
+      heap.poll();
+    }
   }
 
   public int add(int val) {
