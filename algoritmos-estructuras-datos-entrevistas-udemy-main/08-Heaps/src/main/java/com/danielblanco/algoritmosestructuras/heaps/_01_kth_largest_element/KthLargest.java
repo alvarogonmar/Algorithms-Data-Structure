@@ -32,7 +32,7 @@ public class KthLargest {
     }
 
     while (heap.size() > k) {
-      heap.poll();
+      heap.poll(); // Elimina el elemento más pequeño
     }
   }
 
