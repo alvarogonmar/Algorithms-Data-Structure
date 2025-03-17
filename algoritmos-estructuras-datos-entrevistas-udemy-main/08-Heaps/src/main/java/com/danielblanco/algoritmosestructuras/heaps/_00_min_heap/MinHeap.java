@@ -46,7 +46,7 @@ public class MinHeap {
     size++;
   }
 
-  public int extractMin() {
+  public int extractMin() { // funcion para extraer el minimo del heap
     if (size <= 0)
       return Integer.MIN_VALUE;
 
