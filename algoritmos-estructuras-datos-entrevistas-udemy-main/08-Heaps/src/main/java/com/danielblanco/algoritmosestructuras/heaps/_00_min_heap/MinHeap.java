@@ -56,7 +56,7 @@ public class MinHeap {
     return popped;
   }
 
-  private void minHeapify(int i) {
+  private void minHeapify(int i) { // funcion para mantener la propiedad de heap
     if (!isLeaf(i)) {
       if (Heap[i] > Heap[leftChildIndex(i)] || Heap[i] > Heap[rightChildIndex(i)]) {
         if (Heap[leftChildIndex(i)] < Heap[rightChildIndex(i)]) {
