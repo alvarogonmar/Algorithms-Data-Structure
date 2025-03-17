@@ -25,7 +25,7 @@ public class MinHeap {
     return (i * 2) + 2;
   }
 
-  private boolean isLeaf(int i) {
+  private boolean isLeaf(int i) { // funcion para saber si un nodo es hoja
     if (rightChildIndex(i) >= size && leftChildIndex(i) >= size) {
       return true;
     }
