@@ -32,7 +32,7 @@ public class MinHeap {
     return false;
   }
 
-  public void insert(int element) {
+  public void insert(int element) { // funcion para insertar un elemento en el heap
     if (size >= maxSize) {
       return;
     }
