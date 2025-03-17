@@ -24,7 +24,8 @@ public class KthLargest {
   private PriorityQueue<Integer> heap;
 
   public KthLargest(int k, int[] nums) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    this.k = k; // kth elemento más grande
+    heap = new PriorityQueue<>();
   }
 
   public int add(int val) {
