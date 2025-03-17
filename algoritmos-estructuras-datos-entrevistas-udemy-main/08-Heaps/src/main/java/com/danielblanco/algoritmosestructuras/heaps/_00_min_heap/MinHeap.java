@@ -7,7 +7,7 @@ public class MinHeap {
   private int size;
   private int maxSize;
 
-  public MinHeap(int size) {
+  public MinHeap(int size) { // funcion para crear un heap
     this.maxSize = size;
     this.size = 0;
     Heap = new int[size];
@@ -47,7 +47,8 @@ public class MinHeap {
   }
 
   public int extractMin() {
-    if (size <= 0) return Integer.MIN_VALUE;
+    if (size <= 0)
+      return Integer.MIN_VALUE;
 
     int popped = Heap[0];
     Heap[0] = Heap[--size];
@@ -72,8 +73,10 @@ public class MinHeap {
   public void printHeapPretty() {
     for (int i = 0; i < (size / 2); i++) {
       System.out.print("Parent : " + Heap[i]);
-      if (leftChildIndex(i) < size) System.out.print(" Left : " + Heap[leftChildIndex(i)]);
-      if (rightChildIndex(i) < size) System.out.print(" Right :" + Heap[rightChildIndex(i)]);
+      if (leftChildIndex(i) < size)
+        System.out.print(" Left : " + Heap[leftChildIndex(i)]);
+      if (rightChildIndex(i) < size)
+        System.out.print(" Right :" + Heap[rightChildIndex(i)]);
       System.out.println();
     }
   }
