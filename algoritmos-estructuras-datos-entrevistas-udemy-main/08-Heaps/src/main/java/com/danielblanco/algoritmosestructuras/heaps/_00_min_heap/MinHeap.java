@@ -57,11 +57,12 @@ public class MinHeap {
   }
 
   private void minHeapify(int i) { // funcion para mantener la propiedad de heap
-    if (!isLeaf(i)) {
-      if (Heap[i] > Heap[leftChildIndex(i)] || Heap[i] > Heap[rightChildIndex(i)]) {
-        if (Heap[leftChildIndex(i)] < Heap[rightChildIndex(i)]) {
-          swap(i, leftChildIndex(i));
-          minHeapify(leftChildIndex(i));
+    if (!isLeaf(i)) { // si no es hoja
+      if (Heap[i] > Heap[leftChildIndex(i)] || Heap[i] > Heap[rightChildIndex(i)]) { // si el nodo es mayor que alguno
+                                                                                     // de sus hijos
+        if (Heap[leftChildIndex(i)] < Heap[rightChildIndex(i)]) { // si el hijo izquierdo es menor que el derecho
+          swap(i, leftChildIndex(i)); // intercambiamos el nodo con el hijo izquierdo
+          minHeapify(leftChildIndex(i)); // llamamos recursivamente a la funcion con el hijo izquierdo
         } else {
           swap(i, rightChildIndex(i));
           minHeapify(rightChildIndex(i));
