@@ -41,5 +41,6 @@ public class KthLargest {
     if (heap.size() > k) {
       heap.poll();
     }
+    return heap.peek();
   }
 }
