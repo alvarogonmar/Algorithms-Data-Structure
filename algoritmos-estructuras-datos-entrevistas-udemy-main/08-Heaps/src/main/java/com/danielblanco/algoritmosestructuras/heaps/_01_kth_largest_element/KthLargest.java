@@ -37,6 +37,9 @@ public class KthLargest {
   }
 
   public int add(int val) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    heap.add(val);
+    if (heap.size() > k) {
+      heap.poll();
+    }
   }
 }
