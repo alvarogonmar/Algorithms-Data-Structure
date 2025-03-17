@@ -26,6 +26,10 @@ public class KthLargest {
   public KthLargest(int k, int[] nums) {
     this.k = k; // kth elemento más grande
     heap = new PriorityQueue<>();
+
+    for (int num : nums) {
+      heap.add(num);
+    }
   }
 
   public int add(int val) {
