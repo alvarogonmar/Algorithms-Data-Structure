@@ -28,5 +28,8 @@ public class RelativeRanks {
       maxHeap.add(i);
     }
     int position = 1;
+    while (!heap.isEmpty()) {
+      int player = heap.poll();
+    }
   }
 }
