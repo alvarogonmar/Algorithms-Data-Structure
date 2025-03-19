@@ -52,6 +52,8 @@ public class WordSearch {
         continue;
       }
       TrieNode current = root;
-      
+      for (int i = 0; i < word.length(); i++) {
+        char c = word.charAt(i);
+        
   }
 }
