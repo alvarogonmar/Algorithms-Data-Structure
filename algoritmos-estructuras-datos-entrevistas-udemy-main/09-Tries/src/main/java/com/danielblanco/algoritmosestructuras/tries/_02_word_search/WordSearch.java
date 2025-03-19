@@ -57,6 +57,8 @@ public class WordSearch {
         if (!current.map.containsKey(c)) {
           current.map.put(c, new TrieNode());
         }
-        
+        current = current.map.get(c);
+      }
+      
   }
 }
