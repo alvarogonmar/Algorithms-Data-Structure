@@ -47,6 +47,10 @@ public class WordSearch {
 
   private TrieNode buildTrie(String[] words, int maxLen) {
     TrieNode root = new TrieNode();
-
+    for (String word : words) {
+      if (word == null || word.length() == 0 || word.length() > maxLen) {
+        continue;
+      }
+      
   }
 }
