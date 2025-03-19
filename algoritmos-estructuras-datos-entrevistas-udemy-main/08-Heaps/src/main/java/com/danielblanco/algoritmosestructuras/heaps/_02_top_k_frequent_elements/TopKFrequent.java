@@ -24,7 +24,8 @@ public class TopKFrequent {
   public int[] topKFrequent(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<>();
     for (int num : nums) {
-
+      map.put(num, map.getOrDefault(num, 0) + 1); // Incrementa el valor de la clave num en 1 si existe, si no, lo
+                                                  // inicializa en 0 y le suma 1
     }
   }
 }
