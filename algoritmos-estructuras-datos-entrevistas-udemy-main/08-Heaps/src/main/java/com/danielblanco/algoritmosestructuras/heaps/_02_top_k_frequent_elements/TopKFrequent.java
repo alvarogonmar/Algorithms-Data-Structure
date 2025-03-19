@@ -23,5 +23,8 @@ public class TopKFrequent {
 
   public int[] topKFrequent(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<>();
+    for (int num : nums) {
+
+    }
   }
 }
