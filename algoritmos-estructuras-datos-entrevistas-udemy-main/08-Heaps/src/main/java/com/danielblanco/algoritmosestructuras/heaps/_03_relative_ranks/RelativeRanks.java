@@ -19,5 +19,6 @@ public class RelativeRanks {
 
   public String[] findRelativeRanks(int[] score) {
     int numberOfParticipants = score.length;
+    String[] result = new String[numberOfParticipants];
   }
 }
