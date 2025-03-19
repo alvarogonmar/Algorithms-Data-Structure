@@ -48,5 +48,6 @@ public class RelativeRanks {
       }
       position++;
     }
+    return result;
   }
 }
