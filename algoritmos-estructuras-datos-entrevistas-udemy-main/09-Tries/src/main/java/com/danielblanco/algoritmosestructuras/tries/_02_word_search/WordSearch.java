@@ -59,6 +59,8 @@ public class WordSearch {
         }
         current = current.map.get(c);
       }
-      
+      current.word = word;
+    }
+    return root;
   }
 }
