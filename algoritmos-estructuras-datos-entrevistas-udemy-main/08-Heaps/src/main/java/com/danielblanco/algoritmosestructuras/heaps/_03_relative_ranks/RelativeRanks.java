@@ -18,6 +18,6 @@ package com.danielblanco.algoritmosestructuras.heaps._03_relative_ranks;
 public class RelativeRanks {
 
   public String[] findRelativeRanks(int[] score) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    int numberOfParticipants = score.length;
   }
 }
