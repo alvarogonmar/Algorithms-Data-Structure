@@ -35,5 +35,8 @@ public class WordSearch {
 
   public List<String> findWords(char[][] board, String[] words) {
     List<String> result = new ArrayList<>();
+
+    int rows = board.length;
+    int cols = board[0].length;
   }
 }
