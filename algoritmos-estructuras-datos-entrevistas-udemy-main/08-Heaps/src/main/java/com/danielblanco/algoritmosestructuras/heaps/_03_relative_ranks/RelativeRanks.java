@@ -43,8 +43,10 @@ public class RelativeRanks {
           break;
 
         default:
+          result[player] = Integer.toString(position);
           break;
       }
+      position++;
     }
   }
 }
