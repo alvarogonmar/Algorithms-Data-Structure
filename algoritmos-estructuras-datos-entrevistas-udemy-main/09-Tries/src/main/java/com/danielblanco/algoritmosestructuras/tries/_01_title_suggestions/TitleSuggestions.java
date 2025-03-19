@@ -35,5 +35,6 @@ public class TitleSuggestions {
     for (int i = 0; i < prefixes.length; i++) {
       result[i] = dictionary.search(prefixes[i]);
     }
+    return result;
   }
 }
