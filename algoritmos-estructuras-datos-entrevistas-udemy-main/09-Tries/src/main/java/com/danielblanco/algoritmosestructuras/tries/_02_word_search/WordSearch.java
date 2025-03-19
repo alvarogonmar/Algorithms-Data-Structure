@@ -51,6 +51,7 @@ public class WordSearch {
       if (word == null || word.length() == 0 || word.length() > maxLen) {
         continue;
       }
+      TrieNode current = root;
       
   }
 }
