@@ -30,7 +30,7 @@ public class TopKFrequent {
       map.put(num, map.getOrDefault(num, 0) + 1); // Incrementa el valor de la clave num en 1 si existe, si no, lo
                                                   // inicializa en 0 y le suma 1
     }
-    PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
+    PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
     for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
       maxHeap.add(entry);
     }
