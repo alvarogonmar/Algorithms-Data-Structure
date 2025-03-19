@@ -38,5 +38,7 @@ public class WordSearch {
 
     int rows = board.length;
     int cols = board[0].length;
+
+    TrieNode root = buildTrie(words, rows * cols);
   }
 }
