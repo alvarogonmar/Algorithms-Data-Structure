@@ -1,5 +1,6 @@
 package com.danielblanco.algoritmosestructuras.tries._02_word_search;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -22,6 +23,11 @@ import java.util.List;
  *
  */
 public class WordSearch {
+
+  class TrieNode {
+    HashMap<Character, TrieNode> map;
+    String word;
+  }
 
   public List<String> findWords(char[][] board, String[] words) {
     throw new UnsupportedOperationException("Not implemented yet");
