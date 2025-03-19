@@ -32,5 +32,8 @@ public class TitleSuggestions {
       dictionary.insert(book);
     }
     boolean[] result = new boolean[prefixes.length];
+    for (int i = 0; i < prefixes.length; i++) {
+      result[i] = dictionary.search(prefixes[i]);
+    }
   }
 }
