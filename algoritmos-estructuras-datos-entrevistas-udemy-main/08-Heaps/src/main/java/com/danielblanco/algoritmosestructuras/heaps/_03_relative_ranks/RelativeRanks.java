@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.heaps._03_relative_ranks;
 
+import java.util.PriorityQueue;
+
 /*
  * Recibes un array de puntuaciones, en el que el valor de la posición i se corresponde
  * con la puntuación del participante i. No puede haber puntuaciones repetidas.
@@ -20,5 +22,7 @@ public class RelativeRanks {
   public String[] findRelativeRanks(int[] score) {
     int numberOfParticipants = score.length;
     String[] result = new String[numberOfParticipants];
+
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> score[b] - score[a]);
   }
 }
