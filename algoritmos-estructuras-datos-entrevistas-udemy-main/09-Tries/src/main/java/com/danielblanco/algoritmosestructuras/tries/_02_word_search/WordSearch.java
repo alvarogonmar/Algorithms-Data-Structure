@@ -45,6 +45,10 @@ public class WordSearch {
     return result;
   }
 
+  private void dfs(char[][] board, TrieNode current, int row, int col, List<String> result) {
+
+  }
+
   private TrieNode buildTrie(String[] words, int maxLen) {
     TrieNode root = new TrieNode();
     for (String word : words) {
