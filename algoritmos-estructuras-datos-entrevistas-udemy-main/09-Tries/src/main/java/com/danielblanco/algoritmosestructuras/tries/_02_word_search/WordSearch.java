@@ -27,6 +27,10 @@ public class WordSearch {
   class TrieNode {
     HashMap<Character, TrieNode> map;
     String word;
+
+    public TrieNode() {
+      map = new HashMap<>();
+    }
   }
 
   public List<String> findWords(char[][] board, String[] words) {
