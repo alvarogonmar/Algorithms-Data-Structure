@@ -33,7 +33,7 @@ public class RelativeRanks {
 
       switch (position) {
         case 1:
-
+          result[player] = "Gold Medal";
           break;
 
         default:
