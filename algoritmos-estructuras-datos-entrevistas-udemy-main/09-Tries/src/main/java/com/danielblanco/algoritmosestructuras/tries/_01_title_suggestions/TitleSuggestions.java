@@ -27,6 +27,6 @@ package com.danielblanco.algoritmosestructuras.tries._01_title_suggestions;
 public class TitleSuggestions {
 
   public boolean[] titleSuggestions(String[] books, String[] prefixes, boolean ignoreCase) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Trie dictionary = new Trie(ignoreCase);
   }
 }
