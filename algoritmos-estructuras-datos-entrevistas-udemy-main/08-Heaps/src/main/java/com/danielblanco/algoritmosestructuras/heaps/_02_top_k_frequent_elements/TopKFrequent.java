@@ -22,6 +22,6 @@ package com.danielblanco.algoritmosestructuras.heaps._02_top_k_frequent_elements
 public class TopKFrequent {
 
   public int[] topKFrequent(int[] nums, int k) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    Map<Integer, Integer> map = new HashMap<>();
   }
 }
