@@ -35,5 +35,9 @@ public class TopKFrequent {
       maxHeap.add(entry);
     }
     int[] result = new int[k];
+    for (int i = 0; i < k; i++) {
+      result[i] = maxHeap.poll().getKey();
+    }
+    return result;
   }
 }
