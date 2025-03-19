@@ -40,5 +40,7 @@ public class WordSearch {
     int cols = board[0].length;
 
     TrieNode root = buildTrie(words, rows * cols);
+
+    return result;
   }
 }
