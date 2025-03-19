@@ -54,6 +54,13 @@ public class WordSearch {
       result.add(current.word);
       current.word = null;
     }
+    if (row < 0
+        || row >= board.length
+        || col < 0
+        || col >= board[0].length
+        || !current.map.containsKey(board[row][col])) {
+      return;
+    }
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) {
