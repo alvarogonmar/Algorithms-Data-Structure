@@ -31,5 +31,6 @@ public class TitleSuggestions {
     for (String book : books) {
       dictionary.insert(book);
     }
+    boolean[] result = new boolean[prefixes.length];
   }
 }
