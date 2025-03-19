@@ -49,6 +49,10 @@ public class WordSearch {
     if (current == null) {
       return;
     }
+
+    if (current.word != null) {
+
+    }
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) {
