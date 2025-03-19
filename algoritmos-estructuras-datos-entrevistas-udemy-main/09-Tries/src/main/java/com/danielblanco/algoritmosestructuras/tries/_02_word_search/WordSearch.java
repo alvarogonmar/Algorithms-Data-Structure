@@ -1,5 +1,6 @@
 package com.danielblanco.algoritmosestructuras.tries._02_word_search;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -42,5 +43,10 @@ public class WordSearch {
     TrieNode root = buildTrie(words, rows * cols);
 
     return result;
+  }
+
+  private TrieNode buildTrie(String[] words, int maxLen) {
+    TrieNode root = new TrieNode();
+
   }
 }
