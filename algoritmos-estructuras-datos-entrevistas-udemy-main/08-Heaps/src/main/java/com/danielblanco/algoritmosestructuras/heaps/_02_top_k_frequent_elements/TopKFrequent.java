@@ -1,5 +1,8 @@
 package com.danielblanco.algoritmosestructuras.heaps._02_top_k_frequent_elements;
 
+import java.util.Map;
+import java.util.PriorityQueue;
+
 /*
  * Dado un conjunto de elementos y un valor k, devuelve los K elementos más frecuentes.
  * Se pueden devolver en cualquier orden.
@@ -27,5 +30,6 @@ public class TopKFrequent {
       map.put(num, map.getOrDefault(num, 0) + 1); // Incrementa el valor de la clave num en 1 si existe, si no, lo
                                                   // inicializa en 0 y le suma 1
     }
+    PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
   }
 }
