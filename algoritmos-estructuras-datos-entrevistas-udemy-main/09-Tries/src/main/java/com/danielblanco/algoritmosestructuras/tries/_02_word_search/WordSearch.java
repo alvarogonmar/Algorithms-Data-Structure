@@ -51,7 +51,8 @@ public class WordSearch {
     }
 
     if (current.word != null) {
-
+      result.add(current.word);
+      current.word = null;
     }
   }
 
