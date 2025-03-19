@@ -30,6 +30,15 @@ public class RelativeRanks {
     int position = 1;
     while (!heap.isEmpty()) {
       int player = heap.poll();
+
+      switch (position) {
+        case 1:
+
+          break;
+
+        default:
+          break;
+      }
     }
   }
 }
