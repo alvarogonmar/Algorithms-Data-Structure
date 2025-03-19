@@ -24,5 +24,8 @@ public class RelativeRanks {
     String[] result = new String[numberOfParticipants];
 
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> score[b] - score[a]);
+    for (int i = 0; i < numberOfParticipants; i++) {
+      maxHeap.add(i);
+    }
   }
 }
