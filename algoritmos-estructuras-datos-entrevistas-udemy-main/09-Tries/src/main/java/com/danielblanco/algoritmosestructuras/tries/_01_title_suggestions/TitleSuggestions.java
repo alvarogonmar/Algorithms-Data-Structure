@@ -28,5 +28,7 @@ public class TitleSuggestions {
 
   public boolean[] titleSuggestions(String[] books, String[] prefixes, boolean ignoreCase) {
     Trie dictionary = new Trie(ignoreCase);
+    for (String book : books) {
+    }
   }
 }
