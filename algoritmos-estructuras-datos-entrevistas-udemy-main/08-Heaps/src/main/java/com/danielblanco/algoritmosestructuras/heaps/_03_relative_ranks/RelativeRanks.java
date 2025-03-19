@@ -27,5 +27,6 @@ public class RelativeRanks {
     for (int i = 0; i < numberOfParticipants; i++) {
       maxHeap.add(i);
     }
+    int position = 1;
   }
 }
