@@ -34,6 +34,6 @@ public class WordSearch {
   }
 
   public List<String> findWords(char[][] board, String[] words) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    List<String> result = new ArrayList<>();
   }
 }
