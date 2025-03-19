@@ -35,6 +35,9 @@ public class RelativeRanks {
         case 1:
           result[player] = "Gold Medal";
           break;
+        case 2:
+          result[player] = "Silver Medal";
+          break;
 
         default:
           break;
