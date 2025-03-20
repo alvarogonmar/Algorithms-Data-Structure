@@ -41,6 +41,13 @@ public class WordSearch {
     int cols = board[0].length;
 
     TrieNode root = buildTrie(words, rows * cols);
+    for (int row = 0; row < rows; row++) {
+      for (int col = 0; col < cols; col++) {
+        if (root.map.containsKey(board[row][col])) {
+          dfs(board, root, row, col, result);
+        }
+      }
+    }
 
     return result;
   }
