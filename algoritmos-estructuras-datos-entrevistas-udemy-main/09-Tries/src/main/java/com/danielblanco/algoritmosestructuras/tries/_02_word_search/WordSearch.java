@@ -63,6 +63,9 @@ public class WordSearch {
     }
     TrieNode next = current.map.get(board[row][col]);
     dfs(board, next, row - 1, col, result);
+    dfs(board, next, row, col + 1, result);
+    dfs(board, next, row + 1, col, result);
+    dfs(board, next, row, col - 1, result);
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) {
