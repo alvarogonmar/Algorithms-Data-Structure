@@ -61,6 +61,8 @@ public class WordSearch {
         || !current.map.containsKey(board[row][col])) {
       return;
     }
+    TrieNode next = current.map.get(board[row][col]);
+    dfs(board, next, row - 1, col, result);
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) {
