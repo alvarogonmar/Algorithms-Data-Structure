@@ -62,6 +62,7 @@ public class WordSearch {
       return;
     }
     TrieNode next = current.map.get(board[row][col]);
+    board[row][col] = '#';
     dfs(board, next, row - 1, col, result);
     dfs(board, next, row, col + 1, result);
     dfs(board, next, row + 1, col, result);
