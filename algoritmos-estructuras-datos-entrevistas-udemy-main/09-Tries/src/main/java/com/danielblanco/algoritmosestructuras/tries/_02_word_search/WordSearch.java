@@ -37,7 +37,7 @@ public class WordSearch {
   public List<String> findWords(char[][] board, String[] words) { // método para encontrar palabras
     List<String> result = new ArrayList<>(); // lista de palabras
 
-    int rows = board.length;
+    int rows = board.length; // número de filas
     int cols = board[0].length;
 
     TrieNode root = buildTrie(words, rows * cols);
