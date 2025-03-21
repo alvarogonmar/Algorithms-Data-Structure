@@ -26,7 +26,7 @@ import java.util.List;
 public class WordSearch {
 
   class TrieNode { // clase para el nodo del trie
-    HashMap<Character, TrieNode> map;
+    HashMap<Character, TrieNode> map; // mapa de caracteres a nodos
     String word;
 
     public TrieNode() {
