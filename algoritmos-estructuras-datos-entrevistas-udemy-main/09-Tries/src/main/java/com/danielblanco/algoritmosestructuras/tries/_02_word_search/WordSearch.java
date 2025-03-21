@@ -29,7 +29,7 @@ public class WordSearch {
     HashMap<Character, TrieNode> map; // mapa de caracteres a nodos
     String word;
 
-    public TrieNode() {
+    public TrieNode() { // constructor de la clase
       map = new HashMap<>();
     }
   }
