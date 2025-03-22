@@ -8,7 +8,7 @@ public class Trie {
   }
 
   public void insert(String word) {
-    TrieNode currentNode = root;
+    TrieNode currentNode = root; // Start at the root
     String lowercaseWord = word.toLowerCase();
 
     for (char c : lowercaseWord.toCharArray()) {
@@ -29,7 +29,8 @@ public class Trie {
 
     for (char c : prefixLowercase.toCharArray()) {
       currentNode = currentNode.children.get(c);
-      if (currentNode == null) return false;
+      if (currentNode == null)
+        return false;
     }
 
     return true;
