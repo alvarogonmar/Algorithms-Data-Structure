@@ -12,7 +12,7 @@ public class Trie {
     String lowercaseWord = word.toLowerCase(); // Convert the word to lowercase
 
     for (char c : lowercaseWord.toCharArray()) { // iterar sobre cada caracter de la palabra
-      TrieNode child = currentNode.children.get(c);
+      TrieNode child = currentNode.children.get(c); // Verificar si el caracter ya existe en el nodo actual
       if (child == null) {
         child = new TrieNode();
         currentNode.children.put(c, child);
