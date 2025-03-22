@@ -24,7 +24,7 @@ public class Trie {
   }
 
   public boolean search(String prefix) {
-    TrieNode currentNode = root;
+    TrieNode currentNode = root; // Start at the root
     String prefixLowercase = prefix.toLowerCase();
 
     for (char c : prefixLowercase.toCharArray()) {
