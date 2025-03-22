@@ -17,7 +17,7 @@ public class Trie {
         child = new TrieNode(); // Crear un nuevo nodo
         currentNode.children.put(c, child); // Agregar el nuevo nodo al nodo actual
       }
-      currentNode = child;
+      currentNode = child; // Mover el puntero al nuevo nodo
     }
 
     currentNode.isEndOfWord = true;
