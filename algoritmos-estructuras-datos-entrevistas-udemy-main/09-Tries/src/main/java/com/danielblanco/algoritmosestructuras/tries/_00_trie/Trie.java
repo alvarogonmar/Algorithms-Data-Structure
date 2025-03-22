@@ -9,7 +9,7 @@ public class Trie {
 
   public void insert(String word) {
     TrieNode currentNode = root; // Start at the root
-    String lowercaseWord = word.toLowerCase();
+    String lowercaseWord = word.toLowerCase(); // Convert the word to lowercase
 
     for (char c : lowercaseWord.toCharArray()) {
       TrieNode child = currentNode.children.get(c);
