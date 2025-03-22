@@ -11,7 +11,7 @@ public class Trie {
     TrieNode currentNode = root; // Start at the root
     String lowercaseWord = word.toLowerCase(); // Convert the word to lowercase
 
-    for (char c : lowercaseWord.toCharArray()) {
+    for (char c : lowercaseWord.toCharArray()) { // iterar sobre cada caracter de la palabra
       TrieNode child = currentNode.children.get(c);
       if (child == null) {
         child = new TrieNode();
