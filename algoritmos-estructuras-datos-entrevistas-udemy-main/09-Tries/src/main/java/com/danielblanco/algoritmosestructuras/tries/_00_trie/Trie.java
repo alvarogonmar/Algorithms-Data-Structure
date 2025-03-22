@@ -20,7 +20,7 @@ public class Trie {
       currentNode = child; // Mover el puntero al nuevo nodo
     }
 
-    currentNode.isEndOfWord = true;
+    currentNode.isEndOfWord = true; // Marcar el nodo actual como fin de palabra
   }
 
   public boolean search(String prefix) {
