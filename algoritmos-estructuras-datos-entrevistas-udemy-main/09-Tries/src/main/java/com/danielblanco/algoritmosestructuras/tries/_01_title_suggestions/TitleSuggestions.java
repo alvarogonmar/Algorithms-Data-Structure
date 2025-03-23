@@ -28,7 +28,7 @@ public class TitleSuggestions {
 
   public boolean[] titleSuggestions(String[] books, String[] prefixes, boolean ignoreCase) {
     Trie dictionary = new Trie(ignoreCase); // Crear un nuevo trie
-    for (String book : books) {
+    for (String book : books) { // Insertar cada libro en el trie
       dictionary.insert(book);
     }
     boolean[] result = new boolean[prefixes.length];
