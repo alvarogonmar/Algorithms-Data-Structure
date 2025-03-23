@@ -31,7 +31,7 @@ public class TitleSuggestions {
     for (String book : books) { // Insertar cada libro en el trie
       dictionary.insert(book); // Insertar el libro en el trie
     }
-    boolean[] result = new boolean[prefixes.length];
+    boolean[] result = new boolean[prefixes.length]; // Crear un array de booleanos
     for (int i = 0; i < prefixes.length; i++) {
       result[i] = dictionary.search(prefixes[i]);
     }
