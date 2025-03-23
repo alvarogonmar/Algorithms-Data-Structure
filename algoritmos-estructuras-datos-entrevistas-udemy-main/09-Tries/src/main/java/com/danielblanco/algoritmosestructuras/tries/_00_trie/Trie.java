@@ -25,7 +25,7 @@ public class Trie {
 
   public boolean search(String prefix) {
     TrieNode currentNode = root; // Start at the root
-    String prefixLowercase = prefix.toLowerCase();
+    String prefixLowercase = prefix.toLowerCase(); // Convertir el prefijo a minúsculas
 
     for (char c : prefixLowercase.toCharArray()) {
       currentNode = currentNode.children.get(c);
