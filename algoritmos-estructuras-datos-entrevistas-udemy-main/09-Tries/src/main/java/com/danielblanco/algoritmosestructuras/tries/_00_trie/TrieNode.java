@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TrieNode {
-  Map<Character, TrieNode> children;
+  Map<Character, TrieNode> children; // Mapa de caracteres a nodos
   boolean isEndOfWord;
 
   public TrieNode() {
