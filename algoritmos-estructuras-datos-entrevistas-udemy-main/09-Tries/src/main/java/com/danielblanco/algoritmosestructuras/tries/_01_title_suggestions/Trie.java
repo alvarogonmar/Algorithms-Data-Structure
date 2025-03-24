@@ -16,7 +16,7 @@ public class Trie {
       word = word.toLowerCase();
     }
 
-    for (char c : word.toCharArray()) {
+    for (char c : word.toCharArray()) { // iterar sobre cada caracter de la palabra
       TrieNode child = currentNode.children.get(c);
       if (child == null) {
         child = new TrieNode();
@@ -37,7 +37,8 @@ public class Trie {
 
     for (char c : prefix.toCharArray()) {
       currentNode = currentNode.children.get(c);
-      if (currentNode == null) return false;
+      if (currentNode == null)
+        return false;
     }
 
     return true;
