@@ -38,6 +38,6 @@ public class TitleSuggestionsSolution {
       result[i] = dictionary.search(prefixes[i]); // Buscar el prefijo en el trie
     }
 
-    return result;
+    return result; // Devolver el resultado
   }
 }
