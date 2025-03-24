@@ -32,7 +32,7 @@ public class TitleSuggestions {
       dictionary.insert(book); // Insertar el libro en el trie
     }
     boolean[] result = new boolean[prefixes.length]; // Crear un array de booleanos
-    for (int i = 0; i < prefixes.length; i++) {
+    for (int i = 0; i < prefixes.length; i++) { // Buscar cada prefijo en el trie
       result[i] = dictionary.search(prefixes[i]);
     }
     return result;
