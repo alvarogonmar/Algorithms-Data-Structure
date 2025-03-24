@@ -30,7 +30,7 @@ public class TitleSuggestionsSolution {
     Trie dictionary = new Trie(ignoreCase);
 
     for (String book : books) { // Insertar cada libro en el trie
-      dictionary.insert(book);
+      dictionary.insert(book); // Insertar el libro en el trie
     }
 
     boolean[] result = new boolean[prefixes.length];
