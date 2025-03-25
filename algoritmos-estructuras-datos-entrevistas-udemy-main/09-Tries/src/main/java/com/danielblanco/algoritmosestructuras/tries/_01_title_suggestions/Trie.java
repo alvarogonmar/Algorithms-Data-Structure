@@ -18,7 +18,7 @@ public class Trie {
 
     for (char c : word.toCharArray()) { // iterar sobre cada caracter de la palabra
       TrieNode child = currentNode.children.get(c); // Verificar si el caracter ya existe en el nodo actual
-      if (child == null) {
+      if (child == null) { // Si no existe, crear un nuevo nodo
         child = new TrieNode();
         currentNode.children.put(c, child);
       }
