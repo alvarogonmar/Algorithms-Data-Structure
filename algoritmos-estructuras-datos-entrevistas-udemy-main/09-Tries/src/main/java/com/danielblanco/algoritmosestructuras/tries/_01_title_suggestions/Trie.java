@@ -29,7 +29,7 @@ public class Trie {
   }
 
   public boolean search(String prefix) {
-    TrieNode currentNode = root;
+    TrieNode currentNode = root; // Start at the root
 
     if (ignoreCase) {
       prefix = prefix.toLowerCase();
