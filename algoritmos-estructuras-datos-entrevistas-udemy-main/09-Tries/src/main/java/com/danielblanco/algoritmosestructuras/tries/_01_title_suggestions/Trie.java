@@ -31,7 +31,7 @@ public class Trie {
   public boolean search(String prefix) { // Buscar un prefijo en el trie
     TrieNode currentNode = root; // Start at the root
 
-    if (ignoreCase) {
+    if (ignoreCase) { // Convertir el prefijo a minúsculas si se ignoran las mayúsculas
       prefix = prefix.toLowerCase();
     }
 
