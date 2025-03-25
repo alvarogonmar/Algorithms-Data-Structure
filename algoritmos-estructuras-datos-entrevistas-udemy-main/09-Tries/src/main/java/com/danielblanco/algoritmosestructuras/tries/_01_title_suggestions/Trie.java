@@ -32,7 +32,7 @@ public class Trie {
     TrieNode currentNode = root; // Start at the root
 
     if (ignoreCase) { // Convertir el prefijo a minúsculas si se ignoran las mayúsculas
-      prefix = prefix.toLowerCase();
+      prefix = prefix.toLowerCase(); // Convertir el prefijo a minúsculas
     }
 
     for (char c : prefix.toCharArray()) {
