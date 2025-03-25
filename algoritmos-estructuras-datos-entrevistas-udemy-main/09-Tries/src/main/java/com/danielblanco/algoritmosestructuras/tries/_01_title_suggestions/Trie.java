@@ -28,7 +28,7 @@ public class Trie {
     currentNode.isEndOfWord = true; // Marcar el nodo actual como fin de palabra
   }
 
-  public boolean search(String prefix) {
+  public boolean search(String prefix) { // Buscar un prefijo en el trie
     TrieNode currentNode = root; // Start at the root
 
     if (ignoreCase) {
