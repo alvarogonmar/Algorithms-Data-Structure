@@ -54,8 +54,8 @@ public class WordSearch {
 
   private void dfs(char[][] board, TrieNode current, int row, int col, List<String> result) { // método de búsqueda en
                                                                                               // profundidad
-    if (current == null) {
-      return;
+    if (current == null) { // si el nodo es nulo
+      return; // retorna
     }
 
     if (current.word != null) {
