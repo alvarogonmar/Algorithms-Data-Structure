@@ -31,7 +31,7 @@ public class Trie {
       currentNode = currentNode.children.get(c); // Mover el puntero al siguiente nodo
       if (currentNode == null) // Si el nodo es nulo, la palabra no existe
         return false;
-    }
+    } // Si el nodo no es nulo, la palabra existe
 
     return true;
   }
