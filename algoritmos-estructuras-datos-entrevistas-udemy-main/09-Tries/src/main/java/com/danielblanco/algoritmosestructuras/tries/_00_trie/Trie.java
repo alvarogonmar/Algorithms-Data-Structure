@@ -33,6 +33,6 @@ public class Trie {
         return false;
     } // Si el nodo no es nulo, la palabra existe
 
-    return true;
+    return true; // Retornar verdadero
   }
 }
