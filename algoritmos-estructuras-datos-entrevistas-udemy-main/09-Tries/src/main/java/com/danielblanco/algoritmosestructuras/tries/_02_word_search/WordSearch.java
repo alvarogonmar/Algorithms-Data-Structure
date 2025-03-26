@@ -44,7 +44,7 @@ public class WordSearch {
     for (int row = 0; row < rows; row++) { // recorre las filas
       for (int col = 0; col < cols; col++) { // recorre las columnas
         if (root.map.containsKey(board[row][col])) { // si el trie contiene la letra
-          dfs(board, root, row, col, result);
+          dfs(board, root, row, col, result); // hace la búsqueda en profundidad
         }
       }
     }
