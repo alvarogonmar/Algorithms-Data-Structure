@@ -35,7 +35,7 @@ public class Trie {
       prefix = prefix.toLowerCase(); // Convertir el prefijo a minúsculas
     }
 
-    for (char c : prefix.toCharArray()) {
+    for (char c : prefix.toCharArray()) { // Iterar sobre cada caracter del prefijo
       currentNode = currentNode.children.get(c);
       if (currentNode == null)
         return false;
