@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras.tries._01_title_suggestions;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TrieNode {
+public class TrieNode { // TrieNode class
   Map<Character, TrieNode> children;
   boolean isEndOfWord;
 
