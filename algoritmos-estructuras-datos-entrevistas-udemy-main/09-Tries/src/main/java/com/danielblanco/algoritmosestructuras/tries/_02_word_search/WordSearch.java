@@ -59,7 +59,7 @@ public class WordSearch {
     }
 
     if (current.word != null) { // si la palabra es diferente de nulo
-      result.add(current.word);
+      result.add(current.word); // agrega la palabra a la lista
       current.word = null;
     }
     if (row < 0
