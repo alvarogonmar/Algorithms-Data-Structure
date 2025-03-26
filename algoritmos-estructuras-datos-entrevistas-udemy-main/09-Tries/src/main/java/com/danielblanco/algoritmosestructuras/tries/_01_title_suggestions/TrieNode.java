@@ -7,7 +7,7 @@ public class TrieNode { // TrieNode class
   Map<Character, TrieNode> children; // Map to store children nodes
   boolean isEndOfWord; // boolean to check if it is the end of the word
 
-  public TrieNode() {
+  public TrieNode() { // Constructor
     children = new HashMap<Character, TrieNode>();
   }
 }
