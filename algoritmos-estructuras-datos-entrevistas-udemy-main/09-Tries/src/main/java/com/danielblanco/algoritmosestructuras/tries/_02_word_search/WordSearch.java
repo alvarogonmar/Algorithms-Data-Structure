@@ -58,7 +58,7 @@ public class WordSearch {
       return; // retorna
     }
 
-    if (current.word != null) {
+    if (current.word != null) { // si la palabra es diferente de nulo
       result.add(current.word);
       current.word = null;
     }
