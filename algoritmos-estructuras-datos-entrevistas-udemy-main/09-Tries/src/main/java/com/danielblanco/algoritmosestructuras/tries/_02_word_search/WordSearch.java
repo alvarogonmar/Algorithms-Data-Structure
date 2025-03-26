@@ -49,7 +49,7 @@ public class WordSearch {
       }
     }
 
-    return result;
+    return result; // retorna la lista de palabras
   }
 
   private void dfs(char[][] board, TrieNode current, int row, int col, List<String> result) {
