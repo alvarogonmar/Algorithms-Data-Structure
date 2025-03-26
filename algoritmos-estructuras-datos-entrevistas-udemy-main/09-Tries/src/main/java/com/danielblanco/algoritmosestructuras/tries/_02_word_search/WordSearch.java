@@ -42,7 +42,7 @@ public class WordSearch {
 
     TrieNode root = buildTrie(words, rows * cols); // crea el trie
     for (int row = 0; row < rows; row++) { // recorre las filas
-      for (int col = 0; col < cols; col++) {
+      for (int col = 0; col < cols; col++) { // recorre las columnas
         if (root.map.containsKey(board[row][col])) {
           dfs(board, root, row, col, result);
         }
