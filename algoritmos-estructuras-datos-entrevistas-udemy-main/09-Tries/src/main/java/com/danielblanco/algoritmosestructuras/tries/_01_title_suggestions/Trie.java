@@ -41,6 +41,6 @@ public class Trie {
         return false; // Devolver falso
     }
 
-    return true;
+    return true; // Devolver verdadero
   }
 }
