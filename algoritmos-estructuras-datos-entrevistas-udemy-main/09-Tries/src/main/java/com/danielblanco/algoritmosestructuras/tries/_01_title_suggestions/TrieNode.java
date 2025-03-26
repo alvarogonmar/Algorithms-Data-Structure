@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class TrieNode { // TrieNode class
   Map<Character, TrieNode> children; // Map to store children nodes
-  boolean isEndOfWord;
+  boolean isEndOfWord; // boolean to check if it is the end of the word
 
   public TrieNode() {
     children = new HashMap<Character, TrieNode>();
