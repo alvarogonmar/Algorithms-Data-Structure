@@ -38,7 +38,7 @@ public class Trie {
     for (char c : prefix.toCharArray()) { // Iterar sobre cada caracter del prefijo
       currentNode = currentNode.children.get(c); // Mover el puntero al siguiente nodo
       if (currentNode == null) // Si el nodo es nulo, la palabra no existe
-        return false;
+        return false; // Devolver falso
     }
 
     return true;
