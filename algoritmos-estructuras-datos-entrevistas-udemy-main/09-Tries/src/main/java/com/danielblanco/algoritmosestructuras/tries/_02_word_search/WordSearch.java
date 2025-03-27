@@ -66,7 +66,7 @@ public class WordSearch {
         || row >= board.length
         || col < 0
         || col >= board[0].length
-        || !current.map.containsKey(board[row][col])) {
+        || !current.map.containsKey(board[row][col])) { // si la fila o columna son inválidas
       return;
     }
     char currentChar = board[row][col];
