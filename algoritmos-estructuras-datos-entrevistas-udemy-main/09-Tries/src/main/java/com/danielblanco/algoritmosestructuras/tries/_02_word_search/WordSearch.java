@@ -75,7 +75,7 @@ public class WordSearch {
     dfs(board, next, row - 1, col, result); // busca arriba
     dfs(board, next, row, col + 1, result); // busca derecha
     dfs(board, next, row + 1, col, result); // busca abajo
-    dfs(board, next, row, col - 1, result);
+    dfs(board, next, row, col - 1, result); // busca izquierda
 
     board[row][col] = currentChar;
   }
