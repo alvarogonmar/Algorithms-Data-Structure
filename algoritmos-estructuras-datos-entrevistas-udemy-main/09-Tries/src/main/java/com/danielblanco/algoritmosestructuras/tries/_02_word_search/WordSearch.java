@@ -69,7 +69,7 @@ public class WordSearch {
         || !current.map.containsKey(board[row][col])) { // si la fila o columna son inválidas
       return; // retorna
     }
-    char currentChar = board[row][col];
+    char currentChar = board[row][col]; // guarda el caracter actual
     board[row][col] = '#';
     TrieNode next = current.map.get(currentChar);
     dfs(board, next, row - 1, col, result);
