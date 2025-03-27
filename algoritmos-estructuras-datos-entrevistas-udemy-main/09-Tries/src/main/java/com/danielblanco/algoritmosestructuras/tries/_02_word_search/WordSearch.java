@@ -60,7 +60,7 @@ public class WordSearch {
 
     if (current.word != null) { // si la palabra es diferente de nulo
       result.add(current.word); // agrega la palabra a la lista
-      current.word = null;
+      current.word = null; // evita duplicados
     }
     if (row < 0
         || row >= board.length
