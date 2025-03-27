@@ -73,7 +73,7 @@ public class WordSearch {
     board[row][col] = '#'; // marca la posición como visitada
     TrieNode next = current.map.get(currentChar); // obtiene el siguiente nodo
     dfs(board, next, row - 1, col, result); // busca arriba
-    dfs(board, next, row, col + 1, result);
+    dfs(board, next, row, col + 1, result); // busca derecha
     dfs(board, next, row + 1, col, result);
     dfs(board, next, row, col - 1, result);
 
