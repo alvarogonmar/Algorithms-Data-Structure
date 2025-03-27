@@ -67,7 +67,7 @@ public class WordSearch {
         || col < 0
         || col >= board[0].length
         || !current.map.containsKey(board[row][col])) { // si la fila o columna son inválidas
-      return;
+      return; // retorna
     }
     char currentChar = board[row][col];
     board[row][col] = '#';
