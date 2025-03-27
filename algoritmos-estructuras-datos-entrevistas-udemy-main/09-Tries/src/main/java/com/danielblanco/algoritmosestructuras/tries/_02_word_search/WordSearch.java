@@ -70,7 +70,7 @@ public class WordSearch {
       return; // retorna
     }
     char currentChar = board[row][col]; // guarda el caracter actual
-    board[row][col] = '#';
+    board[row][col] = '#'; // marca la posición como visitada
     TrieNode next = current.map.get(currentChar);
     dfs(board, next, row - 1, col, result);
     dfs(board, next, row, col + 1, result);
