@@ -77,7 +77,7 @@ public class WordSearch {
     dfs(board, next, row + 1, col, result); // busca abajo
     dfs(board, next, row, col - 1, result); // busca izquierda
 
-    board[row][col] = currentChar;
+    board[row][col] = currentChar; // desmarca la posición
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) {
