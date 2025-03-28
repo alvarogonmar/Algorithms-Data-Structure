@@ -86,7 +86,7 @@ public class WordSearch {
       if (word == null || word.length() == 0 || word.length() > maxLen) { // si la palabra es nula o vacía
         continue;
       }
-      TrieNode current = root;
+      TrieNode current = root; // inicializa el nodo actual
       for (int i = 0; i < word.length(); i++) {
         char c = word.charAt(i);
         if (!current.map.containsKey(c)) {
