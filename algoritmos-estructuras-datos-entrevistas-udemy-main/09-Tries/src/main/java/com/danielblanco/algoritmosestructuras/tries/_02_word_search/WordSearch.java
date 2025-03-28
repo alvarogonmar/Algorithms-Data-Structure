@@ -89,7 +89,7 @@ public class WordSearch {
       TrieNode current = root; // inicializa el nodo actual
       for (int i = 0; i < word.length(); i++) { // recorre la palabra
         char c = word.charAt(i); // obtiene el caracter
-        if (!current.map.containsKey(c)) {
+        if (!current.map.containsKey(c)) { // si el mapa no contiene el caracter
           current.map.put(c, new TrieNode());
         }
         current = current.map.get(c);
