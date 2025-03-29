@@ -35,7 +35,7 @@ public class WordSearchSolution {
   }
 
   public List<String> findWords(char[][] board, String[] words) { // método para encontrar palabras
-    List<String> result = new ArrayList<>();
+    List<String> result = new ArrayList<>(); // lista de palabras
 
     int rows = board.length;
     int cols = board[0].length;
