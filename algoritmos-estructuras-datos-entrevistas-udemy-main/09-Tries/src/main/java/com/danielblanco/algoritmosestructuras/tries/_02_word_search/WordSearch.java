@@ -96,6 +96,6 @@ public class WordSearch {
       }
       current.word = word; // asigna la palabra al nodo
     }
-    return root;
+    return root; // retorna el nodo raíz
   }
 }
