@@ -94,7 +94,7 @@ public class WordSearch {
         }
         current = current.map.get(c); // obtiene el siguiente nodo
       }
-      current.word = word;
+      current.word = word; // asigna la palabra al nodo
     }
     return root;
   }
