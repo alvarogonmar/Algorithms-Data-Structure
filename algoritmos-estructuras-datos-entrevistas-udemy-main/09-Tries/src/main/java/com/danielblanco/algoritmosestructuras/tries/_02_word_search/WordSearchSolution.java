@@ -27,9 +27,9 @@ public class WordSearchSolution {
 
   class TrieNode { // clase para el nodo del trie
     HashMap<Character, TrieNode> map; // mapa de caracteres a nodos
-    String word;
+    String word; // palabra asociada al nodo
 
-    public TrieNode() {
+    public TrieNode() { // constructor de la clase
       map = new HashMap<>();
     }
   }
