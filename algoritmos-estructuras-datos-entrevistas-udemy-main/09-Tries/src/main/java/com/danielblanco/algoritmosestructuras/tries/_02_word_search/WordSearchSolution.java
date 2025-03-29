@@ -30,7 +30,7 @@ public class WordSearchSolution {
     String word; // palabra asociada al nodo
 
     public TrieNode() { // constructor de la clase
-      map = new HashMap<>();
+      map = new HashMap<>(); // inicializa el mapa
     }
   }
 
