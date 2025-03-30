@@ -52,7 +52,7 @@ public class WordSearchSolution {
   }
 
   private void dfs(char[][] board, TrieNode current, int row, int col, List<String> result) {
-    if (current == null) {
+    if (current == null) { // si el nodo es nulo
       return;
     }
 
