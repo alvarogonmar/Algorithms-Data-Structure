@@ -43,7 +43,7 @@ public class WordSearchSolution {
     TrieNode root = buildTrie(words, rows * cols); // crea el trie
     for (int row = 0; row < rows; row++) { // recorre las filas
       for (int col = 0; col < cols; col++) { // recorre las columnas
-        if (root.map.containsKey(board[row][col])) {
+        if (root.map.containsKey(board[row][col])) { // si el trie contiene la letra
           dfs(board, root, row, col, result);
         }
       }
