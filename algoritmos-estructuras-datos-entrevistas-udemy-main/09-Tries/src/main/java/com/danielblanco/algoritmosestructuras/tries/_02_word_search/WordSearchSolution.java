@@ -40,7 +40,7 @@ public class WordSearchSolution {
     int rows = board.length; // número de filas
     int cols = board[0].length; // número de columnas
 
-    TrieNode root = buildTrie(words, rows * cols);
+    TrieNode root = buildTrie(words, rows * cols); // crea el trie
     for (int row = 0; row < rows; row++) {
       for (int col = 0; col < cols; col++) {
         if (root.map.containsKey(board[row][col])) {
