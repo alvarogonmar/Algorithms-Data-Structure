@@ -56,7 +56,7 @@ public class WordSearchSolution {
       return; // retorna
     }
 
-    if (current.word != null) {
+    if (current.word != null) { // si el nodo tiene una palabra
       result.add(current.word);
       current.word = null; // Se pone a null para no volver a añadirla
     }
