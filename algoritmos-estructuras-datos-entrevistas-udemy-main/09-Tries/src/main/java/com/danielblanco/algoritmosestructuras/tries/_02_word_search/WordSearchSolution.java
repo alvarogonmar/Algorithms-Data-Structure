@@ -38,7 +38,7 @@ public class WordSearchSolution {
     List<String> result = new ArrayList<>(); // lista de palabras
 
     int rows = board.length; // número de filas
-    int cols = board[0].length;
+    int cols = board[0].length; // número de columnas
 
     TrieNode root = buildTrie(words, rows * cols);
     for (int row = 0; row < rows; row++) {
