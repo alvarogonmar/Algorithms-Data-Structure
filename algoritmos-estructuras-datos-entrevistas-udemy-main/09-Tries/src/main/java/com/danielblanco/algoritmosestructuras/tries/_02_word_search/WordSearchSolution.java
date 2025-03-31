@@ -61,7 +61,7 @@ public class WordSearchSolution {
       current.word = null; // Se pone a null para no volver a añadirla
     }
 
-    if (row < 0
+    if (row < 0 // verifica si la fila es menor a 0
         || row >= board.length
         || col < 0
         || col >= board[0].length
