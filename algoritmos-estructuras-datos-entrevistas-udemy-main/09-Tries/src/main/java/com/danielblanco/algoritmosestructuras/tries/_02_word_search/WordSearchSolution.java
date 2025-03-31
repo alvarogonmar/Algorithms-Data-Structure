@@ -71,7 +71,7 @@ public class WordSearchSolution {
 
     char currentChar = board[row][col]; // guarda el caracter actual
     board[row][col] = '#'; // marca la posición como visitada
-    dfs(board, current.map.get(currentChar), row - 1, col, result);
+    dfs(board, current.map.get(currentChar), row - 1, col, result); // busca en la fila de arriba
     dfs(board, current.map.get(currentChar), row, col + 1, result);
     dfs(board, current.map.get(currentChar), row + 1, col, result);
     dfs(board, current.map.get(currentChar), row, col - 1, result);
