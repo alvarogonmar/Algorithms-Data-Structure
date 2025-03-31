@@ -69,7 +69,7 @@ public class WordSearchSolution {
       return; // retorna
     }
 
-    char currentChar = board[row][col];
+    char currentChar = board[row][col]; // guarda el caracter actual
     board[row][col] = '#';
     dfs(board, current.map.get(currentChar), row - 1, col, result);
     dfs(board, current.map.get(currentChar), row, col + 1, result);
