@@ -64,7 +64,7 @@ public class WordSearchSolution {
     if (row < 0 // verifica si la fila es menor a 0
         || row >= board.length // verifica si la fila es mayor o igual al número de filas
         || col < 0 // verifica si la columna es menor a 0
-        || col >= board[0].length
+        || col >= board[0].length // verifica si la columna es mayor o igual al número de columnas
         || !current.map.containsKey(board[row][col])) {
       return;
     }
