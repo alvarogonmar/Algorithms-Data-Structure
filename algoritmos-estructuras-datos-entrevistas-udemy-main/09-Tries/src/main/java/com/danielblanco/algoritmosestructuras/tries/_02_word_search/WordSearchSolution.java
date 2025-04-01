@@ -76,7 +76,7 @@ public class WordSearchSolution {
     dfs(board, current.map.get(currentChar), row + 1, col, result); // busca en la fila de abajo
     dfs(board, current.map.get(currentChar), row, col - 1, result); // busca en la columna de la izquierda
 
-    board[row][col] = currentChar;
+    board[row][col] = currentChar; // desmarca la posición como visitada
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) {
