@@ -79,7 +79,7 @@ public class WordSearchSolution {
     board[row][col] = currentChar; // desmarca la posición como visitada
   }
 
-  private TrieNode buildTrie(String[] words, int maxLen) {
+  private TrieNode buildTrie(String[] words, int maxLen) { // método para construir el trie
     TrieNode root = new TrieNode();
     for (String word : words) {
       if (word == null || word.length() == 0 || word.length() > maxLen) {
