@@ -80,7 +80,7 @@ public class WordSearchSolution {
   }
 
   private TrieNode buildTrie(String[] words, int maxLen) { // método para construir el trie
-    TrieNode root = new TrieNode();
+    TrieNode root = new TrieNode(); // crea el nodo raíz
     for (String word : words) {
       if (word == null || word.length() == 0 || word.length() > maxLen) {
         continue;
