@@ -73,7 +73,7 @@ public class WordSearchSolution {
     board[row][col] = '#'; // marca la posición como visitada
     dfs(board, current.map.get(currentChar), row - 1, col, result); // busca en la fila de arriba
     dfs(board, current.map.get(currentChar), row, col + 1, result); // busca en la columna de la derecha
-    dfs(board, current.map.get(currentChar), row + 1, col, result);
+    dfs(board, current.map.get(currentChar), row + 1, col, result); // busca en la fila de abajo
     dfs(board, current.map.get(currentChar), row, col - 1, result);
 
     board[row][col] = currentChar;
