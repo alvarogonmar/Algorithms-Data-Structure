@@ -83,7 +83,7 @@ public class WordSearchSolution {
     TrieNode root = new TrieNode(); // crea el nodo raíz
     for (String word : words) { // recorre las palabras
       if (word == null || word.length() == 0 || word.length() > maxLen) { // verifica si la palabra es nula o vacía
-        continue;
+        continue; // si la palabra es nula o vacía, continúa con la siguiente
       }
       TrieNode current = root;
       for (int i = 0; i < word.length(); i++) {
