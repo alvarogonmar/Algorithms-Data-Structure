@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class TrieNode {
   Map<Character, TrieNode> children; // Mapa de caracteres a nodos
-  boolean isEndOfWord;
+  boolean isEndOfWord; // Indica si el nodo es el final de una palabra
 
   public TrieNode() {
     children = new HashMap<Character, TrieNode>();
