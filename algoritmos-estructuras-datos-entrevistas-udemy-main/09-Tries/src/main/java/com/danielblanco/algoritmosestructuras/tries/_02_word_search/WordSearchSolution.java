@@ -91,7 +91,7 @@ public class WordSearchSolution {
         if (!current.map.containsKey(c)) { // verifica si el mapa no contiene el caracter
           current.map.put(c, new TrieNode()); // agrega el caracter al mapa
         }
-        current = current.map.get(c);
+        current = current.map.get(c); // actualiza el nodo actual al siguiente nodo
       }
       current.word = word;
     }
