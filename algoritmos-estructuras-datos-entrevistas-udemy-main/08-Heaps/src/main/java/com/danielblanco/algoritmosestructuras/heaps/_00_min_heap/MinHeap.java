@@ -65,7 +65,7 @@ public class MinHeap {
           minHeapify(leftChildIndex(i)); // llamamos recursivamente a la funcion con el hijo izquierdo
         } else {
           swap(i, rightChildIndex(i)); // si el hijo derecho es menor que el izquierdo
-          minHeapify(rightChildIndex(i));
+          minHeapify(rightChildIndex(i)); // llamamos recursivamente a la funcion con el hijo derecho
         }
       }
     }
