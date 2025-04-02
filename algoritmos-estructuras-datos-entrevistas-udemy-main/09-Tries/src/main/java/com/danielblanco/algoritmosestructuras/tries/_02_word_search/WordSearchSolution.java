@@ -93,7 +93,7 @@ public class WordSearchSolution {
         }
         current = current.map.get(c); // actualiza el nodo actual al siguiente nodo
       }
-      current.word = word;
+      current.word = word; // asigna la palabra al nodo actual
     }
     return root;
   }
