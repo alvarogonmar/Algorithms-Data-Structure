@@ -8,6 +8,6 @@ public class TrieNode {
   boolean isEndOfWord; // Indica si el nodo es el final de una palabra
 
   public TrieNode() { // Constructor de la clase
-    children = new HashMap<Character, TrieNode>();
+    children = new HashMap<Character, TrieNode>(); // Inicializa el mapa
   }
 }
