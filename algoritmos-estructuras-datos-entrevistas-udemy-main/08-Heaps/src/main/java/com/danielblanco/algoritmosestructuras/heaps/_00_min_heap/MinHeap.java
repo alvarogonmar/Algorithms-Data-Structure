@@ -82,7 +82,7 @@ public class MinHeap {
     }
   }
 
-  public void printHeap() {
+  public void printHeap() { // funcion para imprimir el heap
     System.out.println(Arrays.toString(Heap));
   }
 
