@@ -78,7 +78,7 @@ public class MinHeap {
         System.out.print(" Left : " + Heap[leftChildIndex(i)]); // imprimimos el hijo izquierdo
       if (rightChildIndex(i) < size) // si el hijo derecho existe
         System.out.print(" Right :" + Heap[rightChildIndex(i)]); // imprimimos el hijo derecho
-      System.out.println();
+      System.out.println(); // saltamos de linea
     }
   }
 
