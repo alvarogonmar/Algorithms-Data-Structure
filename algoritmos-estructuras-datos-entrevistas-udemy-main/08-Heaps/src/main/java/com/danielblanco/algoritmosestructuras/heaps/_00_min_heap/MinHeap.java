@@ -83,7 +83,7 @@ public class MinHeap {
   }
 
   public void printHeap() { // funcion para imprimir el heap
-    System.out.println(Arrays.toString(Heap));
+    System.out.println(Arrays.toString(Heap)); // imprimimos el heap
   }
 
   private void swap(int x, int y) {
