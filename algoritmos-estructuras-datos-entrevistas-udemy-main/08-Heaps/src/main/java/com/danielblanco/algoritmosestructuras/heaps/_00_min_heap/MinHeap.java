@@ -71,7 +71,7 @@ public class MinHeap {
     }
   }
 
-  public void printHeapPretty() {
+  public void printHeapPretty() { // funcion para imprimir el heap de forma bonita
     for (int i = 0; i < (size / 2); i++) {
       System.out.print("Parent : " + Heap[i]);
       if (leftChildIndex(i) < size)
