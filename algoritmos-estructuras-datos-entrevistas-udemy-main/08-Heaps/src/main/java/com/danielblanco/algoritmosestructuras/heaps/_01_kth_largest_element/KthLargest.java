@@ -25,7 +25,7 @@ public class KthLargest {
 
   public KthLargest(int k, int[] nums) { // Constructor
     this.k = k; // kth elemento más grande
-    heap = new PriorityQueue<>();
+    heap = new PriorityQueue<>(); // MinHeap
 
     for (int num : nums) {
       heap.add(num);
