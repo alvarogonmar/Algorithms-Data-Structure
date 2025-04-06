@@ -86,7 +86,7 @@ public class MinHeap {
     System.out.println(Arrays.toString(Heap)); // imprimimos el heap
   }
 
-  private void swap(int x, int y) {
+  private void swap(int x, int y) { // funcion para intercambiar dos nodos
     int tmp;
     tmp = Heap[x];
     Heap[x] = Heap[y];
