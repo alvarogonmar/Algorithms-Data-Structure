@@ -21,7 +21,7 @@ import java.util.PriorityQueue;
 public class KthLargest {
 
   private int k; // kth elemento más grande
-  private PriorityQueue<Integer> heap;
+  private PriorityQueue<Integer> heap; // MinHeap
 
   public KthLargest(int k, int[] nums) {
     this.k = k; // kth elemento más grande
