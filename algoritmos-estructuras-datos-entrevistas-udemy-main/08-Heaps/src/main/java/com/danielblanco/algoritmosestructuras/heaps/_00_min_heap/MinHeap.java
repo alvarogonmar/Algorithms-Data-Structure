@@ -87,7 +87,7 @@ public class MinHeap {
   }
 
   private void swap(int x, int y) { // funcion para intercambiar dos nodos
-    int tmp;
+    int tmp; // variable temporal
     tmp = Heap[x];
     Heap[x] = Heap[y];
     Heap[y] = tmp;
