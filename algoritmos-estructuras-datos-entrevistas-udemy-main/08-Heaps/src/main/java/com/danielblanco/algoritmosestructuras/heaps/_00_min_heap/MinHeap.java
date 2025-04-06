@@ -90,6 +90,6 @@ public class MinHeap {
     int tmp; // variable temporal
     tmp = Heap[x]; // guardamos el valor de x
     Heap[x] = Heap[y]; // guardamos el valor de y en x
-    Heap[y] = tmp;
+    Heap[y] = tmp; // guardamos el valor de x en y
   }
 }
