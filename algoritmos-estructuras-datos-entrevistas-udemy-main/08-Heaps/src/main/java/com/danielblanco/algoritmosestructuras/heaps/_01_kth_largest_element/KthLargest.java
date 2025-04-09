@@ -41,6 +41,6 @@ public class KthLargest {
     if (heap.size() > k) { // Mantiene el tamaño del heap
       heap.poll(); // Elimina el elemento más pequeño
     }
-    return heap.peek();
+    return heap.peek(); // Devuelve el kth elemento más grande
   }
 }
