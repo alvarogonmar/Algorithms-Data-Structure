@@ -31,7 +31,7 @@ public class KthLargest {
       heap.add(num); // Añade el elemento al heap
     }
 
-    while (heap.size() > k) {
+    while (heap.size() > k) { // Mantiene el tamaño del heap
       heap.poll(); // Elimina el elemento más pequeño
     }
   }
