@@ -33,7 +33,7 @@ public class KthLargestSolution { // KthLargest
   private PriorityQueue<Integer> heap; // MinHeap
 
   public KthLargestSolution(int k, int[] nums) { // Constructor
-    this.k = k;
+    this.k = k; // kth elemento más grande
     heap = new PriorityQueue<>();
 
     for (int num : nums) {
