@@ -28,7 +28,7 @@ public class KthLargest {
     heap = new PriorityQueue<>(); // MinHeap
 
     for (int num : nums) { // Añade los elementos al heap
-      heap.add(num);
+      heap.add(num); // Añade el elemento al heap
     }
 
     while (heap.size() > k) {
