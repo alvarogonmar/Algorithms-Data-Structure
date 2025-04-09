@@ -30,7 +30,7 @@ import java.util.PriorityQueue;
  */
 public class KthLargestSolution { // KthLargest
   private int k; // kth elemento más grande
-  private PriorityQueue<Integer> heap;
+  private PriorityQueue<Integer> heap; // MinHeap
 
   public KthLargestSolution(int k, int[] nums) {
     this.k = k;
