@@ -31,7 +31,7 @@ public class TopKFrequent { // TopKFrequent
                                                   // inicializa en 0 y le suma 1
     }
     PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
-    for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    for (Map.Entry<Integer, Integer> entry : map.entrySet()) { // Recorre el mapa y añade los elementos al heap
       maxHeap.add(entry);
     }
     int[] result = new int[k];
