@@ -22,7 +22,7 @@ import java.util.PriorityQueue;
  *  Output:
  *    [3]
  */
-public class TopKFrequent {
+public class TopKFrequent { // TopKFrequent
 
   public int[] topKFrequent(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<>();
