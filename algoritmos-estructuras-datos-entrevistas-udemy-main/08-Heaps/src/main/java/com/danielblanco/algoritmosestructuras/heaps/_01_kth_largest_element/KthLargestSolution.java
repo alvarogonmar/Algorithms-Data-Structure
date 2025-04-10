@@ -47,7 +47,7 @@ public class KthLargestSolution { // KthLargest
 
   public int add(int val) { // Añade un nuevo elemento
     heap.add(val); // Añade el nuevo elemento al heap
-    if (heap.size() > k) {
+    if (heap.size() > k) { // Mantiene el tamaño del heap
       heap.poll();
     }
 
