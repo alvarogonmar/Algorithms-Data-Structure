@@ -51,6 +51,6 @@ public class KthLargestSolution { // KthLargest
       heap.poll(); // Elimina el elemento más pequeño
     }
 
-    return heap.peek();
+    return heap.peek(); // Devuelve el kth elemento más grande
   }
 }
