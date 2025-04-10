@@ -41,7 +41,7 @@ public class KthLargestSolution { // KthLargest
     }
 
     while (heap.size() > k) { // Mantiene el tamaño del heap
-      heap.poll();
+      heap.poll(); // Elimina el elemento más pequeño
     }
   }
 
