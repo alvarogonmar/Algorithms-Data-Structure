@@ -35,7 +35,7 @@ public class TopKFrequent { // TopKFrequent
       maxHeap.add(entry); // Añade el elemento al heap
     }
     int[] result = new int[k]; // Crea un array para almacenar los k elementos más frecuentes
-    for (int i = 0; i < k; i++) {
+    for (int i = 0; i < k; i++) { // Recorre el heap y añade los k elementos más frecuentes al array
       result[i] = maxHeap.poll().getKey();
     }
     return result;
