@@ -34,7 +34,7 @@ public class TopKFrequent { // TopKFrequent
     for (Map.Entry<Integer, Integer> entry : map.entrySet()) { // Recorre el mapa y añade los elementos al heap
       maxHeap.add(entry); // Añade el elemento al heap
     }
-    int[] result = new int[k];
+    int[] result = new int[k]; // Crea un array para almacenar los k elementos más frecuentes
     for (int i = 0; i < k; i++) {
       result[i] = maxHeap.poll().getKey();
     }
