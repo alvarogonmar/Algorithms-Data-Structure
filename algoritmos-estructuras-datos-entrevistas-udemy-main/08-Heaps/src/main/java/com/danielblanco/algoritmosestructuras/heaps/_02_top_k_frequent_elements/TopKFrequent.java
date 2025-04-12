@@ -38,6 +38,6 @@ public class TopKFrequent { // TopKFrequent
     for (int i = 0; i < k; i++) { // Recorre el heap y añade los k elementos más frecuentes al array
       result[i] = maxHeap.poll().getKey(); // Saca el elemento más frecuente del heap y lo añade al array
     }
-    return result;
+    return result; // Devuelve el array con los k elementos más frecuentes
   }
 }
