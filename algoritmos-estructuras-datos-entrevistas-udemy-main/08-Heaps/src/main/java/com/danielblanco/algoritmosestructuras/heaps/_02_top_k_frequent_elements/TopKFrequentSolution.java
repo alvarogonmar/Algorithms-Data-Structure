@@ -24,8 +24,8 @@ import java.util.PriorityQueue;
  *    [3]
  */
 public class TopKFrequentSolution { // TopKFrequent
-  public int[] topKFrequent(int[] nums, int k) {
-    Map<Integer, Integer> map = new HashMap<>();
+  public int[] topKFrequent(int[] nums, int k) { // topKFrequent
+    Map<Integer, Integer> map = new HashMap<>(); // Crea un mapa para almacenar los elementos y su frecuencia
     for (int n : nums) {
       map.put(n, map.getOrDefault(n, 0) + 1);
     }
