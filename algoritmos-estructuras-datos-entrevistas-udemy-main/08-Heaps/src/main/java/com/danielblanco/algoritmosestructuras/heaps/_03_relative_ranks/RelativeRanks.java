@@ -17,7 +17,14 @@ import java.util.PriorityQueue;
  *  Input: [10,3,8,9,4]
  *  Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
  */
-public class RelativeRanks {
+public class RelativeRanks { // RelativeRanks
+  /*
+   * La solución consiste en crear un heap máximo con las puntuaciones de los
+   * participantes.
+   * Luego, se van sacando los elementos del heap y se les asigna la posición
+   * correspondiente.
+   * Se utiliza un switch para asignar las medallas a los tres primeros.
+   */
 
   public String[] findRelativeRanks(int[] score) {
     int numberOfParticipants = score.length;
