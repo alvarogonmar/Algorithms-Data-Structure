@@ -27,7 +27,7 @@ public class RelativeRanks { // RelativeRanks
    */
 
   public String[] findRelativeRanks(int[] score) {
-    int numberOfParticipants = score.length;
+    int numberOfParticipants = score.length; // se obtiene el número de participantes
     String[] result = new String[numberOfParticipants];
 
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> score[b] - score[a]);
