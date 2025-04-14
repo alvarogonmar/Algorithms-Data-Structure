@@ -41,7 +41,7 @@ public class TopKFrequentSolution { // TopKFrequent
                                                                                                                        // y
                                                                                                                        // su
                                                                                                                        // frecuencia
-    for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    for (Map.Entry<Integer, Integer> entry : map.entrySet()) { // Recorre el mapa y añade los elementos al heap
       maxHeap.add(entry);
     }
 
