@@ -42,7 +42,7 @@ public class TopKFrequentSolution { // TopKFrequent
                                                                                                                        // su
                                                                                                                        // frecuencia
     for (Map.Entry<Integer, Integer> entry : map.entrySet()) { // Recorre el mapa y añade los elementos al heap
-      maxHeap.add(entry);
+      maxHeap.add(entry); // Añade el elemento al heap
     }
 
     int[] res = new int[k];
