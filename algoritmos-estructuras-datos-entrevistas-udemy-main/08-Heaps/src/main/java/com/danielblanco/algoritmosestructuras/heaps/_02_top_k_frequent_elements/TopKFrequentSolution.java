@@ -47,7 +47,7 @@ public class TopKFrequentSolution { // TopKFrequent
 
     int[] res = new int[k]; // Crea un array para almacenar los k elementos más frecuentes
     for (int i = 0; i < k; i++) { // Recorre el heap y añade los k elementos más frecuentes al array
-      Map.Entry<Integer, Integer> entry = maxHeap.poll();
+      Map.Entry<Integer, Integer> entry = maxHeap.poll(); // Saca el elemento más frecuente del heap y lo añade al array
       res[i] = entry.getKey();
     }
 
