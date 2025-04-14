@@ -51,6 +51,6 @@ public class TopKFrequentSolution { // TopKFrequent
       res[i] = entry.getKey(); // Saca el elemento más frecuente del heap y lo añade al array
     }
 
-    return res;
+    return res; // Devuelve el array con los k elementos más frecuentes
   }
 }
