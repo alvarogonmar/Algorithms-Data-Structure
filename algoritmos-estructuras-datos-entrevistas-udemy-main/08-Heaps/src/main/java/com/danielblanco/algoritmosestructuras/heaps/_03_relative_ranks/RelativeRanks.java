@@ -30,7 +30,7 @@ public class RelativeRanks { // RelativeRanks
     int numberOfParticipants = score.length; // se obtiene el número de participantes
     String[] result = new String[numberOfParticipants]; // se crea un array para almacenar los resultados
 
-    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> score[b] - score[a]);
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> score[b] - score[a]); // se crea un heap máximo
     for (int i = 0; i < numberOfParticipants; i++) {
       maxHeap.add(i);
     }
