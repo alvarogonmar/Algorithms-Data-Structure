@@ -39,7 +39,7 @@ public class RelativeRanks { // RelativeRanks
       int player = heap.poll(); // se saca el participante con la puntuación más alta
 
       switch (position) { // se asigna la posición correspondiente
-        case 1:
+        case 1: // si es el primer participante
           result[player] = "Gold Medal";
           break;
         case 2:
