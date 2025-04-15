@@ -34,7 +34,7 @@ public class RelativeRanks { // RelativeRanks
     for (int i = 0; i < numberOfParticipants; i++) { // se añaden los participantes al heap
       maxHeap.add(i); // se añade el índice del participante al heap
     }
-    int position = 1;
+    int position = 1; // se inicializa la posición en 1
     while (!heap.isEmpty()) {
       int player = heap.poll();
 
