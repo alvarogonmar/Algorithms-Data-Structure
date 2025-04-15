@@ -42,7 +42,7 @@ public class RelativeRanks { // RelativeRanks
         case 1: // si es el primer participante
           result[player] = "Gold Medal"; // se le asigna la medalla de oro
           break;
-        case 2:
+        case 2: // si es el segundo participante
           result[player] = "Silver Medal";
           break;
         case 3:
