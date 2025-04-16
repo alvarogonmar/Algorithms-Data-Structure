@@ -22,7 +22,7 @@ public class RelativeRanksSolution { // RelativeRanks
     int numberOfPlayers = score.length; // se obtiene el número de participantes
     String[] res = new String[numberOfPlayers]; // se crea un array para almacenar los resultados
 
-    PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> score[b] - score[a]);
+    PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> score[b] - score[a]); // se crea un heap máximo
 
     for (int i = 0; i < numberOfPlayers; i++) {
       pq.add(i);
