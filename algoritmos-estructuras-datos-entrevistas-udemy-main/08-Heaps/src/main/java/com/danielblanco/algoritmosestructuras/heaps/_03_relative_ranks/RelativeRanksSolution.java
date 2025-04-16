@@ -20,7 +20,7 @@ import java.util.PriorityQueue;
 public class RelativeRanksSolution { // RelativeRanks
   public String[] findRelativeRanks(int[] score) { // findRelativeRanks
     int numberOfPlayers = score.length; // se obtiene el número de participantes
-    String[] res = new String[numberOfPlayers];
+    String[] res = new String[numberOfPlayers]; // se crea un array para almacenar los resultados
 
     PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> score[b] - score[a]);
 
