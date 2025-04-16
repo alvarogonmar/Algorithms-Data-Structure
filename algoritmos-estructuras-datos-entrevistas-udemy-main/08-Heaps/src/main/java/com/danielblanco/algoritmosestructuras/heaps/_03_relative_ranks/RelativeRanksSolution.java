@@ -17,7 +17,7 @@ import java.util.PriorityQueue;
  *  Input: [10,3,8,9,4]
  *  Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
  */
-public class RelativeRanksSolution {
+public class RelativeRanksSolution { // RelativeRanks
   public String[] findRelativeRanks(int[] score) {
     int numberOfPlayers = score.length;
     String[] res = new String[numberOfPlayers];
