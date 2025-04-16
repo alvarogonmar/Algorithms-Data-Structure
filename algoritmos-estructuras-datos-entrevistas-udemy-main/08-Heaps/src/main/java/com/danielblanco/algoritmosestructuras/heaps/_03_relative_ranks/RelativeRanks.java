@@ -50,7 +50,7 @@ public class RelativeRanks { // RelativeRanks
           break;
 
         default:
-          result[player] = Integer.toString(position);
+          result[player] = Integer.toString(position); // para los demás participantes se asigna su posición
           break;
       }
       position++;
