@@ -55,6 +55,6 @@ public class RelativeRanks { // RelativeRanks
       }
       position++; // se incrementa la posición
     }
-    return result;
+    return result; // se devuelve el array con los resultados
   }
 }
