@@ -18,8 +18,8 @@ import java.util.PriorityQueue;
  *  Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
  */
 public class RelativeRanksSolution { // RelativeRanks
-  public String[] findRelativeRanks(int[] score) {
-    int numberOfPlayers = score.length;
+  public String[] findRelativeRanks(int[] score) { // findRelativeRanks
+    int numberOfPlayers = score.length; // se obtiene el número de participantes
     String[] res = new String[numberOfPlayers];
 
     PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> score[b] - score[a]);
