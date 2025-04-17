@@ -34,7 +34,7 @@ public class RelativeRanksSolution { // RelativeRanks
 
       switch (position) { // se asigna la posición correspondiente
         case 1:
-          res[playerIndex] = "Gold Medal";
+          res[playerIndex] = "Gold Medal"; // se le asigna la medalla de oro
           break;
         case 2:
           res[playerIndex] = "Silver Medal";
