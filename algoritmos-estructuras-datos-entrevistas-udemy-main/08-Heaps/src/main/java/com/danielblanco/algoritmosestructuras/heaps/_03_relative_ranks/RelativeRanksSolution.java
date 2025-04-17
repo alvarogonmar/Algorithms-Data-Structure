@@ -37,7 +37,7 @@ public class RelativeRanksSolution { // RelativeRanks
           res[playerIndex] = "Gold Medal"; // se le asigna la medalla de oro
           break;
         case 2:
-          res[playerIndex] = "Silver Medal";
+          res[playerIndex] = "Silver Medal"; // se le asigna la medalla de plata
           break;
         case 3:
           res[playerIndex] = "Bronze Medal";
