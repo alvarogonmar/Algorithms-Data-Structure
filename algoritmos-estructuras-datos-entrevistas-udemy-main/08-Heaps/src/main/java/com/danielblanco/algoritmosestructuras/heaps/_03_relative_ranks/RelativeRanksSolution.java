@@ -25,7 +25,7 @@ public class RelativeRanksSolution { // RelativeRanks
     PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> score[b] - score[a]); // se crea un heap máximo
 
     for (int i = 0; i < numberOfPlayers; i++) { // se añaden los participantes al heap
-      pq.add(i);
+      pq.add(i); // se añade el índice del participante al heap
     }
 
     int position = 1;
