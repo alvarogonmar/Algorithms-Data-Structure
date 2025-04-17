@@ -30,7 +30,7 @@ public class RelativeRanksSolution { // RelativeRanks
 
     int position = 1; // se inicializa la posición en 1
     while (!pq.isEmpty()) { // mientras el heap no esté vacío
-      int playerIndex = pq.poll();
+      int playerIndex = pq.poll(); // se saca el participante con la puntuación más alta
 
       switch (position) {
         case 1:
