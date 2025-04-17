@@ -46,7 +46,7 @@ public class RelativeRanksSolution { // RelativeRanks
           res[playerIndex] = Integer.toString(position); // para los demás participantes se asigna su posición
       }
 
-      position++;
+      position++; // se incrementa la posición
     }
 
     return res;
