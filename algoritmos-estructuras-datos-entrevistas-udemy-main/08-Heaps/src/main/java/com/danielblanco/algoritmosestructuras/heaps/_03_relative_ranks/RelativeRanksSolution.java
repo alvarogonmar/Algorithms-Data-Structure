@@ -29,7 +29,7 @@ public class RelativeRanksSolution { // RelativeRanks
     }
 
     int position = 1; // se inicializa la posición en 1
-    while (!pq.isEmpty()) {
+    while (!pq.isEmpty()) { // mientras el heap no esté vacío
       int playerIndex = pq.poll();
 
       switch (position) {
