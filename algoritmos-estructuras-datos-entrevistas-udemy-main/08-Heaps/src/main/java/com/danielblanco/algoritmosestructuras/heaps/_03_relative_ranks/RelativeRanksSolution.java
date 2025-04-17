@@ -28,7 +28,7 @@ public class RelativeRanksSolution { // RelativeRanks
       pq.add(i); // se añade el índice del participante al heap
     }
 
-    int position = 1;
+    int position = 1; // se inicializa la posición en 1
     while (!pq.isEmpty()) {
       int playerIndex = pq.poll();
 
