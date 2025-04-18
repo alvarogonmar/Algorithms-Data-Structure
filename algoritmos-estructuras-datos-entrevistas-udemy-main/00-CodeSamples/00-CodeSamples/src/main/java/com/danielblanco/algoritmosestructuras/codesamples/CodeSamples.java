@@ -21,7 +21,7 @@ public class CodeSamples {
     int product = 1; // product
 
     for (int val : array) { // for each value in array
-      sum += val;
+      sum += val; // sum += value
       product *= val;
     }
 
