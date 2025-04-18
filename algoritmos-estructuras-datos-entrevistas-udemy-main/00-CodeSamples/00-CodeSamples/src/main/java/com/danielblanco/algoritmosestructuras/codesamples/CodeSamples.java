@@ -2,8 +2,8 @@ package com.danielblanco.algoritmosestructuras.codesamples;
 
 public class CodeSamples {
 
-  class Employee {
-    String name;
+  class Employee { // Employee
+    String name; // name
 
     public Employee(String name) {
       this.name = name;
@@ -82,13 +82,15 @@ public class CodeSamples {
   }
 
   int max(int a, int b) {
-    if (a >= b) return a;
+    if (a >= b)
+      return a;
     return b;
   }
 
   Employee linearSearch(Employee[] employees, String name) {
     for (Employee e : employees) {
-      if (name.equals(e.getName())) return e;
+      if (name.equals(e.getName()))
+        return e;
     }
 
     return null;
@@ -169,7 +171,8 @@ public class CodeSamples {
   }
 
   int fibonacci(int n) {
-    if (n < 2) return n;
+    if (n < 2)
+      return n;
     return fibonacci(n - 1) + fibonacci(n - 2);
   }
 
@@ -178,7 +181,8 @@ public class CodeSamples {
   }
 
   int fibonacciMemo(int n, int[] memo) {
-    if (n < 2) return n;
+    if (n < 2)
+      return n;
 
     if (memo[n] == 0) {
       memo[n] = fibonacciMemo(n - 2, memo) + fibonacciMemo(n - 1, memo);
@@ -188,7 +192,8 @@ public class CodeSamples {
   }
 
   int fibonacciBottomUp(int n) {
-    if (n < 2) return n;
+    if (n < 2)
+      return n;
 
     int previousOfPrevious = 0;
     int previous = 1;
