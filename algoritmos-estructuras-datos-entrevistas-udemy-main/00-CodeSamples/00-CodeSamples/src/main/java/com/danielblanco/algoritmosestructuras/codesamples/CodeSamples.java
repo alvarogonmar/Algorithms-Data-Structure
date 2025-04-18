@@ -5,7 +5,7 @@ public class CodeSamples {
   class Employee { // Employee
     String name; // name
 
-    public Employee(String name) {
+    public Employee(String name) { // Employee constructor
       this.name = name;
     }
 
