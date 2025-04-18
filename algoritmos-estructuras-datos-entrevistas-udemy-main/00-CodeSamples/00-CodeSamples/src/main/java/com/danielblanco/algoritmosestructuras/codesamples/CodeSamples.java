@@ -15,7 +15,7 @@ public class CodeSamples {
   }
 
   int oNSum() {
-    int[] array = new int[] {};
+    int[] array = new int[] {}; // array
 
     int sum = 0;
     int product = 1;
