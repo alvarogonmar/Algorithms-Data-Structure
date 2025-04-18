@@ -25,7 +25,7 @@ public class CodeSamples {
       product *= val;
     }
 
-    return sum + product;
+    return sum + product; // retornar sum + product
   }
 
   int oNSum2() {
