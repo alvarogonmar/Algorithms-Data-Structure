@@ -20,7 +20,7 @@ public class CodeSamples {
     int sum = 0; // sum
     int product = 1; // product
 
-    for (int val : array) {
+    for (int val : array) { // for each value in array
       sum += val;
       product *= val;
     }
