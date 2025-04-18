@@ -22,7 +22,8 @@ public class IsUnique {
   private static int NUMBER_OF_CHARS = 128;
 
   public boolean isUnique(String s) {
-    if (s.length() > NUMBER_OF_CHARS)
+    if (s.length() > NUMBER_OF_CHARS) // si la longitud de la cadena es mayor que el número de caracteres posibles, no
+                                      // puede ser única
       return false;
 
     Set<Character> characters = new HashSet<>();
