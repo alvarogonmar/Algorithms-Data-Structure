@@ -39,5 +39,14 @@ public class GenerateParenthesis {
       return;
     }
 
+    if (openLeft > 0) {
+      generateParenthesis(openLeft - 1, closeLeft, current.append('('), result);
+      current.setLength(current.length() - 1);
+    }
+
+    if (closeLeft > openLeft) {
+      generateParenthesis(openLeft, closeLeft - 1, current.append(')'), result);
+      current.setLength(current.length() - 1);
+    }
   }
 }
