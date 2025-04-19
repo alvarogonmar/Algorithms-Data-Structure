@@ -45,6 +45,10 @@ public class RobotInGrid {
     return null;
   }
 
+  boolean getPath(boolean[][] grid, int row, int col, List<Cell> path) {
+    if (row >= grid.length || col >= grid[0].length || !grid[row][col]) {
+      return false;
+    }
 
   }
 }
