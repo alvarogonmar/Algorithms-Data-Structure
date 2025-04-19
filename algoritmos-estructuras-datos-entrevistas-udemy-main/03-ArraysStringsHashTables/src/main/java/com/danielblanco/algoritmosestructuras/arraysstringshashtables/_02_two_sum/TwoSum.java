@@ -29,7 +29,7 @@ import java.util.Map;
 public class TwoSum {
 
   public int[] twoSum(int[] nums, int target) {
-    if (nums == null || nums.length < 2) {
+    if (nums == null || nums.length < 2) { // Comprobamos si el array es nulo o tiene menos de 2 elementos
       return null;
     } else {
       Map<Integer, Integer> compMap = new HashMap<>();
