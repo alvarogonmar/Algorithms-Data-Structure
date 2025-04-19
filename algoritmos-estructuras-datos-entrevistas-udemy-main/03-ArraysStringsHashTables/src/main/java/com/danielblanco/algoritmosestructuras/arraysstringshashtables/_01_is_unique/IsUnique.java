@@ -32,6 +32,6 @@ public class IsUnique {
         return false; // retorna false
       characters.add(c); // añade el carácter al conjunto
     }
-    return true;
+    return true; // si no se han encontrado caracteres duplicados, retorna true
   }
 }
