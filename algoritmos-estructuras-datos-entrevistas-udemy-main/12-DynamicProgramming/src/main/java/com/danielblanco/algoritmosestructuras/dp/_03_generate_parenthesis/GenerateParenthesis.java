@@ -23,14 +23,21 @@ import java.util.List;
  */
 public class GenerateParenthesis {
 
-public List<String> generateParenthesis(int n) {
-    if (n < 1) return Collections.emptyList();
+  public List<String> generateParenthesis(int n) {
+    if (n < 1)
+      return Collections.emptyList();
 
     List<String> result = new ArrayList<String>();
     generateParenthesis(n, n, new StringBuilder(), result);
     return result;
   }
 
+  private void generateParenthesis(
+      int openLeft, int closeLeft, StringBuilder current, List<String> result) {
+    if (openLeft == 0 && closeLeft == 0) {
+      result.add(current.toString());
+      return;
+    }
 
   }
 }
