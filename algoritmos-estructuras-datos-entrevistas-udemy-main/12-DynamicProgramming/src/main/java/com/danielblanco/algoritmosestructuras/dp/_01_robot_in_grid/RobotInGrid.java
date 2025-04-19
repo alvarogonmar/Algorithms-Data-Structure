@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.dp._01_robot_in_grid;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /*
@@ -33,6 +35,9 @@ import java.util.List;
 public class RobotInGrid {
 
   List<Cell> getPath(boolean[][] grid) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (grid == null || grid.length == 0)
+      return null;
+    List<Cell> path = new ArrayList<Cell>();
+
   }
 }
