@@ -38,6 +38,13 @@ public class RobotInGrid {
     if (grid == null || grid.length == 0)
       return null;
     List<Cell> path = new ArrayList<Cell>();
+    if (getPath(grid, 0, 0, path)) {
+      Collections.reverse(path);
+      return path;
+    }
+    return null;
+  }
+
 
   }
 }
