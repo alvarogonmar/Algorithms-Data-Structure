@@ -27,7 +27,7 @@ public class IsUnique {
       return false; // retorna false
 
     Set<Character> characters = new HashSet<>(); // crea un conjunto para almacenar los caracteres
-    for (Character c : s.toCharArray()) {
+    for (Character c : s.toCharArray()) { // recorre la cadena
       if (characters.contains(c))
         return false;
       characters.add(c);
