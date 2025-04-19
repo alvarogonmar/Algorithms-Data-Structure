@@ -54,5 +54,12 @@ public class RobotInGrid {
 
     boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1);
 
+    if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) {
+      path.add(cell);
+      return true;
+    }
+
+    grid[row][col] = false;
+    return false;
   }
 }
