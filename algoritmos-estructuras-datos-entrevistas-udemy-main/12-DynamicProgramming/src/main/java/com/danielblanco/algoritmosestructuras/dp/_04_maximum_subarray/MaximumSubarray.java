@@ -19,6 +19,8 @@ package com.danielblanco.algoritmosestructuras.dp._04_maximum_subarray;
 public class MaximumSubarray {
 
   public int maxSubArray(int[] nums) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    if (nums == null || nums.length == 0)
+      return 0;
+
   }
 }
