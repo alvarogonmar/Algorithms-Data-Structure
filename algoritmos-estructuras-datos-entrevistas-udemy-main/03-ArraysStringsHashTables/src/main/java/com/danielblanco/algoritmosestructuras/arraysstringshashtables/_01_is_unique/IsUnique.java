@@ -30,7 +30,7 @@ public class IsUnique {
     for (Character c : s.toCharArray()) { // recorre la cadena
       if (characters.contains(c)) // si el conjunto ya contiene el carácter, no es único
         return false; // retorna false
-      characters.add(c);
+      characters.add(c); // añade el carácter al conjunto
     }
     return true;
   }
