@@ -32,7 +32,7 @@ public class TwoSum {
     if (nums == null || nums.length < 2) { // Comprobamos si el array es nulo o tiene menos de 2 elementos
       return null; // Si es así, retornamos null
     } else {
-      Map<Integer, Integer> compMap = new HashMap<>();
+      Map<Integer, Integer> compMap = new HashMap<>(); // Creamos un mapa para almacenar los complementos y sus índices
       for (int i = 0; i < nums.length; i++) {
         if (compMap.containsKey(nums[i]))
           return new int[] { i, compMap.get(nums[i]) };
