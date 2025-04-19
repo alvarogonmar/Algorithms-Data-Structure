@@ -22,5 +22,16 @@ public class MaximumSubarray {
     if (nums == null || nums.length == 0)
       return 0;
 
+    int maxSum = nums[0];
+    int currentSum = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+      if (currentSum < 0)
+        currentSum = 0;
+
+      currentSum += nums[i];
+      maxSum = Math.max(maxSum, currentSum);
+    }
+
+    return maxSum;
   }
 }
