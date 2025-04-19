@@ -33,6 +33,12 @@ public class SetSubsets {
     return subsets;
   }
 
-
+  private void duplicateSubsetsAddingElement(Integer element, List<List<Integer>> subsets) {
+    int currentSize = subsets.size();
+    for (int i = 0; i < currentSize; i++) {
+      List<Integer> newSubset = new ArrayList<Integer>(subsets.get(i));
+      newSubset.add(element);
+      subsets.add(newSubset);
+    }
   }
 }
