@@ -34,7 +34,7 @@ public class TwoSum {
     } else {
       Map<Integer, Integer> compMap = new HashMap<>(); // Creamos un mapa para almacenar los complementos y sus índices
       for (int i = 0; i < nums.length; i++) { // Recorremos el array
-        if (compMap.containsKey(nums[i]))
+        if (compMap.containsKey(nums[i])) // Si el mapa ya contiene el número actual, significa que hemos encontrado
           return new int[] { i, compMap.get(nums[i]) };
         int complement = target - nums[i];
         compMap.put(complement, i);
