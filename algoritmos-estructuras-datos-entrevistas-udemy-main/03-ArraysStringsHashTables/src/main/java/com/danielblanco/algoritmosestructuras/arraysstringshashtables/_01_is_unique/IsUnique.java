@@ -29,7 +29,7 @@ public class IsUnique {
     Set<Character> characters = new HashSet<>(); // crea un conjunto para almacenar los caracteres
     for (Character c : s.toCharArray()) { // recorre la cadena
       if (characters.contains(c)) // si el conjunto ya contiene el carácter, no es único
-        return false;
+        return false; // retorna false
       characters.add(c);
     }
     return true;
