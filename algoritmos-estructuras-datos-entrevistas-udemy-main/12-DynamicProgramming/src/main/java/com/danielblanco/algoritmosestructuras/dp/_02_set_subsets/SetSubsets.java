@@ -26,5 +26,13 @@ public class SetSubsets {
     List<List<Integer>> subsets = new ArrayList<List<Integer>>();
     subsets.add(new ArrayList<Integer>()); // The '0' subset
 
+    for (Integer element : set) {
+      duplicateSubsetsAddingElement(element, subsets);
+    }
+
+    return subsets;
+  }
+
+
   }
 }
