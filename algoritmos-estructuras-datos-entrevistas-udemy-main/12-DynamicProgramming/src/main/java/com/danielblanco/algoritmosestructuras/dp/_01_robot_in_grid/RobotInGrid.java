@@ -50,5 +50,9 @@ public class RobotInGrid {
       return false;
     }
 
+    Cell cell = new Cell(row, col);
+
+    boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1);
+
   }
 }
