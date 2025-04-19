@@ -30,7 +30,7 @@ public class TwoSum {
 
   public int[] twoSum(int[] nums, int target) {
     if (nums == null || nums.length < 2) { // Comprobamos si el array es nulo o tiene menos de 2 elementos
-      return null;
+      return null; // Si es así, retornamos null
     } else {
       Map<Integer, Integer> compMap = new HashMap<>();
       for (int i = 0; i < nums.length; i++) {
