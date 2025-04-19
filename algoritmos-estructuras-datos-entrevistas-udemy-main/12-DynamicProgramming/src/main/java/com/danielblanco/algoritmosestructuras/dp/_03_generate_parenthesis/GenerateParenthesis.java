@@ -1,5 +1,7 @@
 package com.danielblanco.algoritmosestructuras.dp._03_generate_parenthesis;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /*
@@ -21,7 +23,14 @@ import java.util.List;
  */
 public class GenerateParenthesis {
 
-  public List<String> generateParenthesis(int n) {
-    throw new UnsupportedOperationException("Not implemented yet");
+public List<String> generateParenthesis(int n) {
+    if (n < 1) return Collections.emptyList();
+
+    List<String> result = new ArrayList<String>();
+    generateParenthesis(n, n, new StringBuilder(), result);
+    return result;
+  }
+
+
   }
 }
