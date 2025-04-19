@@ -1,5 +1,6 @@
 package com.danielblanco.algoritmosestructuras.dp._02_set_subsets;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /*
@@ -22,6 +23,8 @@ import java.util.List;
 public class SetSubsets {
 
   List<List<Integer>> subsets(List<Integer> set) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    List<List<Integer>> subsets = new ArrayList<List<Integer>>();
+    subsets.add(new ArrayList<Integer>()); // The '0' subset
+
   }
 }
