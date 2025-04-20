@@ -15,7 +15,7 @@ import java.util.Deque;
  * https://stackoverflow.com/questions/12524826/why-should-i-use-deque-over-stack
  */
 public class QueueWithStacksSolution {
-  Deque<Integer> firstStack = new ArrayDeque<>();
+  Deque<Integer> firstStack = new ArrayDeque<>(); // hacer array deque
   Deque<Integer> secondStack = new ArrayDeque<>();
 
   public void add(Integer value) {
