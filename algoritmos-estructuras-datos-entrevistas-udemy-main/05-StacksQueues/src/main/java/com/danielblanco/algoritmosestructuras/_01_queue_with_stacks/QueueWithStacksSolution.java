@@ -35,7 +35,7 @@ public class QueueWithStacksSolution {
     return secondStack.peek(); // devolvemos el primer elemento del segundo stack
   }
 
-  public Integer remove() {
+  public Integer remove() { // elimina el primer elemento de la cola
     shiftStacks();
     return secondStack.pop();
   }
