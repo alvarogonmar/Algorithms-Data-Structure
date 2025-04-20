@@ -16,7 +16,7 @@ import java.util.Deque;
  */
 public class QueueWithStacksSolution {
   Deque<Integer> firstStack = new ArrayDeque<>(); // hacer array deque
-  Deque<Integer> secondStack = new ArrayDeque<>();
+  Deque<Integer> secondStack = new ArrayDeque<>(); // hacer segundo array deque
 
   public void add(Integer value) {
     firstStack.push(value);
