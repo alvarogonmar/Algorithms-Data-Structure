@@ -23,7 +23,7 @@ public class QueueWithStacksSolution {
   }
 
   private void shiftStacks() {
-    if (secondStack.isEmpty()) {
+    if (secondStack.isEmpty()) { // si el segundo stack está vacío
       while (!firstStack.isEmpty()) {
         secondStack.push(firstStack.pop());
       }
