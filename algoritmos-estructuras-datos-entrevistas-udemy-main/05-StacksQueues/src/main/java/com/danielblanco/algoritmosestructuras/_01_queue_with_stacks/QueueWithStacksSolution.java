@@ -40,7 +40,7 @@ public class QueueWithStacksSolution {
     return secondStack.pop(); // eliminamos el primer elemento del segundo stack
   }
 
-  public boolean isEmpty() {
+  public boolean isEmpty() { // devuelve true si la cola está vacía
     return size() == 0;
   }
 
