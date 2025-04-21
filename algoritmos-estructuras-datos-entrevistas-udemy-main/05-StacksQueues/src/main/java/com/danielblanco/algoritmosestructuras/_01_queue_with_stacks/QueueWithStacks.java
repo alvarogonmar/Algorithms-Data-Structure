@@ -32,7 +32,8 @@ public class QueueWithStacks {
     return secondStack.pop(); // pop() devuelve y elimina el elemento en la cima de la pila
   }
 
-  private void dumpElementsIntoSecondStack() {
+  private void dumpElementsIntoSecondStack() { // Método privado para pasar los elementos de la primera pila a la
+                                               // segunda
     while (!firstStack.isEmpty()) { /// Mientras la pila no esté vacía
       secondStack.push(firstStack.pop()); // Pasamos los elementos de la primera pila a la segunda
     }
