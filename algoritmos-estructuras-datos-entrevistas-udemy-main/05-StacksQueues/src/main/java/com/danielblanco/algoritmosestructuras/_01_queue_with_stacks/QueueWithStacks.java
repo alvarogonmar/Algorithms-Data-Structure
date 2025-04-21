@@ -23,7 +23,7 @@ public class QueueWithStacks {
   }
 
   public Integer peek() {
-    dumpElementsIntoSecondStack();
+    dumpElementsIntoSecondStack(); // Pasamos los elementos de la primera pila a la segunda
     return secondStack.peek(); // peek() devuelve el elemento en la cima de la pila, sin eliminarlo
   }
 
