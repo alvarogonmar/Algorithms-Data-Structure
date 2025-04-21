@@ -19,7 +19,7 @@ public class QueueWithStacks {
   Deque<Integer> secondStack = new ArrayDeque<>();
 
   public void add(Integer value) {
-    firstStack.push(value);
+    firstStack.push(value); // Añadimos el elemento al primer stack
   }
 
   public Integer peek() {
