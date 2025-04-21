@@ -45,6 +45,6 @@ public class QueueWithStacksSolution {
   }
 
   public int size() { // devuelve el tamaño de la cola
-    return firstStack.size() + secondStack.size();
+    return firstStack.size() + secondStack.size(); // sumamos el tamaño de los dos stacks
   }
 }
