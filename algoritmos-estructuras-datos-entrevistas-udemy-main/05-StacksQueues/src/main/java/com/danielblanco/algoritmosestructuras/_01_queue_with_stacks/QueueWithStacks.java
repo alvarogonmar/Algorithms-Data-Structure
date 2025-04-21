@@ -18,7 +18,7 @@ public class QueueWithStacks {
   Deque<Integer> firstStack = new ArrayDeque<>();
   Deque<Integer> secondStack = new ArrayDeque<>();
 
-  public void add(Integer value) {
+  public void add(Integer value) { // Añade un elemento a la cola
     firstStack.push(value); // Añadimos el elemento al primer stack
   }
 
