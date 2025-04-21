@@ -19,7 +19,7 @@ public class QueueWithStacksSolution {
   Deque<Integer> secondStack = new ArrayDeque<>(); // hacer segundo array deque
 
   public void add(Integer value) {
-    firstStack.push(value);
+    firstStack.push(value); // añadimos el elemento al primer stack
   }
 
   private void shiftStacks() {
