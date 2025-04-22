@@ -40,7 +40,7 @@ public class QueueWithStacks {
   }
 
   public boolean isEmpty() { // Devuelve true si la cola está vacía
-    return size() == 0;
+    return size() == 0; // Si el tamaño de la cola es 0
   }
 
   public int size() {
