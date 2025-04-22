@@ -16,7 +16,7 @@ import java.util.Deque;
  */
 public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
 
-  public boolean isValid(String s) {
+  public boolean isValid(String s) { // clase principal que revisa si el string es válido
     Deque<Character> stack = new java.util.ArrayDeque<>();
 
     for (char c : s.toCharArray()) {
