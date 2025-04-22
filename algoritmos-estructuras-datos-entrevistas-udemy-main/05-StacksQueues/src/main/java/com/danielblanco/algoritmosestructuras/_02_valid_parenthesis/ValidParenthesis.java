@@ -14,7 +14,7 @@ import java.util.Deque;
  *  Input: "({)}"
  *  Output: false
  */
-public class ValidParenthesis {
+public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
 
   public boolean isValid(String s) {
     Deque<Character> stack = new java.util.ArrayDeque<>();
