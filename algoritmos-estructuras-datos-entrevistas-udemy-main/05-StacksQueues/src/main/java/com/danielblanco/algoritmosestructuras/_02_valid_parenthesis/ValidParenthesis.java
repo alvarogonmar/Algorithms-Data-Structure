@@ -19,7 +19,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
   public boolean isValid(String s) { // clase principal que revisa si el string es válido
     Deque<Character> stack = new java.util.ArrayDeque<>(); // crear un stack
 
-    for (char c : s.toCharArray()) {
+    for (char c : s.toCharArray()) { // recorrer el string
       if (c == "(" || c == "{" || c == "[") {
         stack.push(getOpposite(c));
       } else {
