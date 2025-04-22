@@ -43,7 +43,7 @@ public class QueueWithStacks {
     return size() == 0; // Si el tamaño de la cola es 0
   }
 
-  public int size() {
+  public int size() { // Devuelve el tamaño de la cola
     return firstStack.size() + secondStack.size(); // Devuelve el tamaño de la cola
   }
 }
