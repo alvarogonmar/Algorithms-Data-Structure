@@ -21,7 +21,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
 
     for (char c : s.toCharArray()) { // recorrer el string
       if (c == "(" || c == "{" || c == "[") { // si el caracter es un paréntesis de apertura
-        stack.push(getOpposite(c));
+        stack.push(getOpposite(c)); // añadir el paréntesis de cierre al stack
       } else {
         if (stack.isEmpty() || stack.pop() != c) {
           return false;
