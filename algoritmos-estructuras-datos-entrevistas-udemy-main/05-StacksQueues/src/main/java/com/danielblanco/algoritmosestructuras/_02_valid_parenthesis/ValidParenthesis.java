@@ -25,7 +25,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
       } else { // si el caracter es un paréntesis de cierre
         if (stack.isEmpty() || stack.pop() != c) { // si el stack está vacío o el paréntesis de cierre no coincide con
                                                    // el de apertura
-          return false;
+          return false; // devolver false
         }
       }
       return stack.isEmpty();
