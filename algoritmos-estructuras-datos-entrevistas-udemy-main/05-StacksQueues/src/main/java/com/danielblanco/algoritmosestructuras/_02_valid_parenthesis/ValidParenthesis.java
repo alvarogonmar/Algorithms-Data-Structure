@@ -28,7 +28,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
           return false; // devolver false
         }
       }
-      return stack.isEmpty();
+      return stack.isEmpty(); // devolver true si el stack está vacío
     }
   }
 
