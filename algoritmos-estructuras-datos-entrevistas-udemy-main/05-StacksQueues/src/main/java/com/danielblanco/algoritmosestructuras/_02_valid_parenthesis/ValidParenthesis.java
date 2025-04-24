@@ -33,7 +33,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
   }
 
   private Character getOpposite(Character c) { // método privado que devuelve el paréntesis de cierre
-    if (c == "(") {
+    if (c == "(") { // devolver el paréntesis de cierre
       return ")";
     }
     if (c == "{") {
