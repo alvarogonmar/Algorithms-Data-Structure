@@ -40,7 +40,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
       return "}"; // devolver el paréntesis de cierre
     }
     if (c == "[") { // si el paréntesis de apertura es [
-      return "]";
+      return "]"; // devolver el paréntesis de cierre
     }
   }
 }
