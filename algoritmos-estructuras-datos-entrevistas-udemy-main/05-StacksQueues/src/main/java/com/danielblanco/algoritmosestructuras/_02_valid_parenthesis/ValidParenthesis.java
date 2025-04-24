@@ -36,7 +36,7 @@ public class ValidParenthesis { // O(n) time complexity, O(n) space complexity
     if (c == "(") { // devolver el paréntesis de cierre
       return ")"; // si el paréntesis de apertura es (
     }
-    if (c == "{") {
+    if (c == "{") { // si el paréntesis de apertura es {
       return "}";
     }
     if (c == "[") {
