@@ -28,7 +28,7 @@ public class ValidParenthesisSolution {
       }
     }
 
-    return stack.isEmpty();
+    return stack.isEmpty(); // devolver true si el stack está vacío
   }
 
   private char getOpposite(char c) {
