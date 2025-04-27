@@ -17,7 +17,7 @@ import java.util.Deque;
  */
 public class ValidParenthesisSolution {
   public boolean isValid(String s) { // funcion principal que revisa si el string es válido
-    Deque<Character> stack = new ArrayDeque<Character>();
+    Deque<Character> stack = new ArrayDeque<Character>(); // crear un stack
 
     for (char c : s.toCharArray()) {
       if (c == '(' || c == '{' || c == '[') {
