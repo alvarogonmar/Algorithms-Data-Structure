@@ -31,7 +31,7 @@ public class ValidParenthesisSolution {
     return stack.isEmpty(); // devolver true si el stack está vacío
   }
 
-  private char getOpposite(char c) {
+  private char getOpposite(char c) { // método privado que devuelve el paréntesis de cierre
     if (c == '(')
       return ')';
     if (c == '{')
