@@ -19,7 +19,7 @@ public class ValidParenthesisSolution {
   public boolean isValid(String s) { // funcion principal que revisa si el string es válido
     Deque<Character> stack = new ArrayDeque<Character>(); // crear un stack
 
-    for (char c : s.toCharArray()) {
+    for (char c : s.toCharArray()) { // recorrer el string
       if (c == '(' || c == '{' || c == '[') {
         stack.push(getOpposite(c));
       } else {
