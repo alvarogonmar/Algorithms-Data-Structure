@@ -20,7 +20,7 @@ public class ValidParenthesisSolution {
     Deque<Character> stack = new ArrayDeque<Character>(); // crear un stack
 
     for (char c : s.toCharArray()) { // recorrer el string
-      if (c == '(' || c == '{' || c == '[') {
+      if (c == '(' || c == '{' || c == '[') { // si el caracter es un paréntesis de apertura
         stack.push(getOpposite(c));
       } else {
         if (stack.isEmpty() || stack.pop() != c)
