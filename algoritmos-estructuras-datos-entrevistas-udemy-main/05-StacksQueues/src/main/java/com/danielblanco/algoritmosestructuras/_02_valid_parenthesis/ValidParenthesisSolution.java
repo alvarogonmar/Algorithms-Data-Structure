@@ -22,7 +22,7 @@ public class ValidParenthesisSolution {
     for (char c : s.toCharArray()) { // recorrer el string
       if (c == '(' || c == '{' || c == '[') { // si el caracter es un paréntesis de apertura
         stack.push(getOpposite(c)); // añadir el paréntesis de cierre al stack
-      } else {
+      } else { // si el caracter es un paréntesis de cierre
         if (stack.isEmpty() || stack.pop() != c)
           return false;
       }
