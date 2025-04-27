@@ -16,14 +16,15 @@ import java.util.Deque;
  *  Output: false
  */
 public class ValidParenthesisSolution {
-  public boolean isValid(String s) {
+  public boolean isValid(String s) { // funcion principal que revisa si el string es válido
     Deque<Character> stack = new ArrayDeque<Character>();
 
     for (char c : s.toCharArray()) {
       if (c == '(' || c == '{' || c == '[') {
         stack.push(getOpposite(c));
       } else {
-        if (stack.isEmpty() || stack.pop() != c) return false;
+        if (stack.isEmpty() || stack.pop() != c)
+          return false;
       }
     }
 
@@ -31,9 +32,12 @@ public class ValidParenthesisSolution {
   }
 
   private char getOpposite(char c) {
-    if (c == '(') return ')';
-    if (c == '{') return '}';
-    if (c == '[') return ']';
+    if (c == '(')
+      return ')';
+    if (c == '{')
+      return '}';
+    if (c == '[')
+      return ']';
 
     return '0';
   }
