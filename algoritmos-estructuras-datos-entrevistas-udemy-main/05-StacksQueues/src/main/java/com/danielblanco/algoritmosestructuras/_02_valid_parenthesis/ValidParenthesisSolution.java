@@ -34,7 +34,7 @@ public class ValidParenthesisSolution {
   private char getOpposite(char c) { // método privado que devuelve el paréntesis de cierre
     if (c == '(') // devolver el paréntesis de cierre
       return ')';
-    if (c == '{')
+    if (c == '{') // si el paréntesis de apertura es {
       return '}';
     if (c == '[')
       return ']';
