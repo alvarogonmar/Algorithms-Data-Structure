@@ -22,7 +22,7 @@ public class SortStackSolution { // clase principal que ordena un stack
       while (!sortedStack.isEmpty() && element > sortedStack.peek()) { // mientras el stack auxiliar no esté vacío y el
                                                                        // elemento sea mayor que el tope del stack
                                                                        // auxiliar
-        stack.push(sortedStack.pop());
+        stack.push(sortedStack.pop()); // pasar el elemento del stack auxiliar al stack original
       }
       sortedStack.push(element);
     }
