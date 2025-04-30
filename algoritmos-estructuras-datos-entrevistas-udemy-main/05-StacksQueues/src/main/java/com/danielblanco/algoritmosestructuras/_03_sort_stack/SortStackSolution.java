@@ -18,7 +18,7 @@ public class SortStackSolution { // clase principal que ordena un stack
     Deque<Integer> sortedStack = new ArrayDeque<>(); // crear un stack auxiliar
 
     while (!stack.isEmpty()) { // mientras el stack no esté vacío
-      Integer element = stack.pop();
+      Integer element = stack.pop(); // sacar el elemento del stack original
       while (!sortedStack.isEmpty() && element > sortedStack.peek()) {
         stack.push(sortedStack.pop());
       }
