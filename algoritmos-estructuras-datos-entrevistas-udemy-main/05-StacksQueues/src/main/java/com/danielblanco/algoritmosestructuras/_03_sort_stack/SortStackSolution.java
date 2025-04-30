@@ -14,7 +14,7 @@ import java.util.Deque;
  */
 public class SortStackSolution { // clase principal que ordena un stack
 
-  public Deque<Integer> sort(Deque<Integer> stack) {
+  public Deque<Integer> sort(Deque<Integer> stack) { // función principal que ordena el stack
     Deque<Integer> sortedStack = new ArrayDeque<>();
 
     while (!stack.isEmpty()) {
