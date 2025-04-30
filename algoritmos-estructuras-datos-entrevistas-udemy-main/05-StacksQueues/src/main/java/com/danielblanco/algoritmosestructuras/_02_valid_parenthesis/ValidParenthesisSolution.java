@@ -36,7 +36,7 @@ public class ValidParenthesisSolution {
       return ')';
     if (c == '{') // si el paréntesis de apertura es {
       return '}'; // devolver el paréntesis de cierre
-    if (c == '[')
+    if (c == '[') // si el paréntesis de apertura es [
       return ']';
 
     return '0';
