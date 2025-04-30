@@ -19,7 +19,9 @@ public class SortStackSolution { // clase principal que ordena un stack
 
     while (!stack.isEmpty()) { // mientras el stack no esté vacío
       Integer element = stack.pop(); // sacar el elemento del stack original
-      while (!sortedStack.isEmpty() && element > sortedStack.peek()) {
+      while (!sortedStack.isEmpty() && element > sortedStack.peek()) { // mientras el stack auxiliar no esté vacío y el
+                                                                       // elemento sea mayor que el tope del stack
+                                                                       // auxiliar
         stack.push(sortedStack.pop());
       }
       sortedStack.push(element);
