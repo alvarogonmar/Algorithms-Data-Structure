@@ -12,7 +12,7 @@ import java.util.Deque;
  *  Input: (tope) 4->2->5->1
  *  Output: (tope) 1->2->4->5
  */
-public class SortStackSolution {
+public class SortStackSolution { // clase principal que ordena un stack
 
   public Deque<Integer> sort(Deque<Integer> stack) {
     Deque<Integer> sortedStack = new ArrayDeque<>();
