@@ -24,7 +24,7 @@ public class SortStackSolution { // clase principal que ordena un stack
                                                                        // auxiliar
         stack.push(sortedStack.pop()); // pasar el elemento del stack auxiliar al stack original
       }
-      sortedStack.push(element);
+      sortedStack.push(element); // añadir el elemento al stack auxiliar
     }
 
     return sortedStack;
