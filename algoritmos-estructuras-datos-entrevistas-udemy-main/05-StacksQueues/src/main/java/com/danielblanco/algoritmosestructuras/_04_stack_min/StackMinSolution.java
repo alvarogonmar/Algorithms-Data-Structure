@@ -9,7 +9,7 @@ import java.util.Deque;
  */
 public class StackMinSolution {
 
-  private Deque<Integer> valuesStack = new ArrayDeque<>();
+  private Deque<Integer> valuesStack = new ArrayDeque<>(); // Stack para los valores
   private Deque<Integer> minStack = new ArrayDeque<>();
 
   public void push(Integer data) {
