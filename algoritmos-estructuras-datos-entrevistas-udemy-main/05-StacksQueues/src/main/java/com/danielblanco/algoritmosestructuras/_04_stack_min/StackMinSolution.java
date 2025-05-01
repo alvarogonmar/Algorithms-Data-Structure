@@ -12,7 +12,7 @@ public class StackMinSolution {
   private Deque<Integer> valuesStack = new ArrayDeque<>(); // Stack para los valores
   private Deque<Integer> minStack = new ArrayDeque<>(); // Stack para los mínimos
 
-  public void push(Integer data) {
+  public void push(Integer data) { // Agrega el valor al stack de valores
     valuesStack.push(data);
     if (minStack.isEmpty() || data <= minStack.peek()) {
       minStack.push(data);
