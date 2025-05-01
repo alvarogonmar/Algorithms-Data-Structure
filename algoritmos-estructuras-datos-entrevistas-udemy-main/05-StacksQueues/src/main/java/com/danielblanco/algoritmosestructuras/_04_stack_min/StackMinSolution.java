@@ -14,7 +14,8 @@ public class StackMinSolution {
 
   public void push(Integer data) { // Agrega el valor al stack de valores
     valuesStack.push(data); // Si el valor es menor al mínimo actual, lo agrega al stack de mínimos
-    if (minStack.isEmpty() || data <= minStack.peek()) {
+    if (minStack.isEmpty() || data <= minStack.peek()) { // Si el stack de mínimos está vacío o el nuevo valor es menor
+                                                         // o igual al mínimo actual
       minStack.push(data);
     }
   }
