@@ -16,7 +16,7 @@ public class StackMinSolution {
     valuesStack.push(data); // Si el valor es menor al mínimo actual, lo agrega al stack de mínimos
     if (minStack.isEmpty() || data <= minStack.peek()) { // Si el stack de mínimos está vacío o el nuevo valor es menor
                                                          // o igual al mínimo actual
-      minStack.push(data);
+      minStack.push(data); // Agrega el nuevo valor al stack de mínimos
     }
   }
 
