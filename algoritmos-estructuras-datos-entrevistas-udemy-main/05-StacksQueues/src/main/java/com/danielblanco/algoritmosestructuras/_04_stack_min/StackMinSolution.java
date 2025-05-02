@@ -20,7 +20,7 @@ public class StackMinSolution {
     }
   }
 
-  public int pop() {
+  public int pop() { // Saca el valor del stack de valores
     int oldTopData = valuesStack.pop();
     if (oldTopData == minStack.peek()) {
       minStack.pop();
