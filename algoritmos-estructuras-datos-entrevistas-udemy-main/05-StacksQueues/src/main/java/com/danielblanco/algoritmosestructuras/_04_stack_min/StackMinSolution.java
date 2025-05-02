@@ -28,7 +28,7 @@ public class StackMinSolution {
     return oldTopData; // Devuelve el valor sacado
   }
 
-  public int min() {
+  public int min() { // Devuelve el mínimo sin sacarlo
     return minStack.peek();
   }
 }
