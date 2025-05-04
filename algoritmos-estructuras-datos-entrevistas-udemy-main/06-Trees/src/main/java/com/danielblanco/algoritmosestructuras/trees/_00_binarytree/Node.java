@@ -6,6 +6,6 @@ public class Node { // Clase para los nodos del árbol binario
   public Node right; // Nodo derecho
 
   public Node(int value) { // Constructor de la clase
-    this.value = value;
+    this.value = value; // Inicializa el valor del nodo
   }
 }
