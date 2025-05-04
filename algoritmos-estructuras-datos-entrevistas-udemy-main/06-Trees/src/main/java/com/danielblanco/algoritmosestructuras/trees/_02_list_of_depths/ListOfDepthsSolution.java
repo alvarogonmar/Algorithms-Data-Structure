@@ -23,7 +23,7 @@ import java.util.List;
 public class ListOfDepthsSolution { // clase principal que devuelve una lista enlazada con los nodos de cada nivel
   public List<LinkedList<Node>> listOfDepths(Node root) { // función principal que devuelve una lista enlazada con los
                                                           // nodos de cada nivel
-    if (root == null) {
+    if (root == null) { // si el árbol está vacío
       return null;
     }
 
