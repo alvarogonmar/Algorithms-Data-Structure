@@ -24,7 +24,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
   public List<LinkedList<Node>> listOfDepths(Node root) { // función principal que devuelve una lista enlazada con los
                                                           // nodos de cada nivel
     if (root == null) { // si el árbol está vacío
-      return null;
+      return null; // devolver null
     }
 
     List<LinkedList<Node>> result = new ArrayList<>();
