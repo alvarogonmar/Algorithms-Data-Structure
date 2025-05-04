@@ -32,7 +32,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
     LinkedList<Node> current = new LinkedList<>(); // crear una lista enlazada para almacenar los nodos del nivel actual
     current.add(root); // añadir la raíz a la lista enlazada
 
-    while (!current.isEmpty()) {
+    while (!current.isEmpty()) { // mientras la lista enlazada no esté vacía
       result.add(current);
       LinkedList<Node> parents = current;
       current = new LinkedList<Node>();
