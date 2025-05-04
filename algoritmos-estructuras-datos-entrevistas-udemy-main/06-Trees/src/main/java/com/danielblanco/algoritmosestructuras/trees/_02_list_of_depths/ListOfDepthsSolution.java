@@ -21,7 +21,8 @@ import java.util.List;
  *    1->3->6->9
  */
 public class ListOfDepthsSolution { // clase principal que devuelve una lista enlazada con los nodos de cada nivel
-  public List<LinkedList<Node>> listOfDepths(Node root) {
+  public List<LinkedList<Node>> listOfDepths(Node root) { // función principal que devuelve una lista enlazada con los
+                                                          // nodos de cada nivel
     if (root == null) {
       return null;
     }
