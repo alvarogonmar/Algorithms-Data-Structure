@@ -20,7 +20,7 @@ import java.util.List;
  *    2->7
  *    1->3->6->9
  */
-public class ListOfDepthsSolution {
+public class ListOfDepthsSolution { // clase principal que devuelve una lista enlazada con los nodos de cada nivel
   public List<LinkedList<Node>> listOfDepths(Node root) {
     if (root == null) {
       return null;
