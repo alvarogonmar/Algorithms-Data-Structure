@@ -27,7 +27,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
       return null; // devolver null
     }
 
-    List<LinkedList<Node>> result = new ArrayList<>();
+    List<LinkedList<Node>> result = new ArrayList<>(); // crear una lista para almacenar los nodos de cada nivel
 
     LinkedList<Node> current = new LinkedList<>();
     current.add(root);
