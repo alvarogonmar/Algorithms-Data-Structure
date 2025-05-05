@@ -39,7 +39,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
 
       for (Node node : parents) { // recorrer la lista enlazada de nodos
         if (node.left != null) { // si el nodo tiene un hijo izquierdo
-          current.add(node.left);
+          current.add(node.left); // añadir el hijo izquierdo a la lista enlazada
         }
 
         if (node.right != null) {
