@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras.trees._02_list_of_depths;
 import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.List; // importar las librerías necesarias
 
 /*
  * Implementa un algoritmo que devuelva una lista enlazada con los nodos de cada nivel. Si el árbol tiene
