@@ -47,6 +47,6 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
         }
       }
     }
-    return result;
+    return result; // devolver la lista de resultados
   }
 }
