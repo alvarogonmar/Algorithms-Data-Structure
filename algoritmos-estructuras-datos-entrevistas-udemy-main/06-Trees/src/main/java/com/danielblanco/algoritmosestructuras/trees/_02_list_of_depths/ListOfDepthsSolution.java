@@ -43,7 +43,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
         }
 
         if (node.right != null) { // si el nodo tiene un hijo derecho
-          current.add(node.right);
+          current.add(node.right); // añadir el hijo derecho a la lista enlazada
         }
       }
     }
