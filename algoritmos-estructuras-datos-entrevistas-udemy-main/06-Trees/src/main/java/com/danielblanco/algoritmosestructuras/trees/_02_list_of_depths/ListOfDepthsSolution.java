@@ -34,7 +34,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
 
     while (!current.isEmpty()) { // mientras la lista enlazada no esté vacía
       result.add(current); // añadir la lista enlazada a la lista de resultados
-      LinkedList<Node> parents = current;
+      LinkedList<Node> parents = current; // guardar la lista enlazada actual en una variable temporal
       current = new LinkedList<Node>();
 
       for (Node node : parents) {
