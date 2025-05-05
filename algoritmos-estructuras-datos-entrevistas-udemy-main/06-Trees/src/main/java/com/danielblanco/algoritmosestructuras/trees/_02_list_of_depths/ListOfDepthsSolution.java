@@ -33,7 +33,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
     current.add(root); // añadir la raíz a la lista enlazada
 
     while (!current.isEmpty()) { // mientras la lista enlazada no esté vacía
-      result.add(current);
+      result.add(current); // añadir la lista enlazada a la lista de resultados
       LinkedList<Node> parents = current;
       current = new LinkedList<Node>();
 
