@@ -38,7 +38,7 @@ public class ListOfDepthsSolution { // clase principal que devuelve una lista en
       current = new LinkedList<Node>(); // crear una nueva lista enlazada para el siguiente nivel
 
       for (Node node : parents) { // recorrer la lista enlazada de nodos
-        if (node.left != null) {
+        if (node.left != null) { // si el nodo tiene un hijo izquierdo
           current.add(node.left);
         }
 
