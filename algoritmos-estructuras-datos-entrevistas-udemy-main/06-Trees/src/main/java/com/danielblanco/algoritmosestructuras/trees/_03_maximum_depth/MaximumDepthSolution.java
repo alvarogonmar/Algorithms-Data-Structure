@@ -16,7 +16,7 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  */
 public class MaximumDepthSolution { // Clase principal que calcula la profundidad máxima de un árbol binario
   public int maxDepth(Node root) { // Función principal que calcula la profundidad máxima
-    if (root == null)
+    if (root == null) { // Si el árbol está vacío
       return 0;
 
     int depthLeft = maxDepth(root.left) + 1;
