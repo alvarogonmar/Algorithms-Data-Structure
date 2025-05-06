@@ -22,6 +22,6 @@ public class MaximumDepthSolution { // Clase principal que calcula la profundida
     int depthLeft = maxDepth(root.left) + 1; // Calcular la profundidad del subárbol izquierdo
     int depthRight = maxDepth(root.right) + 1; // Calcular la profundidad del subárbol derecho
 
-    return Math.max(depthLeft, depthRight);
+    return Math.max(depthLeft, depthRight); // Devolver la profundidad máxima entre el subárbol izquierdo y derecho
   }
 }
