@@ -25,14 +25,17 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  *
  *  Output: true
  */
-public class ValidateBSTSolution {
+public class ValidateBSTSolution { // Clase principal que valida si un árbol binario es un árbol binario de
+                                   // búsqueda
   public boolean isValidBST(Node root) {
     return isValidBST(root, null, null);
   }
 
   public boolean isValidBST(Node root, Integer min, Integer max) {
-    if (root == null) return true;
-    if ((min != null && root.value <= min) || (max != null && root.value >= max)) return false;
+    if (root == null)
+      return true;
+    if ((min != null && root.value <= min) || (max != null && root.value >= max))
+      return false;
 
     return isValidBST(root.left, min, root.value) && isValidBST(root.right, root.value, max);
   }
