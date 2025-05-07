@@ -44,7 +44,7 @@ public class IsSubTreeSolution { // Clase principal que determina si un árbol e
     preOrder(first, stb1); // Llamar a la función preOrder para el primer árbol
     preOrder(second, stb2); // Llamar a la función preOrder para el segundo árbol
 
-    return stb1.toString().contains(stb2.toString());
+    return stb1.toString().contains(stb2.toString()); // Comprobar si el segundo árbol es subárbol del primero
   }
 
   private void preOrder(Node node, StringBuilder stb) {
