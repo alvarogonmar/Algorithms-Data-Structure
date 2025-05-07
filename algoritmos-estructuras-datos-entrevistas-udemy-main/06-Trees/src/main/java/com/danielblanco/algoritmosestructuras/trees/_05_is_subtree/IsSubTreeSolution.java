@@ -54,7 +54,7 @@ public class IsSubTreeSolution { // Clase principal que determina si un árbol e
     }
 
     stb.append(node.value); // Añadir el valor del nodo al StringBuilder
-    preOrder(node.left, stb);
+    preOrder(node.left, stb); // Llamar a la función recursivamente para el hijo izquierdo
     preOrder(node.right, stb);
   }
 }
