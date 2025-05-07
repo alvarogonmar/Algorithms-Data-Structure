@@ -29,7 +29,7 @@ public class ValidateBSTSolution { // Clase principal que valida si un árbol bi
                                    // búsqueda
   public boolean isValidBST(Node root) { // función principal que valida si un árbol binario es un árbol binario de
                                          // búsqueda
-    return isValidBST(root, null, null);
+    return isValidBST(root, null, null); // llamamos a la función con el máximo y mínimo
   }
 
   public boolean isValidBST(Node root, Integer min, Integer max) {
