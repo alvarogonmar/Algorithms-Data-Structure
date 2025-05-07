@@ -53,7 +53,7 @@ public class IsSubTreeSolution { // Clase principal que determina si un árbol e
       return; // Retornar para evitar recorrer nodos nulos
     }
 
-    stb.append(node.value);
+    stb.append(node.value); // Añadir el valor del nodo al StringBuilder
     preOrder(node.left, stb);
     preOrder(node.right, stb);
   }
