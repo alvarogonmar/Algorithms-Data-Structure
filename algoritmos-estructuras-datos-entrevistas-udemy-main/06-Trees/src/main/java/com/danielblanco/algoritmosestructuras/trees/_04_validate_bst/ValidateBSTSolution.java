@@ -34,7 +34,7 @@ public class ValidateBSTSolution { // Clase principal que valida si un árbol bi
 
   public boolean isValidBST(Node root, Integer min, Integer max) { // función con el máximo y mínimo
     if (root == null) // si el nodo es nulo, retornamos true
-      return true;
+      return true; // si el nodo es nulo, retornamos true
     if ((min != null && root.value <= min) || (max != null && root.value >= max))
       return false;
 
