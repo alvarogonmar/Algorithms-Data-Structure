@@ -41,7 +41,7 @@ public class IsSubTreeSolution { // Clase principal que determina si un árbol e
     StringBuilder stb1 = new StringBuilder(); // Crear un StringBuilder para el primer árbol
     StringBuilder stb2 = new StringBuilder(); // Crear un StringBuilder para el segundo árbol
 
-    preOrder(first, stb1);
+    preOrder(first, stb1); // Llamar a la función preOrder para el primer árbol
     preOrder(second, stb2);
 
     return stb1.toString().contains(stb2.toString());
