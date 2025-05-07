@@ -35,7 +35,7 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  *
  *  Output: true
  */
-public class IsSubTreeSolution {
+public class IsSubTreeSolution { // Clase principal que determina si un árbol es subárbol de otro
 
   public boolean isSubtree(Node first, Node second) {
     StringBuilder stb1 = new StringBuilder();
