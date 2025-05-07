@@ -50,7 +50,7 @@ public class IsSubTreeSolution { // Clase principal que determina si un árbol e
   private void preOrder(Node node, StringBuilder stb) { // Función auxiliar que recorre el árbol en preorden
     if (node == null) { // Si el nodo es nulo, añadir un marcador
       stb.append("X"); // Añadir un marcador para indicar un nodo nulo
-      return;
+      return; // Retornar para evitar recorrer nodos nulos
     }
 
     stb.append(node.value);
