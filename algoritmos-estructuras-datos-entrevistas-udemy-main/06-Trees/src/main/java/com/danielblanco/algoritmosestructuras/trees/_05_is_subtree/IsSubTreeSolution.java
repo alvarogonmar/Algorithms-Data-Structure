@@ -39,7 +39,7 @@ public class IsSubTreeSolution { // Clase principal que determina si un árbol e
 
   public boolean isSubtree(Node first, Node second) { // Función principal que determina si un árbol es subárbol de otro
     StringBuilder stb1 = new StringBuilder(); // Crear un StringBuilder para el primer árbol
-    StringBuilder stb2 = new StringBuilder();
+    StringBuilder stb2 = new StringBuilder(); // Crear un StringBuilder para el segundo árbol
 
     preOrder(first, stb1);
     preOrder(second, stb2);
