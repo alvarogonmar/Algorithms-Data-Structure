@@ -17,7 +17,7 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
  *  firstCommonAncestor(1, 3) = 5
  *
  */
-public class FirstCommonAncestorSolution {
+public class FirstCommonAncestorSolution { // Clase principal que determina el primer ancestro común de dos nodos
 
   class AncestorNode {
     boolean nodeFound;
@@ -34,10 +34,12 @@ public class FirstCommonAncestorSolution {
     }
 
     AncestorNode leftResult = postOrderSearch(current.left, firstNode, secondNode);
-    if (leftResult.ancestor != null) return leftResult;
+    if (leftResult.ancestor != null)
+      return leftResult;
 
     AncestorNode rightResult = postOrderSearch(current.right, firstNode, secondNode);
-    if (rightResult.ancestor != null) return rightResult;
+    if (rightResult.ancestor != null)
+      return rightResult;
 
     AncestorNode result = new AncestorNode();
 
@@ -46,11 +48,10 @@ public class FirstCommonAncestorSolution {
       return result;
     }
 
-    result.nodeFound =
-        current == firstNode
-            || current == secondNode
-            || leftResult.nodeFound
-            || rightResult.nodeFound;
+    result.nodeFound = current == firstNode
+        || current == secondNode
+        || leftResult.nodeFound
+        || rightResult.nodeFound;
 
     return result;
   }
