@@ -26,7 +26,8 @@ public class FirstCommonAncestorSolution { // Clase principal que determina el p
 
   public Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) { // Función principal que determina el
                                                                                 // primer ancestro común
-    return postOrderSearch(root, firstNode, secondNode).ancestor;
+    return postOrderSearch(root, firstNode, secondNode).ancestor; // Llamar a la función postOrderSearch para buscar el
+                                                                  // ancestro
   }
 
   private AncestorNode postOrderSearch(Node current, Node firstNode, Node secondNode) {
