@@ -20,7 +20,7 @@ import com.danielblanco.algoritmosestructuras.trees._00_binarytree.Node;
 public class FirstCommonAncestorSolution { // Clase principal que determina el primer ancestro común de dos nodos
 
   class AncestorNode { // Clase auxiliar que almacena información sobre el ancestro
-    boolean nodeFound;
+    boolean nodeFound; // Indica si se ha encontrado un nodo
     Node ancestor;
   }
 
