@@ -32,7 +32,7 @@ public class FirstCommonAncestorSolution { // Clase principal que determina el p
 
   private AncestorNode postOrderSearch(Node current, Node firstNode, Node secondNode) { // Función auxiliar que realiza
                                                                                         // una búsqueda en postorden
-    if (current == null) {
+    if (current == null) { // Si el nodo actual es nulo, retornar un nuevo AncestorNode
       return new AncestorNode();
     }
 
