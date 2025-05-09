@@ -21,7 +21,7 @@ public class FirstCommonAncestorSolution { // Clase principal que determina el p
 
   class AncestorNode { // Clase auxiliar que almacena información sobre el ancestro
     boolean nodeFound; // Indica si se ha encontrado un nodo
-    Node ancestor;
+    Node ancestor; // Almacena el ancestro común
   }
 
   public Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) {
