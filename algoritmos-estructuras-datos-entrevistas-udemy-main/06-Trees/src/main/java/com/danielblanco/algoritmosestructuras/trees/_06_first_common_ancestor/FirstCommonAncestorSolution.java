@@ -39,7 +39,7 @@ public class FirstCommonAncestorSolution { // Clase principal que determina el p
     AncestorNode leftResult = postOrderSearch(current.left, firstNode, secondNode); // Llamar a la función
                                                                                     // recursivamente para el hijo
                                                                                     // izquierdo
-    if (leftResult.ancestor != null)
+    if (leftResult.ancestor != null) // Si se ha encontrado un ancestro en el hijo izquierdo, retornar el resultado
       return leftResult;
 
     AncestorNode rightResult = postOrderSearch(current.right, firstNode, secondNode);
