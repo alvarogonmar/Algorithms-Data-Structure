@@ -8,7 +8,7 @@ public class DepthFirstSearch {
       }
     }
 
-    return false;
+    return false; // Devolver falso si no se encuentra el objetivo
   }
 
   private static boolean recursiveDfsHelper(GraphNode currentNode, String target) {
