@@ -11,7 +11,7 @@ public class BreadthFirstSearch { // Aqui si examinan primero los nodos adyacent
         return true; // Llamar a la función auxiliar BFS con el nodo actual
     }
 
-    return false;
+    return false; // Devolver falso si no se encuentra el objetivo
   }
 
   private static boolean singleBfsHelper(GraphNode node, String target) {
