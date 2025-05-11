@@ -57,7 +57,7 @@ public class FirstCommonAncestorSolution { // Clase principal que determina el p
     }
 
     result.nodeFound = current == firstNode // Comprobar si el nodo actual es uno de los nodos buscados
-        || current == secondNode
+        || current == secondNode // Comprobar si el nodo actual es uno de los nodos buscados
         || leftResult.nodeFound
         || rightResult.nodeFound;
 
