@@ -33,6 +33,6 @@ public class BreadthFirstSearch { // Aqui si examinan primero los nodos adyacent
       }
     }
 
-    return false;
+    return false; // Devolver falso si no se encuentra el objetivo
   }
 }
