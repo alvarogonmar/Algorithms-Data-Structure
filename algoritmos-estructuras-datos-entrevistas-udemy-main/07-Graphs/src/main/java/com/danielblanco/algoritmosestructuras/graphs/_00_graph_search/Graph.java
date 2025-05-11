@@ -15,7 +15,7 @@ public class Graph { // Clase para representar un grafo
       node = new GraphNode(name); // Crear un nuevo nodo
       nodes.put(name, node); // Agregar el nodo al HashMap
     }
-    return node;
+    return node; // Retornar el nodo
   }
 
   // es de un nodo dirigido a otro
