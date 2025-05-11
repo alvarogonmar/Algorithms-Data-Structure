@@ -61,6 +61,6 @@ public class FirstCommonAncestorSolution { // Clase principal que determina el p
         || leftResult.nodeFound // Comprobar si se ha encontrado un nodo en el hijo izquierdo
         || rightResult.nodeFound; // Comprobar si se ha encontrado un nodo en el hijo derecho
 
-    return result;
+    return result; // Retornar el resultado
   }
 }
