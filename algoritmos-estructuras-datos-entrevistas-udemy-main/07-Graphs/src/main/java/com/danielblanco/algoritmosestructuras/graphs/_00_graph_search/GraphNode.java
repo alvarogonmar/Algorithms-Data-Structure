@@ -11,7 +11,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
 
   // Constructor
   public GraphNode(String value) { // Constructor que inicializa el nodo con un valor
-    this.value = value;
+    this.value = value; // Asigna el valor al nodo
     this.adjacents = new HashMap<String, GraphNode>();
     this.status = GraphNodeStatus.Unvisited;
   }
