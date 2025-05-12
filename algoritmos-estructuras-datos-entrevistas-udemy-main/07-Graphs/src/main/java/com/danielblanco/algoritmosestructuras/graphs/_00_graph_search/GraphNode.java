@@ -30,7 +30,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
   }
 
   @Override // Método hashCode para calcular el código hash del nodo
-  public int hashCode() {
+  public int hashCode() { // Se utiliza para comparar nodos
     final int prime = 31;
     int result = 1;
     result = prime * result + ((value == null) ? 0 : value.hashCode());
