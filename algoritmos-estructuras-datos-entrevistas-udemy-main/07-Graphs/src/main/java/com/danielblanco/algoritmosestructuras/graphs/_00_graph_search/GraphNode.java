@@ -34,7 +34,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
     final int prime = 31; // Número primo para calcular el código hash
     int result = 1; // Inicializa el resultado
     result = prime * result + ((value == null) ? 0 : value.hashCode()); // Calcula el código hash del valor del nodo
-    return result;
+    return result; // Retorna el código hash
   }
 
   @Override
