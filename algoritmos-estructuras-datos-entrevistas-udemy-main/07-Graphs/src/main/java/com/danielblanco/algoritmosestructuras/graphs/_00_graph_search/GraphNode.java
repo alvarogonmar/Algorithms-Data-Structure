@@ -29,7 +29,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
     }
   }
 
-  @Override
+  @Override // Método hashCode para calcular el código hash del nodo
   public int hashCode() {
     final int prime = 31;
     int result = 1;
