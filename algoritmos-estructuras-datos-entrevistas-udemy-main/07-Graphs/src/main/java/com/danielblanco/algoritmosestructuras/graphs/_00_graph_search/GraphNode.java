@@ -38,7 +38,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
   }
 
   @Override // Método equals para comparar dos nodos
-  public boolean equals(Object obj) {
+  public boolean equals(Object obj) { // Se utiliza para comparar nodos
     if (this == obj)
       return true;
     if (obj == null)
