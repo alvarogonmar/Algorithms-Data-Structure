@@ -65,6 +65,6 @@ public class BuildOrder {
     for (String[] dep : dependencies) { // por cada dependencia en la lista de dependencias
       graph.addEdge(dep[0], dep[1]); // añadir arista al grafo
     }
-    return graph;
+    return graph; // devolver grafo de dependencias
   }
 }
