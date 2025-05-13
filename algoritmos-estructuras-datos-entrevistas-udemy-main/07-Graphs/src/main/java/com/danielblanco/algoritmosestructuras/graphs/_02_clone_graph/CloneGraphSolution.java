@@ -25,7 +25,7 @@ public class CloneGraphSolution { // Cambio de nombre de CloneGraph a CloneGraph
   }
 
   private Node clone(Node node, Map<Integer, Node> map) { // funcion clone con parametros node y map
-    if (node == null)
+    if (node == null) // si el nodo es null
       return null; // return null si el nodo es null
 
     if (map.containsKey(node.val)) // si el map contiene la key node.val
