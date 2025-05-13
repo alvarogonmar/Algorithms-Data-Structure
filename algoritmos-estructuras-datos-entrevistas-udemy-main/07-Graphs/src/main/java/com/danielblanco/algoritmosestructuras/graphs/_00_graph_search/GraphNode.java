@@ -50,7 +50,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
       if (other.value != null) // Si el valor del otro nodo no es nulo, retorna falso
         return false; // Retorna falso
     } else if (!value.equals(other.value)) // Si el valor del nodo es diferente al del otro nodo, retorna falso
-      return false;
+      return false; // Retorna falso
     return true;
   }
 }
