@@ -46,7 +46,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
     if (getClass() != obj.getClass()) // Si el objeto no es de la misma clase, retorna falso
       return false; // Retorna falso
     GraphNode other = (GraphNode) obj; // Convierte el objeto a un nodo
-    if (value == null) {
+    if (value == null) { // Si el valor del nodo es nulo
       if (other.value != null)
         return false;
     } else if (!value.equals(other.value))
