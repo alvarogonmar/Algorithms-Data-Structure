@@ -43,7 +43,7 @@ public class BuildOrder {
   }
 
   private void depthFirstSearch(GraphNode node, ArrayList<String> sortedProjects) {
-    if (node == null)
+    if (node == null) // si el nodo es nulo, salir
       return; // si el nodo es nulo, salir
     if (node.status == GraphNodeStatus.Unvisited) {
       node.status = GraphNodeStatus.Visiting; // marcar nodo como visitado
