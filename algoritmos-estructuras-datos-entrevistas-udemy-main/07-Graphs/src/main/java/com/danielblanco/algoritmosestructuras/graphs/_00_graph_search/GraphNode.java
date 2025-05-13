@@ -51,6 +51,6 @@ public class GraphNode { // Clase para representar un nodo de un grafo
         return false; // Retorna falso
     } else if (!value.equals(other.value)) // Si el valor del nodo es diferente al del otro nodo, retorna falso
       return false; // Retorna falso
-    return true;
+    return true; // Retorna verdadero si los nodos son iguales
   }
 }
