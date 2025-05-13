@@ -41,7 +41,7 @@ public class GraphNode { // Clase para representar un nodo de un grafo
   public boolean equals(Object obj) { // Se utiliza para comparar nodos
     if (this == obj) // Si son el mismo objeto, retorna verdadero
       return true; // Retorna verdadero
-    if (obj == null)
+    if (obj == null) // Si el objeto es nulo, retorna falso
       return false;
     if (getClass() != obj.getClass())
       return false;
