@@ -41,7 +41,7 @@ public class RelativeRanksSolution { // RelativeRanks
           break;
         case 3:
           res[playerIndex] = "Bronze Medal"; // se le asigna la medalla de bronce
-          break;
+          break; // se le asigna la medalla de bronce
         default:
           res[playerIndex] = Integer.toString(position); // para los demás participantes se asigna su posición
       }
