@@ -6,7 +6,7 @@ public class Trie { // Clase Trie para almacenar palabras y buscar prefijos
 
   public Trie(boolean ignoreCase) { // Constructor de la clase Trie
     root = new TrieNode(); // Inicializar el nodo raíz
-    this.ignoreCase = ignoreCase;
+    this.ignoreCase = ignoreCase; // Asignar el valor de ignoreCase
   }
 
   public void insert(String word) {
