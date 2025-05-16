@@ -27,7 +27,7 @@ package com.danielblanco.algoritmosestructuras.tries._01_title_suggestions;
 public class TitleSuggestionsSolution {
 
   public boolean[] titleSuggestions(String[] books, String[] prefixes, boolean ignoreCase) {
-    Trie dictionary = new Trie(ignoreCase);
+    Trie dictionary = new Trie(ignoreCase); // Crear un nuevo trie
 
     for (String book : books) { // Insertar cada libro en el trie
       dictionary.insert(book); // Insertar el libro en el trie
