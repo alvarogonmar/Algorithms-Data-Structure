@@ -12,7 +12,7 @@ public class Trie { // Clase Trie para almacenar palabras y buscar prefijos
   public void insert(String word) { // Insertar una palabra en el trie
     TrieNode currentNode = root; // Start at the root
 
-    if (ignoreCase) {
+    if (ignoreCase) { // Convertir la palabra a minúsculas si se ignoran las mayúsculas
       word = word.toLowerCase();
     }
 
