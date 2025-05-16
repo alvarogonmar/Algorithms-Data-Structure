@@ -9,7 +9,7 @@ public class Trie { // Clase Trie para almacenar palabras y buscar prefijos
     this.ignoreCase = ignoreCase; // Asignar el valor de ignoreCase
   }
 
-  public void insert(String word) {
+  public void insert(String word) { // Insertar una palabra en el trie
     TrieNode currentNode = root;
 
     if (ignoreCase) {
