@@ -5,7 +5,7 @@ public class Trie { // Clase Trie para almacenar palabras y buscar prefijos
   boolean ignoreCase; // Variable para indicar si se ignoran las mayúsculas y minúsculas
 
   public Trie(boolean ignoreCase) { // Constructor de la clase Trie
-    root = new TrieNode();
+    root = new TrieNode(); // Inicializar el nodo raíz
     this.ignoreCase = ignoreCase;
   }
 
