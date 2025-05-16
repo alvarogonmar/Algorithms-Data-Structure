@@ -1,7 +1,7 @@
 package com.danielblanco.algoritmosestructuras.tries._01_title_suggestions;
 
 public class Trie { // Clase Trie para almacenar palabras y buscar prefijos
-  TrieNode root;
+  TrieNode root; // Nodo raíz del trie
   boolean ignoreCase;
 
   public Trie(boolean ignoreCase) {
