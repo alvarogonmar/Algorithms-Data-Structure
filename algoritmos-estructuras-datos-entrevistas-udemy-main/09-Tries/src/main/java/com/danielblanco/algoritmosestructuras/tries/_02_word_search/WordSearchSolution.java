@@ -51,7 +51,8 @@ public class WordSearchSolution {
     return result; // retorna la lista de palabras
   }
 
-  private void dfs(char[][] board, TrieNode current, int row, int col, List<String> result) {
+  private void dfs(char[][] board, TrieNode current, int row, int col, List<String> result) { // método de búsqueda en
+                                                                                              // profundidad
     if (current == null) { // si el nodo es nulo
       return; // retorna
     }
