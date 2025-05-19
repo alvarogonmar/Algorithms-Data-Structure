@@ -20,7 +20,7 @@ public class MergeSort {
                                                                                         // lados
     /* Copia ambas mitades en el array auxiliar */
     for (int i = low; i <= high; i++) { // Recorre el array
-      helper[i] = array[i];
+      helper[i] = array[i]; // Copia el array original al auxiliar
     }
 
     int helperLeft = low;
