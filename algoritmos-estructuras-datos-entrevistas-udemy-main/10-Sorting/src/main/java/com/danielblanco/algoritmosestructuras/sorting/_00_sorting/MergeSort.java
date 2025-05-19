@@ -23,7 +23,7 @@ public class MergeSort {
       helper[i] = array[i]; // Copia el array original al auxiliar
     }
 
-    int helperLeft = low;
+    int helperLeft = low; // Índice del lado izquierdo
     int helperRight = middle + 1;
     int current = low;
 
