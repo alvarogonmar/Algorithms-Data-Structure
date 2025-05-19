@@ -9,7 +9,7 @@ public class MergeSort {
 
   private static void sort(int[] array, int[] helper, int low, int high) { // Método recursivo para ordenar el array
     if (low < high) { // Si el índice bajo es menor que el alto
-      int middle = (low + high) / 2;
+      int middle = (low + high) / 2; // Calcula el índice medio
       sort(array, helper, low, middle); // Ordena lado izquierdo
       sort(array, helper, middle + 1, high); // Ordena lado derecho
       merge(array, helper, low, middle, high); // Mezcla ambos
