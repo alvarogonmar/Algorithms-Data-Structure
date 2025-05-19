@@ -16,7 +16,8 @@ public class MergeSort {
     }
   }
 
-  private static void merge(int[] array, int[] helper, int low, int middle, int high) {
+  private static void merge(int[] array, int[] helper, int low, int middle, int high) { // Método para mezclar ambos
+                                                                                        // lados
     /* Copia ambas mitades en el array auxiliar */
     for (int i = low; i <= high; i++) {
       helper[i] = array[i];
