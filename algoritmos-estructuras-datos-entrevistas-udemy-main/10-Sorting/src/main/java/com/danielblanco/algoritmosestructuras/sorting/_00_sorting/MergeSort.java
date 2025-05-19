@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras.sorting._00_sorting;
 public class MergeSort {
 
   public static void sort(int[] array) { // Método para ordenar el array
-    int[] helper = new int[array.length];
+    int[] helper = new int[array.length]; // Crea un array auxiliar
     sort(array, helper, 0, array.length - 1);
   }
 
