@@ -4,7 +4,7 @@ public class MergeSort {
 
   public static void sort(int[] array) { // Método para ordenar el array
     int[] helper = new int[array.length]; // Crea un array auxiliar
-    sort(array, helper, 0, array.length - 1);
+    sort(array, helper, 0, array.length - 1); // Llama al método de ordenación
   }
 
   private static void sort(int[] array, int[] helper, int low, int high) {
