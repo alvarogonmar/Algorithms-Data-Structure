@@ -25,7 +25,7 @@ public class MergeSort {
 
     int helperLeft = low; // Índice del lado izquierdo
     int helperRight = middle + 1; // Índice del lado derecho
-    int current = low;
+    int current = low; // Índice del array original
 
     /*
      * Itera el array auxiliar. Compara la mitad izquierda y la derecha, copiando el
