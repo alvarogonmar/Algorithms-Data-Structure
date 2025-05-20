@@ -32,7 +32,7 @@ public class MergeSort {
      * menor elemento
      * de las dos mitades al array original.
      */
-    while (helperLeft <= middle && helperRight <= high) {
+    while (helperLeft <= middle && helperRight <= high) { // Mientras haya elementos en ambas mitades
       if (helper[helperLeft] <= helper[helperRight]) {
         array[current] = helper[helperLeft];
         helperLeft++;
