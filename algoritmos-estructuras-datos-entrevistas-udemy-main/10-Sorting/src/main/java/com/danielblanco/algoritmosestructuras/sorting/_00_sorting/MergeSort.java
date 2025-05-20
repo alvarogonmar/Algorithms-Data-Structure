@@ -36,7 +36,7 @@ public class MergeSort {
       if (helper[helperLeft] <= helper[helperRight]) { // Si el elemento de la izquierda es menor o igual al de la
                                                        // derecha
         array[current] = helper[helperLeft]; // Copia el elemento de la izquierda al array original
-        helperLeft++;
+        helperLeft++; // Incrementa el indice de la izquierda
       } else {
         array[current] = helper[helperRight];
         helperRight++;
