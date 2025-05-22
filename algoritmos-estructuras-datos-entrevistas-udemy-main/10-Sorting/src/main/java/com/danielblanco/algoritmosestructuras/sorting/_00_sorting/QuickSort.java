@@ -7,7 +7,7 @@ package com.danielblanco.algoritmosestructuras.sorting._00_sorting;
  * O(n log(n)) tiempo medio y O(n^2) peor caso porque el pivote podría estar lejos de la mediana.
  * Si el pivote seleccionado es siempre el mayor o menor número estaríamos haciando un bubble sort.
  */
-public class QuickSort {
+public class QuickSort { // Algoritmo de ordenación rápida
 
   public static void sort(int[] array) {
     sort(array, 0, array.length - 1);
@@ -25,18 +25,22 @@ public class QuickSort {
   }
 
   /*
-   * Esta función toma el último elemento como pivote, lo coloca en su posición correcta y
-   * posiciona los elementos menores que él a su izquierda y los mayores a la derecha.
+   * Esta función toma el último elemento como pivote, lo coloca en su posición
+   * correcta y
+   * posiciona los elementos menores que él a su izquierda y los mayores a la
+   * derecha.
    */
   private static int partition(int[] array, int low, int high) {
     int pivot = array[high];
 
-    // Índice del menor elemento. Indica la posición correcta del pivote hasta el momento.
+    // Índice del menor elemento. Indica la posición correcta del pivote hasta el
+    // momento.
     int i = (low - 1);
 
     for (int j = low; j <= high - 1; j++) {
       if (array[j] < pivot) {
-        // Incrementamos el índice del menor elemento si el actual es menor que el pivote.
+        // Incrementamos el índice del menor elemento si el actual es menor que el
+        // pivote.
         i++;
         SearchUtils.swap(array, i, j);
       }
