@@ -58,7 +58,7 @@ public class MergeSort {
      */
     int remaining = middle - helperLeft; // Número de elementos restantes en la izquierda
     for (int i = 0; i <= remaining; i++) { // Recorre el resto de la izquierda
-      array[current + i] = helper[helperLeft + i];
+      array[current + i] = helper[helperLeft + i]; // Copia el resto de la izquierda al array original
     }
   }
 }
