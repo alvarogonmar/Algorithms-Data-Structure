@@ -13,7 +13,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
     sort(array, 0, array.length - 1); // Llama al método de ordenación
   }
 
-  private static void sort(int[] array, int low, int high) {
+  private static void sort(int[] array, int low, int high) { // Método recursivo para ordenar el array
     if (low < high) {
       // Índice de partition, arr[p] se encuentra ahora en la posición correcta.
       int index = partition(array, low, high);
