@@ -30,7 +30,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
    * posiciona los elementos menores que él a su izquierda y los mayores a la
    * derecha.
    */
-  private static int partition(int[] array, int low, int high) {
+  private static int partition(int[] array, int low, int high) { // Método de partición
     int pivot = array[high];
 
     // Índice del menor elemento. Indica la posición correcta del pivote hasta el
