@@ -19,7 +19,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
       int index = partition(array, low, high); // Llama al método de partición
 
       // Ordenamos los elementos antes y después de la partición de forma separada.
-      sort(array, low, index - 1);
+      sort(array, low, index - 1); // Ordena el lado izquierdo
       sort(array, index + 1, high);
     }
   }
