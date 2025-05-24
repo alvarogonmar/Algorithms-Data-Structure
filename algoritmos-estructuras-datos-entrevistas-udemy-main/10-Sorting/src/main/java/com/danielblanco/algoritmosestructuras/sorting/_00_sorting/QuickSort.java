@@ -10,7 +10,7 @@ package com.danielblanco.algoritmosestructuras.sorting._00_sorting;
 public class QuickSort { // Algoritmo de ordenación rápida
 
   public static void sort(int[] array) { // Método para ordenar el array
-    sort(array, 0, array.length - 1);
+    sort(array, 0, array.length - 1); // Llama al método de ordenación
   }
 
   private static void sort(int[] array, int low, int high) {
