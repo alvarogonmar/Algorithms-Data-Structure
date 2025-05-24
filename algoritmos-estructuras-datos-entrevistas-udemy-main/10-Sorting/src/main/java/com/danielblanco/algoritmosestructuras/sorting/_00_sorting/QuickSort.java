@@ -16,7 +16,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
   private static void sort(int[] array, int low, int high) { // Método recursivo para ordenar el array
     if (low < high) {
       // Índice de partition, arr[p] se encuentra ahora en la posición correcta.
-      int index = partition(array, low, high);
+      int index = partition(array, low, high); // Llama al método de partición
 
       // Ordenamos los elementos antes y después de la partición de forma separada.
       sort(array, low, index - 1);
