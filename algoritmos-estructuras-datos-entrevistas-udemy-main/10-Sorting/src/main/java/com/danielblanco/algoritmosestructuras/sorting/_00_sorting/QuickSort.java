@@ -41,7 +41,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
       if (array[j] < pivot) { // Si el elemento actual es menor que el pivote
         // Incrementamos el índice del menor elemento si el actual es menor que el
         // pivote.
-        i++;
+        i++; // Incrementamos el índice del menor elemento
         SearchUtils.swap(array, i, j);
       }
     }
