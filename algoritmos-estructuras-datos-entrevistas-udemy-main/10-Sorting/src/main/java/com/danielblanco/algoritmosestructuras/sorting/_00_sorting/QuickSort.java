@@ -42,7 +42,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
         // Incrementamos el índice del menor elemento si el actual es menor que el
         // pivote.
         i++; // Incrementamos el índice del menor elemento
-        SearchUtils.swap(array, i, j);
+        SearchUtils.swap(array, i, j); // Intercambiamos el elemento actual con el elemento en la posición i
       }
     }
 
