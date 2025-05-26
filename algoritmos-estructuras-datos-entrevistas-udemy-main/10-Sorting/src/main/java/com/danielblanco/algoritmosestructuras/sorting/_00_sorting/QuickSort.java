@@ -47,7 +47,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
     }
 
     // Movemos el pivote a la posición correcta.
-    SearchUtils.swap(array, i + 1, high);
+    SearchUtils.swap(array, i + 1, high); // Intercambiamos el pivote con el elemento en la posición i + 1
     return i + 1;
   }
 }
