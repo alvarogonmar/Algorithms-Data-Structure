@@ -38,7 +38,7 @@ public class QuickSort { // Algoritmo de ordenación rápida
     int i = (low - 1); // Índice del menor elemento
 
     for (int j = low; j <= high - 1; j++) { // Recorremos el array desde low hasta high - 1
-      if (array[j] < pivot) {
+      if (array[j] < pivot) { // Si el elemento actual es menor que el pivote
         // Incrementamos el índice del menor elemento si el actual es menor que el
         // pivote.
         i++;
