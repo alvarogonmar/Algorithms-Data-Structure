@@ -7,7 +7,8 @@ public class SelectionSort { // Algoritmo de ordenación por selección
       // En cada iteración seleccionamos el mínimo y lo movemos al inicio de la parte
       // desordenada
       // del array.
-      int minIndex = findMinimumElementIndex(array, i);
+      int minIndex = findMinimumElementIndex(array, i); // Encontramos el índice del elemento mínimo a partir de la
+                                                        // posición i
       SearchUtils.swap(array, i, minIndex);
     }
   }
