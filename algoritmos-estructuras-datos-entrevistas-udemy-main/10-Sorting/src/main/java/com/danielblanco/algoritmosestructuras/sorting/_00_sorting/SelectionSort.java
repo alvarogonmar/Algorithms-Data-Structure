@@ -1,7 +1,7 @@
 package com.danielblanco.algoritmosestructuras.sorting._00_sorting;
 
 public class SelectionSort { // Algoritmo de ordenación por selección
-  static void sort(int[] array) {
+  static void sort(int[] array) { // Método para ordenar el array
 
     for (int i = 0; i < array.length - 1; i++) {
       // En cada iteración seleccionamos el mínimo y lo movemos al inicio de la parte
