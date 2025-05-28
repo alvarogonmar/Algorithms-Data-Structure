@@ -18,7 +18,7 @@ public class SelectionSort { // Algoritmo de ordenación por selección
                                                                        // start
     int minIndex = start; // Inicializamos el índice mínimo con el valor de start
     for (int i = start + 1; i < array.length; i++) {
-      if (array[i] < array[minIndex])
+      if (array[i] < array[minIndex]) // Si el elemento actual es menor que el elemento en minIndex
         minIndex = i;
     }
 
