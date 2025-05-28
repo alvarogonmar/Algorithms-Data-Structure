@@ -13,7 +13,9 @@ public class SelectionSort { // Algoritmo de ordenación por selección
     }
   }
 
-  private static int findMinimumElementIndex(int[] array, int start) {
+  private static int findMinimumElementIndex(int[] array, int start) { // Método para encontrar el índice del elemento
+                                                                       // mínimo en el array a partir de la posición
+                                                                       // start
     int minIndex = start;
     for (int i = start + 1; i < array.length; i++) {
       if (array[i] < array[minIndex])
