@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras.searching._00_binary_search;
 public class BinarySearch { // Algoritmo de búsqueda binaria
 
   int binarySearch(int[] array, int target) { // Método para buscar un elemento en un array ordenado
-    return binarySearch(array, 0, array.length - 1, target);
+    return binarySearch(array, 0, array.length - 1, target);// Llama al método recursivo de búsqueda binaria
   }
 
   private int binarySearch(int[] array, int left, int right, int target) {
