@@ -11,7 +11,7 @@ public class BinarySearch { // Algoritmo de búsqueda binaria
       int mid = left + (right - left) / 2; // Calcula el índice medio para evitar desbordamiento
 
       // Elemento presente en el elemento central del array.
-      if (array[mid] == target)
+      if (array[mid] == target) // Si el elemento en el índice medio es igual al objetivo
         return mid;
 
       // Si el elemento es menor que el central, se debe encontrar a su izquierda.
