@@ -1,6 +1,6 @@
 package com.danielblanco.algoritmosestructuras.searching._00_binary_search;
 
-public class BinarySearch {
+public class BinarySearch { // Algoritmo de búsqueda binaria
 
   int binarySearch(int[] array, int target) {
     return binarySearch(array, 0, array.length - 1, target);
@@ -11,10 +11,12 @@ public class BinarySearch {
       int mid = left + (right - left) / 2;
 
       // Elemento presente en el elemento central del array.
-      if (array[mid] == target) return mid;
+      if (array[mid] == target)
+        return mid;
 
       // Si el elemento es menor que el central, se debe encontrar a su izquierda.
-      if (array[mid] > target) return binarySearch(array, left, mid - 1, target);
+      if (array[mid] > target)
+        return binarySearch(array, left, mid - 1, target);
 
       // En caso contrario solo puede encontrarse en la mitad derecha.
       return binarySearch(array, mid + 1, right, target);
