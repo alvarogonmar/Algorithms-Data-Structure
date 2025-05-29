@@ -22,6 +22,6 @@ public class SelectionSort { // Algoritmo de ordenación por selección
         minIndex = i; // Actualizamos minIndex con el índice del elemento actual
     }
 
-    return minIndex;
+    return minIndex; // Devolvemos el índice del elemento mínimo encontrado
   }
 }
