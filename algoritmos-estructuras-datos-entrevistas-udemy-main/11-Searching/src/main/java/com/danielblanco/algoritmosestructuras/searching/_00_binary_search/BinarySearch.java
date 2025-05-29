@@ -6,7 +6,7 @@ public class BinarySearch { // Algoritmo de búsqueda binaria
     return binarySearch(array, 0, array.length - 1, target);// Llama al método recursivo de búsqueda binaria
   }
 
-  private int binarySearch(int[] array, int left, int right, int target) {
+  private int binarySearch(int[] array, int left, int right, int target) { // Método recursivo para búsqueda binaria
     if (right >= left) {
       int mid = left + (right - left) / 2;
 
