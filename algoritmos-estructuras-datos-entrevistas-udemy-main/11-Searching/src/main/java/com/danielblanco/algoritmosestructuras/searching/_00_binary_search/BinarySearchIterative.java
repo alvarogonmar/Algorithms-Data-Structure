@@ -1,6 +1,6 @@
 package com.danielblanco.algoritmosestructuras.searching._00_binary_search;
 
-public class BinarySearchIterative {
+public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
 
   int binarySearch(int[] array, int target) {
     int left = 0;
@@ -9,7 +9,8 @@ public class BinarySearchIterative {
     while (left <= right) {
       int mid = left + ((right - left) / 2);
 
-      if (array[mid] == target) return mid;
+      if (array[mid] == target)
+        return mid;
 
       if (array[mid] < target) {
         left = mid + 1;
