@@ -4,7 +4,7 @@ public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
 
   int binarySearch(int[] array, int target) { // Método para buscar un elemento en un array ordenado
     int left = 0; // Índice izquierdo
-    int right = array.length - 1;
+    int right = array.length - 1; // Índice derecho
 
     while (left <= right) {
       int mid = left + ((right - left) / 2);
