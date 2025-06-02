@@ -7,7 +7,7 @@ public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
     int right = array.length - 1; // Índice derecho
 
     while (left <= right) { // Mientras el índice izquierdo sea menor o igual al derecho
-      int mid = left + ((right - left) / 2);
+      int mid = left + ((right - left) / 2); // Calcula el índice medio para evitar desbordamiento
 
       if (array[mid] == target)
         return mid;
