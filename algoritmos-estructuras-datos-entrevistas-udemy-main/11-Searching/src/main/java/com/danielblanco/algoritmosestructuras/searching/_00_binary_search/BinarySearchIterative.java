@@ -2,7 +2,7 @@ package com.danielblanco.algoritmosestructuras.searching._00_binary_search;
 
 public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
 
-  int binarySearch(int[] array, int target) {
+  int binarySearch(int[] array, int target) { // Método para buscar un elemento en un array ordenado
     int left = 0;
     int right = array.length - 1;
 
