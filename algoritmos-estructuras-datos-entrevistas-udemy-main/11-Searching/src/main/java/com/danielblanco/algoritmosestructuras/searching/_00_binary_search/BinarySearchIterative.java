@@ -10,7 +10,7 @@ public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
       int mid = left + ((right - left) / 2); // Calcula el índice medio para evitar desbordamiento
 
       if (array[mid] == target) // Si el elemento en el índice medio es igual al objetivo
-        return mid;
+        return mid; // Devuelve el índice medio
 
       if (array[mid] < target) {
         left = mid + 1;
