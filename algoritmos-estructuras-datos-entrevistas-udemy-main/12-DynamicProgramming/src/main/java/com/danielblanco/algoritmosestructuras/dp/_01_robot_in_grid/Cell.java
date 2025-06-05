@@ -3,7 +3,7 @@ package com.danielblanco.algoritmosestructuras.dp._01_robot_in_grid;
 public class Cell { // Clase que representa una celda en una cuadrícula, utilizada para el problema
                     // del robot en la cuadrícula
   int row; // Fila de la celda
-  int col;
+  int col; // Columna de la celda
 
   public Cell(int row, int col) {
     this.row = row;
