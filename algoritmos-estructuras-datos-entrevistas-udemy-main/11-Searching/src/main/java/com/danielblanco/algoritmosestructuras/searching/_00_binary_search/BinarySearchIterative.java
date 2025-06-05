@@ -13,7 +13,7 @@ public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
         return mid; // Devuelve el índice medio
 
       if (array[mid] < target) { // Si el elemento en el índice medio es menor que el objetivo
-        left = mid + 1;
+        left = mid + 1; // Mueve el índice izquierdo a la derecha del medio
       } else {
         right = mid - 1;
       }
