@@ -5,7 +5,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
   int row; // Fila de la celda
   int col; // Columna de la celda
 
-  public Cell(int row, int col) {
+  public Cell(int row, int col) { // Constructor que inicializa la celda con una fila y una columna específicas
     this.row = row;
     this.col = col;
   }
