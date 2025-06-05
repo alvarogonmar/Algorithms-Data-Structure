@@ -19,6 +19,6 @@ public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
       }
     }
 
-    return -1;
+    return -1; // El elemento no se ha encontrado, devuelve -1
   }
 }
