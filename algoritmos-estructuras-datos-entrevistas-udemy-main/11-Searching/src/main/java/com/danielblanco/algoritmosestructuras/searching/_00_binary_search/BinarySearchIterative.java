@@ -14,7 +14,7 @@ public class BinarySearchIterative { // Algoritmo de búsqueda binaria iterativa
 
       if (array[mid] < target) { // Si el elemento en el índice medio es menor que el objetivo
         left = mid + 1; // Mueve el índice izquierdo a la derecha del medio
-      } else {
+      } else { // Si el elemento en el índice medio es mayor que el objetivo
         right = mid - 1;
       }
     }
