@@ -1,6 +1,7 @@
 package com.danielblanco.algoritmosestructuras.dp._01_robot_in_grid;
 
-public class Cell {
+public class Cell { // Clase que representa una celda en una cuadrícula, utilizada para el problema
+                    // del robot en la cuadrícula
   int row;
   int col;
 
@@ -20,12 +21,17 @@ public class Cell {
 
   @Override
   public boolean equals(Object obj) {
-    if (this == obj) return true;
-    if (obj == null) return false;
-    if (getClass() != obj.getClass()) return false;
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
     Cell other = (Cell) obj;
-    if (row != other.row) return false;
-    if (col != other.col) return false;
+    if (row != other.row)
+      return false;
+    if (col != other.col)
+      return false;
     return true;
   }
 }
