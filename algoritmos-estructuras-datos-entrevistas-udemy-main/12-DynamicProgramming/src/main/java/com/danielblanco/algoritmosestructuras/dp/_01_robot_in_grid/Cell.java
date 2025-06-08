@@ -20,7 +20,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
     return result; // Devuelve el código hash resultante
   }
 
-  @Override
+  @Override // Método equals para comparar dos celdas y determinar si son iguales
   public boolean equals(Object obj) {
     if (this == obj)
       return true;
