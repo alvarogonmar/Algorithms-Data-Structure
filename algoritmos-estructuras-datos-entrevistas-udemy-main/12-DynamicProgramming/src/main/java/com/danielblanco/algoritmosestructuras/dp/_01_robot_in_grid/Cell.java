@@ -10,7 +10,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
     this.col = col; // Inicializa la columna de la celda
   }
 
-  @Override
+  @Override // Método hashCode para generar un código hash único para la celda
   public int hashCode() {
     final int prime = 31;
     int result = 1;
