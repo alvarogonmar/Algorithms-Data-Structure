@@ -14,7 +14,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
   public int hashCode() { // Utiliza el método hashCode para calcular un código hash basado en la fila y
                           // la columna
     final int prime = 31; // Número primo utilizado para la generación del código hash
-    int result = 1;
+    int result = 1; // Inicializa el resultado del código hash en 1
     result = prime * result + row;
     result = prime * result + col;
     return result;
