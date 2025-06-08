@@ -15,7 +15,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
                           // la columna
     final int prime = 31; // Número primo utilizado para la generación del código hash
     int result = 1; // Inicializa el resultado del código hash en 1
-    result = prime * result + row;
+    result = prime * result + row; // Multiplica el resultado por el número primo y suma la fila
     result = prime * result + col;
     return result;
   }
