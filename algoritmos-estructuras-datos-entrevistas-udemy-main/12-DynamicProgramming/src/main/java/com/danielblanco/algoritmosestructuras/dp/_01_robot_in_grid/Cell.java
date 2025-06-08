@@ -13,7 +13,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
   @Override // Método hashCode para generar un código hash único para la celda
   public int hashCode() { // Utiliza el método hashCode para calcular un código hash basado en la fila y
                           // la columna
-    final int prime = 31;
+    final int prime = 31; // Número primo utilizado para la generación del código hash
     int result = 1;
     result = prime * result + row;
     result = prime * result + col;
