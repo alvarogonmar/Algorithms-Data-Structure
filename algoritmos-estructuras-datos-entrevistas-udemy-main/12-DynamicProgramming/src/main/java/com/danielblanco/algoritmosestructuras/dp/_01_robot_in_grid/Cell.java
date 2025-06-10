@@ -23,7 +23,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
   @Override // Método equals para comparar dos celdas y determinar si son iguales
   public boolean equals(Object obj) {// Compara la celda actual con otro objeto para ver si son iguales
     if (this == obj) // Si el objeto actual es el mismo que el objeto comparado
-      return true;
+      return true; // Devuelve verdadero si son el mismo objeto
     if (obj == null)
       return false;
     if (getClass() != obj.getClass())
