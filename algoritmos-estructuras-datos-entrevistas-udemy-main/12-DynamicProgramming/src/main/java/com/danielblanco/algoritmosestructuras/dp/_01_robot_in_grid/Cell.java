@@ -24,7 +24,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
   public boolean equals(Object obj) {// Compara la celda actual con otro objeto para ver si son iguales
     if (this == obj) // Si el objeto actual es el mismo que el objeto comparado
       return true; // Devuelve verdadero si son el mismo objeto
-    if (obj == null)
+    if (obj == null) // Si el objeto comparado es nulo
       return false;
     if (getClass() != obj.getClass())
       return false;
