@@ -26,7 +26,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
       return true; // Devuelve verdadero si son el mismo objeto
     if (obj == null) // Si el objeto comparado es nulo
       return false; // Devuelve falso porque no pueden ser iguales
-    if (getClass() != obj.getClass())
+    if (getClass() != obj.getClass()) // Si el objeto comparado no es de la misma clase
       return false;
     Cell other = (Cell) obj;
     if (row != other.row)
