@@ -32,7 +32,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
     if (row != other.row) // Compara las filas de las dos celdas
       return false; // Devuelve falso si las filas no son iguales
     if (col != other.col) // Compara las columnas de las dos celdas
-      return false;
+      return false; // Devuelve falso si las columnas no son iguales
     return true;
   }
 }
