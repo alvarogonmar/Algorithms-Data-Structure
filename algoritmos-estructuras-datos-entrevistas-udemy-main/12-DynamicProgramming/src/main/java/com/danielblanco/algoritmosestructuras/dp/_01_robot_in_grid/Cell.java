@@ -29,7 +29,7 @@ public class Cell { // Clase que representa una celda en una cuadrícula, utiliz
     if (getClass() != obj.getClass()) // Si el objeto comparado no es de la misma clase
       return false; // Devuelve falso porque no pueden ser iguales
     Cell other = (Cell) obj; // Convierte el objeto comparado a una celda
-    if (row != other.row)
+    if (row != other.row) // Compara las filas de las dos celdas
       return false;
     if (col != other.col)
       return false;
