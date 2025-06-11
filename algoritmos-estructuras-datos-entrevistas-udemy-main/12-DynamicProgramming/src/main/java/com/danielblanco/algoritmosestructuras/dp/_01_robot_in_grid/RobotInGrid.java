@@ -32,7 +32,7 @@ import java.util.List;
  *  Output: [(0,0), (0,1), (1,1), (2,1), (3,1), (3,2), (3,3)]
  *
  */
-public class RobotInGrid {
+public class RobotInGrid { // Clase que representa el problema del robot en la cuadrícula
 
   List<Cell> getPath(boolean[][] grid) {
     if (grid == null || grid.length == 0)
