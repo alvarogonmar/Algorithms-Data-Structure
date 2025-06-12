@@ -38,7 +38,7 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
                                          // inferior derecha
     if (grid == null || grid.length == 0) // Verifica si la cuadrícula es nula o vacía
       return null; // Retorna null si la cuadrícula es nula o vacía
-    List<Cell> path = new ArrayList<Cell>();
+    List<Cell> path = new ArrayList<Cell>(); // Lista para almacenar el camino encontrado
     if (getPath(grid, 0, 0, path)) {
       Collections.reverse(path);
       return path;
