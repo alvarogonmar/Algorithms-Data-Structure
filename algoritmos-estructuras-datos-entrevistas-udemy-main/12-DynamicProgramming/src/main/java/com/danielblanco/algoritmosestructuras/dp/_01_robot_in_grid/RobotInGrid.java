@@ -55,7 +55,7 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
       return false; // Retorna false si la posición es inválida
     }
 
-    Cell cell = new Cell(row, col);
+    Cell cell = new Cell(row, col); // Crea una nueva celda con las coordenadas actuales
 
     boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1);
 
