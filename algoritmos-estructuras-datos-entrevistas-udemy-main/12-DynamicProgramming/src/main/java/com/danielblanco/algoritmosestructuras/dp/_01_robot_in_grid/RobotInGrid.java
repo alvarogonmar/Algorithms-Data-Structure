@@ -62,7 +62,8 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
 
     if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) { // Intenta moverse a la
                                                                                                 // derecha o hacia abajo
-      path.add(cell);
+      path.add(cell); // Agrega la celda al camino si se ha llegado a la esquina inferior derecha o si
+                      // se ha encontrado un camino
       return true;
     }
 
