@@ -64,7 +64,7 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
                                                                                                 // derecha o hacia abajo
       path.add(cell); // Agrega la celda al camino si se ha llegado a la esquina inferior derecha o si
                       // se ha encontrado un camino
-      return true;
+      return true; // Retorna true si se ha encontrado un camino
     }
 
     grid[row][col] = false;
