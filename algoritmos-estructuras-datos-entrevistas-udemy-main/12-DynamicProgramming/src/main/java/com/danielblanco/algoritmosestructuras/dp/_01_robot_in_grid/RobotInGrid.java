@@ -47,7 +47,8 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
     return null; // Retorna null si no se encuentra un camino
   }
 
-  boolean getPath(boolean[][] grid, int row, int col, List<Cell> path) {
+  boolean getPath(boolean[][] grid, int row, int col, List<Cell> path) { // Método recursivo que busca un camino desde
+                                                                         // la posición (row, col) en la cuadrícula
     if (row >= grid.length || col >= grid[0].length || !grid[row][col]) {
       return false;
     }
