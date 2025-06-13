@@ -52,7 +52,7 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
     if (row >= grid.length || col >= grid[0].length || !grid[row][col]) { // Verifica si la posición está fuera de los
                                                                           // límites de la cuadrícula o si la celda no
                                                                           // es transitable
-      return false;
+      return false; // Retorna false si la posición es inválida
     }
 
     Cell cell = new Cell(row, col);
