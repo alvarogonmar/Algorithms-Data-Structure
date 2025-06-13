@@ -60,7 +60,8 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
     boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1); // Verifica si se ha llegado a la
                                                                                   // esquina inferior derecha
 
-    if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) {
+    if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) { // Intenta moverse a la
+                                                                                                // derecha o hacia abajo
       path.add(cell);
       return true;
     }
