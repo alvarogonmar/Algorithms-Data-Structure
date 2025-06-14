@@ -43,7 +43,7 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
       Collections.reverse(path); // Invierte el camino para que vaya desde la esquina inferior derecha a la
       return path; // superior izquierda
     }
-    return null;
+    return null; // Retorna null si no se encuentra un camino
   }
 
   boolean getPath(boolean[][] grid, int row, int col, List<Cell> path) {
