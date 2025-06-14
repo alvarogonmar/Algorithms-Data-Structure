@@ -32,10 +32,11 @@ import java.util.List;
  *  Output: [(0,0), (0,1), (1,1), (2,1), (3,1), (3,2), (3,3)]
  *
  */
-public class RobotInGridSolution {
+public class RobotInGridSolution { // Clase que representa el problema del robot en la cuadrícula
 
   List<Cell> getPath(boolean[][] grid) {
-    if (grid == null || grid.length == 0) return null;
+    if (grid == null || grid.length == 0)
+      return null;
     List<Cell> path = new ArrayList<Cell>();
     if (getPath(grid, 0, 0, path)) {
       Collections.reverse(path);
