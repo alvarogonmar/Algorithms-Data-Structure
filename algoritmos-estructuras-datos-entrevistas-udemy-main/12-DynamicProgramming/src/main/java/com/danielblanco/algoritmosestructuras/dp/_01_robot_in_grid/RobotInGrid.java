@@ -68,6 +68,6 @@ public class RobotInGrid { // Clase que representa el problema del robot en la c
     }
 
     grid[row][col] = false; // Marca la celda como no transitable para evitar ciclos en la búsqueda
-    return false;
+    return false; // Retorna false si no se ha encontrado un camino
   }
 }
