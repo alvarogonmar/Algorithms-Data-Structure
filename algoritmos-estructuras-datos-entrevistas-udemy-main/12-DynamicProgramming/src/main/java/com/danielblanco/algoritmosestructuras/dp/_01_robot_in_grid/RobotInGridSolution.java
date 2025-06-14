@@ -34,7 +34,8 @@ import java.util.List;
  */
 public class RobotInGridSolution { // Clase que representa el problema del robot en la cuadrícula
 
-  List<Cell> getPath(boolean[][] grid) {
+  List<Cell> getPath(boolean[][] grid) { // Método que obtiene el camino desde la esquina superior izquierda a la
+                                         // inferior derecha
     if (grid == null || grid.length == 0)
       return null;
     List<Cell> path = new ArrayList<Cell>();
