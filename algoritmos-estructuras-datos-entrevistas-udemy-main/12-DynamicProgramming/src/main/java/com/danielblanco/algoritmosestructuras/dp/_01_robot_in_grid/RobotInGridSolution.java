@@ -36,7 +36,7 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
 
   List<Cell> getPath(boolean[][] grid) { // Método que obtiene el camino desde la esquina superior izquierda a la
                                          // inferior derecha
-    if (grid == null || grid.length == 0)
+    if (grid == null || grid.length == 0) // Verifica si la cuadrícula es nula o vacía
       return null;
     List<Cell> path = new ArrayList<Cell>();
     if (getPath(grid, 0, 0, path)) {
