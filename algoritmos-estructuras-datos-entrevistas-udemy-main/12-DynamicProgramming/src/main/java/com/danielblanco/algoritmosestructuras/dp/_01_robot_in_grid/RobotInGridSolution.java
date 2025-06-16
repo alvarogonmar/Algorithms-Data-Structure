@@ -56,7 +56,8 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
     boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1); // Verifica si se ha llegado a la
 
     if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) { // posición final
-      path.add(cell);
+      path.add(cell); // Agrega la celda al camino si se ha llegado a la posición final o si se puede
+                      // avanzar hacia la derecha o hacia abajo
       return true;
     }
 
