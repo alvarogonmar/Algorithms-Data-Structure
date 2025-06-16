@@ -51,7 +51,7 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
       return false; // Verifica si la posición está fuera de los
     }
 
-    Cell cell = new Cell(row, col); // límites de la cuadrícula o si la
+    Cell cell = new Cell(row, col); // límites de la cuadrícula o si la celda no es transitable
 
     boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1);
 
