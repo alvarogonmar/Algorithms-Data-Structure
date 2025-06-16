@@ -53,7 +53,7 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
 
     Cell cell = new Cell(row, col); // límites de la cuadrícula o si la celda no es transitable
 
-    boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1);
+    boolean isAtFinish = (row == grid.length - 1) && (col == grid[0].length - 1); // Verifica si se ha llegado a la
 
     if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) {
       path.add(cell);
