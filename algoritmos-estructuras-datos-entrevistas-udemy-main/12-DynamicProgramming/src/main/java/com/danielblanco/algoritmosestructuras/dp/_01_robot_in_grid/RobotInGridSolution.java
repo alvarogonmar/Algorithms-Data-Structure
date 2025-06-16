@@ -48,7 +48,7 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
 
   boolean getPath(boolean[][] grid, int row, int col, List<Cell> path) { // Método recursivo que busca un camino desde
     if (row >= grid.length || col >= grid[0].length || !grid[row][col]) { // la posición (row, col) en la cuadrícula
-      return false;
+      return false; // Verifica si la posición está fuera de los
     }
 
     Cell cell = new Cell(row, col);
