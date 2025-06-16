@@ -62,6 +62,6 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
     }
 
     grid[row][col] = false; // Marca la celda como no transitable para evitar ciclos
-    return false;
+    return false; // Retorna false si no se ha encontrado un camino
   }
 }
