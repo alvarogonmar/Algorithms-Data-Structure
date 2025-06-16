@@ -58,7 +58,7 @@ public class RobotInGridSolution { // Clase que representa el problema del robot
     if (isAtFinish || getPath(grid, row, col + 1, path) || getPath(grid, row + 1, col, path)) { // posición final
       path.add(cell); // Agrega la celda al camino si se ha llegado a la posición final o si se puede
                       // avanzar hacia la derecha o hacia abajo
-      return true;
+      return true; // Retorna true si se ha encontrado un camino
     }
 
     grid[row][col] = false;
