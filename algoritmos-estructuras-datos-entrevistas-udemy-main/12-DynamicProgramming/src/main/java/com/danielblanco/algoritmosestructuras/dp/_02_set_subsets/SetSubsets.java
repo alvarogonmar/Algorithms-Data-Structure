@@ -40,7 +40,7 @@ public class SetSubsets { // Clase que representa el problema de encontrar todos
                                                                                              // subconjuntos existentes
                                                                                              // y agrega el elemento
                                                                                              // actual
-    int currentSize = subsets.size();
+    int currentSize = subsets.size(); // Obtiene el tamaño actual de la lista de subconjuntos
     for (int i = 0; i < currentSize; i++) {
       List<Integer> newSubset = new ArrayList<Integer>(subsets.get(i));
       newSubset.add(element);
