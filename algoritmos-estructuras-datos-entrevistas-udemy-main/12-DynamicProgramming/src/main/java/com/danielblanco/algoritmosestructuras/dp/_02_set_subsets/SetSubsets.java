@@ -36,7 +36,10 @@ public class SetSubsets { // Clase que representa el problema de encontrar todos
     return subsets; // Retorna la lista de subconjuntos encontrados
   }
 
-  private void duplicateSubsetsAddingElement(Integer element, List<List<Integer>> subsets) {
+  private void duplicateSubsetsAddingElement(Integer element, List<List<Integer>> subsets) { // Método que duplica los
+                                                                                             // subconjuntos existentes
+                                                                                             // y agrega el elemento
+                                                                                             // actual
     int currentSize = subsets.size();
     for (int i = 0; i < currentSize; i++) {
       List<Integer> newSubset = new ArrayList<Integer>(subsets.get(i));
