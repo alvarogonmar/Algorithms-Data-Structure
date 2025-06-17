@@ -26,7 +26,7 @@ public class SetSubsets { // Clase que representa el problema de encontrar todos
   List<List<Integer>> subsets(List<Integer> set) { // Método que devuelve todos los subconjuntos de un conjunto de
                                                    // enteros
     List<List<Integer>> subsets = new ArrayList<List<Integer>>(); // Lista para almacenar los subconjuntos encontrados
-    subsets.add(new ArrayList<Integer>()); // The '0' subset
+    subsets.add(new ArrayList<Integer>()); // The '0' subset // Agrega el subconjunto vacío a la lista de subconjuntos
 
     for (Integer element : set) {
       duplicateSubsetsAddingElement(element, subsets);
