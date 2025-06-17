@@ -23,7 +23,8 @@ import java.util.List;
 public class SetSubsets { // Clase que representa el problema de encontrar todos los subconjuntos de un
                           // conjunto de enteros
 
-  List<List<Integer>> subsets(List<Integer> set) {
+  List<List<Integer>> subsets(List<Integer> set) { // Método que devuelve todos los subconjuntos de un conjunto de
+                                                   // enteros
     List<List<Integer>> subsets = new ArrayList<List<Integer>>();
     subsets.add(new ArrayList<Integer>()); // The '0' subset
 
