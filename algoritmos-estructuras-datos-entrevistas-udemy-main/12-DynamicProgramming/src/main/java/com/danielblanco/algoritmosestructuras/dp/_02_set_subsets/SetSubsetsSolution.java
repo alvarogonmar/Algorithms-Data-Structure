@@ -33,7 +33,7 @@ public class SetSubsetsSolution { // Clase que representa el problema de encontr
       // actual
     }
 
-    return subsets;
+    return subsets; // Retorna la lista de subconjuntos encontrados
   }
 
   private void duplicateSubsetsAddingElement(Integer element, List<List<Integer>> subsets) {
