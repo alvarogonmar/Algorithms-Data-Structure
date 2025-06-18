@@ -39,7 +39,7 @@ public class SetSubsetsSolution { // Clase que representa el problema de encontr
   private void duplicateSubsetsAddingElement(Integer element, List<List<Integer>> subsets) { // Método que duplica los
     int currentSize = subsets.size(); // subconjuntos existentes y agrega el elemento
                                       // actual
-    for (int i = 0; i < currentSize; i++) {
+    for (int i = 0; i < currentSize; i++) { // Obtiene el tamaño actual de la lista de subconjuntos
       List<Integer> newSubset = new ArrayList<Integer>(subsets.get(i));
       newSubset.add(element);
       subsets.add(newSubset);
