@@ -20,7 +20,8 @@ import java.util.List;
  *      []
  *    ]
  */
-public class SetSubsetsSolution {
+public class SetSubsetsSolution { // Clase que representa el problema de encontrar todos los subconjuntos de un
+                                  // conjunto de enteros
 
   List<List<Integer>> subsets(List<Integer> set) {
     List<List<Integer>> subsets = new ArrayList<List<Integer>>();
