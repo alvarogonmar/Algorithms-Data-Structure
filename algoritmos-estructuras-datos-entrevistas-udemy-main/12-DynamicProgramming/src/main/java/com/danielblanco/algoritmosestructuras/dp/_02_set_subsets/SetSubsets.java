@@ -44,7 +44,7 @@ public class SetSubsets { // Clase que representa el problema de encontrar todos
     for (int i = 0; i < currentSize; i++) {
       List<Integer> newSubset = new ArrayList<Integer>(subsets.get(i));
       newSubset.add(element); // Agrega el elemento actual al nuevo subconjunto
-      subsets.add(newSubset);
+      subsets.add(newSubset); // Agrega el nuevo subconjunto a la lista de subconjuntos
     }
   }
 }
