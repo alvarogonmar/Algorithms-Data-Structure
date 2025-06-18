@@ -28,7 +28,7 @@ public class SetSubsetsSolution { // Clase que representa el problema de encontr
     List<List<Integer>> subsets = new ArrayList<List<Integer>>(); // Lista para almacenar los subconjuntos encontrados
     subsets.add(new ArrayList<Integer>()); // The '0' subset // Agrega el subconjunto vacío a la lista de subconjuntos
 
-    for (Integer element : set) {
+    for (Integer element : set) { // Itera sobre cada elemento del conjunto
       duplicateSubsetsAddingElement(element, subsets);
     }
 
