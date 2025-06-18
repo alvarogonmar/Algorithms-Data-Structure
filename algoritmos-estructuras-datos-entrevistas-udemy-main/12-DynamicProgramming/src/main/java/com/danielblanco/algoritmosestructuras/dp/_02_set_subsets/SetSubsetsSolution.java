@@ -42,7 +42,7 @@ public class SetSubsetsSolution { // Clase que representa el problema de encontr
     for (int i = 0; i < currentSize; i++) { // Obtiene el tamaño actual de la lista de subconjuntos
       List<Integer> newSubset = new ArrayList<Integer>(subsets.get(i)); // Crea un nuevo subconjunto a partir del
                                                                         // subconjunto existente
-      newSubset.add(element);
+      newSubset.add(element); // Agrega el elemento actual al nuevo subconjunto
       subsets.add(newSubset);
     }
   }
