@@ -34,7 +34,7 @@ public class GenerateParenthesis { // Clase que representa el problema de genera
   }
 
   private void generateParenthesis( // Método recursivo que genera combinaciones válidas de paréntesis
-      int openLeft, int closeLeft, StringBuilder current, List<String> result) {
+      int openLeft, int closeLeft, StringBuilder current, List<String> result) { // Parámetros:
     if (openLeft == 0 && closeLeft == 0) {
       result.add(current.toString());
       return;
