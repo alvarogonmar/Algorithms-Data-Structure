@@ -42,7 +42,7 @@ public class GenerateParenthesis { // Clase que representa el problema de genera
 
     if (openLeft > 0) { // Verifica si quedan paréntesis de apertura por agregar
       generateParenthesis(openLeft - 1, closeLeft, current.append('('), result);
-      current.setLength(current.length() - 1);
+      current.setLength(current.length() - 1); // Elimina el último carácter agregado al StringBuilder
     }
 
     if (closeLeft > openLeft) {
