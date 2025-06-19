@@ -29,7 +29,7 @@ public class GenerateParenthesis { // Clase que representa el problema de genera
       return Collections.emptyList(); // Retorna una lista vacía si n es menor que 1
 
     List<String> result = new ArrayList<String>(); // Lista para almacenar las combinaciones válidas de paréntesis
-    generateParenthesis(n, n, new StringBuilder(), result);
+    generateParenthesis(n, n, new StringBuilder(), result); // Llama al método recursivo para generar las combinaciones
     return result;
   }
 
