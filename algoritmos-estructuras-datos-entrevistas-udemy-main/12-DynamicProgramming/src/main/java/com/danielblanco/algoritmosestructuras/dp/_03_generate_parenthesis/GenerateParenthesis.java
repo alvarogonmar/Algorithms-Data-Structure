@@ -37,7 +37,7 @@ public class GenerateParenthesis { // Clase que representa el problema de genera
       int openLeft, int closeLeft, StringBuilder current, List<String> result) { // Parámetros:
     if (openLeft == 0 && closeLeft == 0) { // Verifica si no quedan paréntesis por agregar
       result.add(current.toString()); // Agrega la combinación actual a la lista de resultados
-      return;
+      return; // Retorna si no quedan paréntesis por agregar
     }
 
     if (openLeft > 0) {
