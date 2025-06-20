@@ -30,7 +30,7 @@ public class GenerateParenthesisSolution { // Clase que representa el problema d
 
     List<String> result = new ArrayList<String>(); // Lista para almacenar las combinaciones válidas de paréntesis
     generateParenthesis(n, n, new StringBuilder(), result); // Llama al método recursivo para generar las combinaciones
-    return result;
+    return result; // Retorna la lista de combinaciones válidas de paréntesis
   }
 
   private void generateParenthesis(
