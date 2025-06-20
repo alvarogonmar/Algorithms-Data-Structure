@@ -46,7 +46,8 @@ public class GenerateParenthesis { // Clase que representa el problema de genera
     }
 
     if (closeLeft > openLeft) { // Verifica si quedan paréntesis de cierre por agregar
-      generateParenthesis(openLeft, closeLeft - 1, current.append(')'), result);
+      generateParenthesis(openLeft, closeLeft - 1, current.append(')'), result); // Llama al método recursivo para
+                                                                                 // agregar un paréntesis de cierre
       current.setLength(current.length() - 1);
     }
   }
