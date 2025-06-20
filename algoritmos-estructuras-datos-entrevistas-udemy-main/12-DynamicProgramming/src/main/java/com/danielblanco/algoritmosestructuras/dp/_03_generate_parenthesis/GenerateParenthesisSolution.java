@@ -21,10 +21,12 @@ import java.util.List;
  *    ["((()))","(()())","(())()","()(())","()()()"]
  *
  */
-public class GenerateParenthesisSolution {
+public class GenerateParenthesisSolution { // Clase que representa el problema de generar combinaciones válidas de
+                                           // paréntesis
 
   public List<String> generateParenthesis(int n) {
-    if (n < 1) return Collections.emptyList();
+    if (n < 1)
+      return Collections.emptyList();
 
     List<String> result = new ArrayList<String>();
     generateParenthesis(n, n, new StringBuilder(), result);
