@@ -24,7 +24,7 @@ import java.util.List;
 public class GenerateParenthesisSolution { // Clase que representa el problema de generar combinaciones válidas de
                                            // paréntesis
 
-  public List<String> generateParenthesis(int n) {
+  public List<String> generateParenthesis(int n) { // Método que genera todas las combinaciones válidas de paréntesis
     if (n < 1)
       return Collections.emptyList();
 
