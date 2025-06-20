@@ -26,7 +26,7 @@ public class GenerateParenthesisSolution { // Clase que representa el problema d
 
   public List<String> generateParenthesis(int n) { // Método que genera todas las combinaciones válidas de paréntesis
     if (n < 1)
-      return Collections.emptyList();
+      return Collections.emptyList(); // Verifica si n es menor que 1
 
     List<String> result = new ArrayList<String>();
     generateParenthesis(n, n, new StringBuilder(), result);
