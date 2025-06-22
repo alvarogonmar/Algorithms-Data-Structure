@@ -40,7 +40,7 @@ public class GenerateParenthesisSolution { // Clase que representa el problema d
       return; // Retorna si no quedan paréntesis por agregar
     }
 
-    if (openLeft > 0) {
+    if (openLeft > 0) { // Verifica si quedan paréntesis de apertura por agregar
       generateParenthesis(openLeft - 1, closeLeft, current.append('('), result);
       current.setLength(current.length() - 1);
     }
