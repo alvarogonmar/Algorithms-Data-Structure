@@ -19,7 +19,7 @@ package com.danielblanco.algoritmosestructuras.dp._04_maximum_subarray;
 public class MaximumSubarray { // Clase que representa el problema de encontrar el subarray con la mayor suma
 
   public int maxSubArray(int[] nums) { // Método que encuentra el subarray con la mayor suma
-    if (nums == null || nums.length == 0)
+    if (nums == null || nums.length == 0) // Verifica si el array es nulo o vacío
       return 0;
 
     int maxSum = nums[0];
