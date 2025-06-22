@@ -43,7 +43,7 @@ public class GenerateParenthesisSolution { // Clase que representa el problema d
     if (openLeft > 0) { // Verifica si quedan paréntesis de apertura por agregar
       generateParenthesis(openLeft - 1, closeLeft, current.append('('), result); // Llama al método recursivo para
                                                                                  // agregar un paréntesis de apertura
-      current.setLength(current.length() - 1);
+      current.setLength(current.length() - 1); // Elimina el último carácter agregado al StringBuilder
     }
 
     if (closeLeft > openLeft) {
