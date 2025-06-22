@@ -33,6 +33,6 @@ public class MaximumSubarray { // Clase que representa el problema de encontrar 
       maxSum = Math.max(maxSum, currentSum); // Actualiza la suma máxima si la suma actual es mayor
     }
 
-    return maxSum;
+    return maxSum; // Retorna la suma máxima encontrada
   }
 }
