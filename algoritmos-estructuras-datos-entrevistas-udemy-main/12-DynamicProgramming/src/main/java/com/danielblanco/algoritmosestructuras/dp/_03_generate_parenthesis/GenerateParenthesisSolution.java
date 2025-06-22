@@ -41,7 +41,8 @@ public class GenerateParenthesisSolution { // Clase que representa el problema d
     }
 
     if (openLeft > 0) { // Verifica si quedan paréntesis de apertura por agregar
-      generateParenthesis(openLeft - 1, closeLeft, current.append('('), result);
+      generateParenthesis(openLeft - 1, closeLeft, current.append('('), result); // Llama al método recursivo para
+                                                                                 // agregar un paréntesis de apertura
       current.setLength(current.length() - 1);
     }
 
