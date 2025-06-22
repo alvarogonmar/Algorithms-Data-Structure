@@ -30,7 +30,7 @@ public class MaximumSubarray { // Clase que representa el problema de encontrar 
         currentSum = 0; // Reinicia la suma actual si es negativa
 
       currentSum += nums[i]; // Suma el elemento actual a la suma actual
-      maxSum = Math.max(maxSum, currentSum);
+      maxSum = Math.max(maxSum, currentSum); // Actualiza la suma máxima si la suma actual es mayor
     }
 
     return maxSum;
