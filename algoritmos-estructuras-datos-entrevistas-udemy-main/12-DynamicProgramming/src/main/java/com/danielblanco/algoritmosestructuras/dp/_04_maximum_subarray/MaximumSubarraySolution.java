@@ -16,15 +16,17 @@ package com.danielblanco.algoritmosestructuras.dp._04_maximum_subarray;
  *    23 (subarray [5,4,-1,7,8], es decir, el array entero)
  *
  */
-public class MaximumSubarraySolution {
+public class MaximumSubarraySolution { // Clase que representa el problema de encontrar el subarray con la mayor suma
 
   public int maxSubArray(int[] nums) {
-    if (nums == null || nums.length == 0) return 0;
+    if (nums == null || nums.length == 0)
+      return 0;
 
     int maxSum = nums[0];
     int currentSum = nums[0];
     for (int i = 1; i < nums.length; i++) {
-      if (currentSum < 0) currentSum = 0;
+      if (currentSum < 0)
+        currentSum = 0;
 
       currentSum += nums[i];
       maxSum = Math.max(maxSum, currentSum);
