@@ -23,7 +23,7 @@ public class MaximumSubarraySolution { // Clase que representa el problema de en
       return 0; // Retorna 0 si el array es nulo o vacío
 
     int maxSum = nums[0]; // Inicializa la suma máxima con el primer elemento del array
-    int currentSum = nums[0];
+    int currentSum = nums[0]; // Inicializa la suma actual con el primer elemento del array
     for (int i = 1; i < nums.length; i++) {
       if (currentSum < 0)
         currentSum = 0;
