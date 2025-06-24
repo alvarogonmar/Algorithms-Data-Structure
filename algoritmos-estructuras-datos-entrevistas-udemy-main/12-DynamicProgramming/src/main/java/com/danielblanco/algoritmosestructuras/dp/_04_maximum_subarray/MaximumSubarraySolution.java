@@ -20,7 +20,7 @@ public class MaximumSubarraySolution { // Clase que representa el problema de en
 
   public int maxSubArray(int[] nums) { // Método que encuentra el subarray con la mayor suma
     if (nums == null || nums.length == 0) // Verifica si el array es nulo o vacío
-      return 0;
+      return 0; // Retorna 0 si el array es nulo o vacío
 
     int maxSum = nums[0];
     int currentSum = nums[0];
