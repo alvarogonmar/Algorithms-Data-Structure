@@ -25,7 +25,8 @@ public class MaximumSubarraySolution { // Clase que representa el problema de en
     int maxSum = nums[0]; // Inicializa la suma máxima con el primer elemento del array
     int currentSum = nums[0]; // Inicializa la suma actual con el primer elemento del array
     for (int i = 1; i < nums.length; i++) { // Itera desde el segundo elemento hasta el final del array
-      if (currentSum < 0)
+      if (currentSum < 0) // Si la suma actual es negativa, reinicia la suma actual al valor del elemento
+                          // actual
         currentSum = 0;
 
       currentSum += nums[i];
