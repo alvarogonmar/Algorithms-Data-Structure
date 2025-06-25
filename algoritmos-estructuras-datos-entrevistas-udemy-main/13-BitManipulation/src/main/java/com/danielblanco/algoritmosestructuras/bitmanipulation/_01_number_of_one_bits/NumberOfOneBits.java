@@ -14,6 +14,6 @@ package com.danielblanco.algoritmosestructuras.bitmanipulation._01_number_of_one
 public class NumberOfOneBits {
 
   public int numberOfOneBits(int n) {
-    throw new UnsupportedOperationException("Not implemented yet");
+    int bitCount = 0; // Inicializa el contador de bits a 0
   }
 }
