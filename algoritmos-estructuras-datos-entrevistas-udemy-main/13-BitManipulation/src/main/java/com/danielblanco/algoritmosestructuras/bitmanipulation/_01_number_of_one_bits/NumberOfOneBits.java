@@ -15,5 +15,7 @@ public class NumberOfOneBits {
 
   public int numberOfOneBits(int n) {
     int bitCount = 0; // Inicializa el contador de bits a 0
+    while (n != 0) {
+    }
   }
 }
